@@ -1,0 +1,10 @@
+"3.5 (created: 2012/08/04 00:41:20)
+
+source! /home/sweater/.vimperator/styles/github.vimp
+
+set toolbars=none
+" set private
+
+" vim: set ft=vimperator:
+
+colorscheme solarized
