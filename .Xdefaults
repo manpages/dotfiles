@@ -1,4 +1,4 @@
-urxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12
+urxvt*font: xft:Ubuntu Mono:pixelsize=11,style=regular
 URxvt*scrollBar: false
 URxvt.saveLines: 32767
 URxvt*termName: rxvt
