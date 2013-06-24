@@ -41,7 +41,7 @@ end
 beautiful.init( awful.util.getdir("config") .. "/themes/awesome-solarized/dark/theme.lua" )
 
 -- This is used later as the default terminal and editor to run.
-terminal = "konsole"
+terminal = 'st -f Ubuntu\\ Mono'
 applauncher = "dmenu_run" 
 editor = os.getenv("EDITOR") or "vim" 
 editor_cmd = terminal .. " -e " .. editor 
