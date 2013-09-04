@@ -1,13 +1,8 @@
 set nocompatible
 set noswapfile
 filetype off
+filetype plugin indent on  " required for Vundle
 let mapleader=","
-
-" ========================================================================
-" Pathogen stuff
-" ========================================================================
-" call pathogen#incubate()
-" call pathogen#helptags()
 
 " ========================================================================
 " Vundle stuff
@@ -43,8 +38,6 @@ map Q <nop>
 map K <nop>
 nnoremap <PageUp> <nop>
 nnoremap <PageDown> <nop>
-
-filetype plugin indent on  " required for Vundle
 
 " ========================================================================
 " Run this file and grab the output
