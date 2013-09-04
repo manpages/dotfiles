@@ -1,4 +1,5 @@
 set nocompatible
+set noswapfile
 filetype off
 let mapleader=","
 
