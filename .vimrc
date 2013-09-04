@@ -32,5 +32,7 @@ set smartindent
 set number
 set tabstop=2
 set expandtab
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>a
 
 filetype plugin indent on  " required for Vundle
