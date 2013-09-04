@@ -35,6 +35,14 @@ set expandtab
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>a
 
+" ========================================================================
+" Less annoyance
+" ========================================================================
+map Q <nop>
+map K <nop>
+nnoremap <PageUp> <nop>
+nnoremap <PageDown> <nop>
+
 filetype plugin indent on  " required for Vundle
 
 " ========================================================================
