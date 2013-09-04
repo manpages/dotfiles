@@ -36,3 +36,9 @@ map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>a
 
 filetype plugin indent on  " required for Vundle
+
+" ========================================================================
+" Run this file and grab the output
+" ========================================================================
+nnoremap <Leader>r :w<CR>o####<Esc>:r!time %:p<CR><CR>o<Esc>
+nnoremap <Leader>R :w<CR>o####<Esc>:!%:p<CR><CR>o<Esc>
