@@ -38,8 +38,8 @@ imap <C-s> <esc>:w<CR>a
 " ========================================================================
 map Q <nop>
 map K <nop>
-nnoremap <PageUp> <nop>
-nnoremap <PageDown> <nop>
+nnoremap <PageUp> :tabprevious<CR>
+nnoremap <PageDown> :tabnext<CR>
 
 " ========================================================================
 " Run this file and grab the output
