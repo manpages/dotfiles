@@ -43,10 +43,10 @@ nnoremap <PageDown> <nop>
 " ========================================================================
 " Run this file and grab the output
 " ========================================================================
-" nnoremap <Leader>r :w<CR>o####<Esc>:r!time %:p<CR><CR>o<Esc>
+set shellredir=\ 2>&1\  " redirect to both standard output and files
 map <F7> :w<CR>:!%:p<CR><CR>
 imap <F7> <Esc>:w<CR>:!%:p<CR><CR>
 map <Leader>R :w<CR>:!%:p<CR><CR>
-map <F8> :w<CR>:!% 2>&1 >> /tmp/vimterm.out<CR><CR>
-imap <F8> <Esc>:w<CR>:!% 2>&1 >> /tmp/vimterm.out<CR><CR>
-map <Leader>r :w<CR>:!% 2>&1 >> /tmp/vimterm.out<CR><CR>
+map <F8> :w<CR>:!% >> /tmp/vimterm.out<CR><CR>
+imap <F8> <Esc>:w<CR>:!% >> /tmp/vimterm.out<CR><CR>
+map <Leader>r :w<CR>:!% >> /tmp/vimterm.out<CR><CR>
