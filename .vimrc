@@ -16,6 +16,7 @@ call vundle#rc()
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'wincent/Command-T'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Tail-Bundle'
 
 " ========================================================================
 " Fundamentals
@@ -42,5 +43,10 @@ nnoremap <PageDown> <nop>
 " ========================================================================
 " Run this file and grab the output
 " ========================================================================
-nnoremap <Leader>r :w<CR>o####<Esc>:r!time %:p<CR><CR>o<Esc>
-nnoremap <Leader>R :w<CR>o####<Esc>:!%:p<CR><CR>o<Esc>
+" nnoremap <Leader>r :w<CR>o####<Esc>:r!time %:p<CR><CR>o<Esc>
+map <F7> :w<CR>:!%:p<CR><CR>
+imap <F7> <Esc>:w<CR>:!%:p<CR><CR>
+map <Leader>R :w<CR>:!%:p<CR><CR>
+map <F8> :w<CR>:!% 2>&1 >> /tmp/vimterm.out<CR><CR>
+imap <F8> <Esc>:w<CR>:!% 2>&1 >> /tmp/vimterm.out<CR><CR>
+map <Leader>r :w<CR>:!% 2>&1 >> /tmp/vimterm.out<CR><CR>
