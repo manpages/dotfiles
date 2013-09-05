@@ -32,14 +32,16 @@ set shiftwidth=2
 set expandtab
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>a
+map <Leader>. :tabprevious<CR>
+map <Leader>/ :tabnext<CR>
 
 " ========================================================================
 " Less annoyance
 " ========================================================================
 map Q <nop>
 map K <nop>
-nnoremap <PageUp> :tabprevious<CR>
-nnoremap <PageDown> :tabnext<CR>
+nnoremap <PageUp> <nop>
+nnoremap <PageDown> <nop>
 
 " ========================================================================
 " Run this file and grab the output
@@ -51,3 +53,4 @@ map <F8> :w<CR>:!%:p 2>&1 >> ~/.vimterm.out<CR><CR>
 imap <F8> <Esc>:w<CR>:!%:p 2>&1 >> ~/.vimterm.out<CR><CR>
 map <Leader>r :w<CR>:!%:p 2>&1 >> ~/.vimterm.out<CR><CR>
 map <Leader>\ :tabnew ~/nut.sh<CR>:Tail ~/.vimterm.out<CR>:set modifiable<CR>
+map <Leader>c :!echo -n > ~/.vimterm.out<CR><CR>
