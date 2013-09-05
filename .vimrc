@@ -43,7 +43,7 @@ nnoremap <PageDown> <nop>
 " ========================================================================
 " Run this file and grab the output
 " ========================================================================
-set shellredir=\ 2>&1\  " redirect to both standard output and files
+set shellredir=\ 2>&1\  
 map <F7> :w<CR>:!%:p<CR><CR>
 imap <F7> <Esc>:w<CR>:!%:p<CR><CR>
 map <Leader>R :w<CR>:!%:p<CR><CR>
