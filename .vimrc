@@ -28,6 +28,7 @@ colorscheme solarized
 set smartindent
 set number
 set tabstop=2
+set shiftwidth=2
 set expandtab
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>a
@@ -43,10 +44,9 @@ nnoremap <PageDown> <nop>
 " ========================================================================
 " Run this file and grab the output
 " ========================================================================
-set shellredir=\ 2>&1\  
 map <F7> :w<CR>:!%:p<CR><CR>
 imap <F7> <Esc>:w<CR>:!%:p<CR><CR>
 map <Leader>R :w<CR>:!%:p<CR><CR>
-map <F8> :w<CR>:!% >> /tmp/vimterm.out<CR><CR>
-imap <F8> <Esc>:w<CR>:!% >> /tmp/vimterm.out<CR><CR>
-map <Leader>r :w<CR>:!% >> /tmp/vimterm.out<CR><CR>
+map <F8> :w<CR>:!%:p 2>&1 >> /tmp/vimterm.out<CR><CR>
+imap <F8> <Esc>:w<CR>:!%:p 2>&1 >> /tmp/vimterm.out<CR><CR>
+map <Leader>r :w<CR>:!%:p 2>&1 >> /tmp/vimterm.out<CR><CR>
