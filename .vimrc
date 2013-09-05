@@ -47,6 +47,7 @@ nnoremap <PageDown> <nop>
 map <F7> :w<CR>:!%:p<CR><CR>
 imap <F7> <Esc>:w<CR>:!%:p<CR><CR>
 map <Leader>R :w<CR>:!%:p<CR><CR>
-map <F8> :w<CR>:!%:p 2>&1 >> /tmp/vimterm.out<CR><CR>
-imap <F8> <Esc>:w<CR>:!%:p 2>&1 >> /tmp/vimterm.out<CR><CR>
-map <Leader>r :w<CR>:!%:p 2>&1 >> /tmp/vimterm.out<CR><CR>
+map <F8> :w<CR>:!%:p 2>&1 >> ~/.vimterm.out<CR><CR>
+imap <F8> <Esc>:w<CR>:!%:p 2>&1 >> ~/.vimterm.out<CR><CR>
+map <Leader>r :w<CR>:!%:p 2>&1 >> ~/.vimterm.out<CR><CR>
+map <Leader>\ :tabnew ~/nut.sh<CR>:Tail ~/.vimterm.out<CR>
