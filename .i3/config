@@ -182,10 +182,7 @@ bindcode $mod+107 exec scrot -e 'mv $f /tmp'
 # bindsym $mod+z exec i3lock -i '/home/mfag/.screenlayout/locker.png'
 
 # automatic workspace assignment
-assign [class="Pidgin"] 3
-assign [class="Skype"] 3
-assign [class="Deadbeef"] 10
-assign [class="Liferea"] 4
+assign [class="Skype"] 14
 
 # volume control
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
