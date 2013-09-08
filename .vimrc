@@ -17,6 +17,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'wincent/Command-T'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Tail-Bundle'
+Bundle 'elixir-lang/vim-elixir'
 
 " ========================================================================
 " Fundamentals
@@ -36,6 +37,7 @@ map <Leader>. :tabprevious<CR>
 map <Leader>/ :tabnext<CR>
 
 map <C-h> :noh<CR>
+map <Leader>z :noh<CR>
 
 " ========================================================================
 " Less annoyance
@@ -45,6 +47,10 @@ map K <nop>
 nnoremap <PageUp> <nop>
 nnoremap <PageDown> <nop>
 
+" ========================================================================
+" Filetypes
+" ========================================================================
+au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
 " ========================================================================
 " Run this file and grab the output
 " ========================================================================
