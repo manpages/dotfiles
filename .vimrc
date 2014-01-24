@@ -19,7 +19,7 @@ Bundle 'wincent/Command-T'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Tail-Bundle'
 Bundle 'elixir-lang/vim-elixir'
-Bundle 'Floobits/floobits-vim'
+"Bundle 'Floobits/floobits-vim'
 Bundle 'Markdown'
 
 " ========================================================================

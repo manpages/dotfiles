@@ -19,7 +19,7 @@ font pango: Ubuntu 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "st -f Ubuntu\ Mono"
+bindsym $mod+Return exec gnome-terminal #"st -f Ubuntu\ Mono"
 
 # kill focused window
 bindsym $mod+Shift+C kill

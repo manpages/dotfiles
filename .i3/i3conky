@@ -6,4 +6,26 @@ total_run_times 0
 use_spacer none
 
 TEXT
-${if_up enp12s0}— u${upspeedf enp12s0}KiB d${downspeedf wlp3s0}KiB ${endif}${if_up wlp3s0}₩: ${wireless_link_qual_perc wlp3s0}% u${upspeedf wlp3s0}KiB d${downspeedf wlp3s0}KiB ${endif} ⛁ ${memperc}% / ${fs_free /} ⌂ ${fs_free /home} ⚡ ${battery_percent BAT0}% ↑ ${uptime_short} | ${time %a %b %d %k:%M}
+${if_up enp12s0}— \
+u${upspeedf enp12s0}KiB d${downspeedf enp12s0}KiB \
+${endif}\
+${if_up wlp3s0}₩: \
+${wireless_link_qual_perc wlp3s0}% \
+u${upspeedf wlp3s0}KiB \
+d${downspeedf wlp3s0}KiB \
+${endif} \
+${if_up eth0}— \
+u${upspeedf eth0}KiB d${downspeedf eth0}KiB \
+${endif}\
+${if_up wlan0}₩: \
+${wireless_link_qual_perc wlan0}% \
+u${upspeedf wlan0}KiB \
+d${downspeedf wlan0}KiB \
+${endif} \
+⛁ ${memperc}% / ${fs_free /} \
+⌂ ${fs_free /home} \
+⚡ ${battery_percent BAT0}% \
+↑ ${uptime_short} \
+LV<${tztime Europe/Latvia %k:%M}> \
+BC<${tztime America/Vancouver %k:%M}> \
+★ ${time %a %b %d %k:%M}
