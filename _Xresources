@@ -1,0 +1,65 @@
+URxvt*font: xft:Ubuntu\ Mono:style=Regular:pixelsize=12
+URxvt*scrollstyle: plain
+URxvt*scrollBar_right: true
+URxvt.saveLines: 5120
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyOutput: false
+URxvt.scrollTtyKeypress: true
+
+! extensions
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
+! clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd: xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+! keyboard-select
+URxvt.keysym.M-a: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.autocopy: true
+URxvt.url-select.button: 1
+URxvt.url-select.launcher: /usr/bin/firefox
+URxvt.url-select.underline: true
+
+! Base16 Atelier Lakeside
+! Scheme: Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside/)
+
+#define base00 #161b1d
+#define base01 #1f292e
+#define base02 #516d7b
+#define base03 #5a7b8c
+#define base04 #7195a8
+#define base05 #7ea2b4
+#define base06 #c1e4f6
+#define base07 #ebf8ff
+#define base08 #d22d72
+#define base09 #935c25
+#define base0A #8a8a0f
+#define base0B #568c3b
+#define base0C #2d8f6f
+#define base0D #257fad
+#define base0E #5d5db1
+#define base0F #b72dd2
+
+*.foreground:   base05
+*.background:   base00
+*.cursorColor:  base05
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+*.color8:       base03
+*.color9:       base09
+*.color10:      base01
+*.color11:      base02
+*.color12:      base04
+*.color13:      base06
+*.color14:      base0F
+*.color15:      base07
