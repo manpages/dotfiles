@@ -33,6 +33,8 @@
                                  pkgs.tmux
                                  pkgs.htop
                                  pkgs.mosh
+				 pkgs.autossh
+				 pkgs.proxychains
                                ];
   environment.shellInit = 
     ''
