@@ -35,7 +35,7 @@ in
     xkbOptions = "grp:alt_shift_toggle";
     synaptics = {
       enable = true;
-      minSpeed = "1.2"; 
+      minSpeed = "1.0"; 
       maxSpeed = "2.0";
       tapButtons = false;
       twoFingerScroll = true;

@@ -11,6 +11,7 @@
       ./dnsCroatia.nix
       ./i3.nix
       ./unfree.nix
+      ./windows.nix
     ];
 
   boot.loader.grub = {
@@ -33,8 +34,8 @@
                                  pkgs.tmux
                                  pkgs.htop
                                  pkgs.mosh
-				 pkgs.autossh
-				 pkgs.proxychains
+                                 pkgs.autossh
+                                 pkgs.proxychains
                                ];
   environment.shellInit = 
     ''
