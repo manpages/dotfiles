@@ -8,7 +8,7 @@
   imports =
     [ ./lenovoThinkPadE530c.nix
       ./xserver.nix
-      ./dnsCroatia.nix
+      ./croatia.nix
       ./i3.nix
       ./unfree.nix
       ./windows.nix
@@ -35,12 +35,13 @@
                                  pkgs.htop
                                  pkgs.mosh
                                  pkgs.autossh
+				 pkgs.acpi
                                  pkgs.proxychains
                                ];
   environment.shellInit = 
     ''
       NIX_PATH=/nix/var/nix/profiles/per-user/root/channels/nixos
-      NIX_PATH=$NIX_PATH:nixpkgs=/root/nixpkgs
+      NIX_PATH=$NIX_PATH:bleeding=/root/nixpkgs
       NIX_PATH=$NIX_PATH:nixos-config=/etc/nixos/configuration.nix
       export NIX_PATH
     '';
