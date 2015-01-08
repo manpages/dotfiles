@@ -1,6 +1,6 @@
 set -o vi
 export PATH=$HOME/github/usr-local-bin:$PATH
-ps1_date="\[$(tput bold)\]\[$(tput setaf 3)\]\$(date +'%a %b %d %I:%M:%S:%N')"
+ps1_date="\[$(tput bold)\]\[$(tput setaf 3)\]\$(date +'%a %b %d %H:%M:%S:%N')"
 ps1_user="\[$(tput setaf 4)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h"
 ps1_path="\[$(tput setaf 5)\]\w"
 ps1_lambda="\[$(tput setaf 4)\]λ\[$(tput sgr0)\]"
