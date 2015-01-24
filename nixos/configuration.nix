@@ -35,9 +35,9 @@
                                  pkgs.htop
                                  pkgs.mosh
                                  pkgs.autossh
-				 pkgs.acpi
+                                 pkgs.acpi
                                  pkgs.proxychains
-				 pkgs.nginx
+                                 pkgs.nginx
                                ];
   environment.shellInit = 
     ''
