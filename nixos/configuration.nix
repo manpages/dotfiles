@@ -37,6 +37,7 @@
                                  pkgs.autossh
 				 pkgs.acpi
                                  pkgs.proxychains
+				 pkgs.nginx
                                ];
   environment.shellInit = 
     ''
@@ -53,6 +54,11 @@
     createHome = true;
     home = "/home/sweater";
     shell = "/run/current-system/sw/bin/bash";
+  };
+
+  services.nginx = {
+    enable = true;
+    config = "/root/nginx.conf";
   };
 
 }
