@@ -12,6 +12,7 @@
       ./i3.nix
       ./unfree.nix
       ./windows.nix
+      ./nginx.nix
     ];
 
   boot.loader.grub = {
@@ -56,9 +57,9 @@
     shell = "/run/current-system/sw/bin/bash";
   };
 
-  services.nginx = {
+  services.cron = {
     enable = true;
-    config = "/root/nginx.conf";
+    cronFiles = [ "/root/cron.conf" ];
   };
 
 }
