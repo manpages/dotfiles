@@ -1,0 +1,4 @@
+PATH=/run/current-system/sw/bin:/run/current-system/sw/sbin:/root/.nix-profile/bin/:/root/.nix-profile/sbin
+
+@daily    su -u sweater /home/sweater/github/dotfiles/sync.sh
+* * * * *               /root/bin/pm_job

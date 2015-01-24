@@ -1,12 +1,21 @@
 set -o vi
+
+# Haskell
+NIX_GHC_VERSION=$(ghc --numeric-version)
+export NIX_GHC="$HOME/.nix-profile/bin/ghc"
+export NIX_GHCPKG="$HOME/.nix-profile/bin/ghc-pkg"
+export NIX_GHC_DOCDIR="$HOME/.nix-profile/share/doc/ghc/html"
+export NIX_GHC_LIBDIR="$HOME/.nix-profile/lib/ghc-${NIX_GHC_VERSION}"
+
 export PATH=$HOME/github/usr-local-bin:$PATH
-ps1_date="\[$(tput bold)\]\[$(tput setaf 3)\]\$(date +'%a %b %d %H:%M:%S:%N')"
-ps1_user="\[$(tput setaf 4)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h"
-ps1_path="\[$(tput setaf 5)\]\w"
-ps1_lambda="\[$(tput setaf 4)\]λ\[$(tput sgr0)\]"
+
+ps1_date="\[$(tput bold)\]\[$(tput setaf 8)\]\$(date +'%a %b %d %H:%M:%S:%N')"
+ps1_user="\[$(tput setaf 241)\]\u\[$(tput setaf 8)\]@\[$(tput setaf 241)\]\h"
+ps1_path="\[$(tput setaf 8)\]\w"
+ps1_lambda="\[$(tput setaf 8)\]λ\[$(tput sgr0)\]"
 for x in {0..256}; do
   ps1_tester="${ps1_tester}\[$(tput setaf $x)\]$x"
 done
 export PS1="${ps1_date} ${ps1_user} ${ps1_path}\n${ps1_lambda} "
 
-alias bleeding='nix-env -f "<bleeding>"'
+alias bleeding='nix-env -f "<bleeding>" --option extra-binary-caches http://hydra.nixos.org --option extra-binary-caches http://hydra.cryp.to'
