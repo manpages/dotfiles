@@ -1,4 +1,5 @@
 PATH=/run/current-system/sw/bin:/run/current-system/sw/sbin:/root/.nix-profile/bin/:/root/.nix-profile/sbin
 
-@daily    su sweater -c /home/sweater/github/dotfiles/sync.sh
-* * * * *               /root/bin/pm_job
+# minute hour dom month dow user cmd
+35  *   *   *   *    su sweater -c /home/sweater/github/dotfiles/sync.sh
+*   *   *   *   *               /root/bin/pm_job
