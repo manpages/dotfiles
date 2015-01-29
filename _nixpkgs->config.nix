@@ -10,7 +10,10 @@ with import /root/nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkg
                                       };
     haskellEnvDemo = pkgs.haskellngPackages.ghcWithPackages (p: with p; [
     ]);
-    haskellWebEnv  = pkgs.haskellngPackages.ghcWithPackages (p: with p; [
+    haskellCore    = pkgs.haskellngPackages.ghcWithPackages (p: with p; [
+      ghc cabal2nix
+    ]);
+    haskellWeb     = pkgs.haskellngPackages.ghcWithPackages (p: with p; [
       warp scotty
     ]);
   };
