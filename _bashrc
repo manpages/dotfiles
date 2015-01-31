@@ -16,6 +16,14 @@ ps1_lambda="\[$(tput setaf 8)\]λ\[$(tput sgr0)\]"
 for x in {0..256}; do
   ps1_tester="${ps1_tester}\[$(tput setaf $x)\]$x"
 done
-export PS1="${ps1_date} ${ps1_user} ${ps1_path}\n${ps1_lambda} "
+
+git_prompt() {
+  local ref="$(git symbolic-ref -q HEAD 2>/dev/null)"
+  if [ -n "$ref" ]; then
+    echo "$(tput setaf 241)(${ref#refs/heads/}) "
+  fi
+}
+
+export PS1="${ps1_date} ${ps1_user} ${ps1_path}\n\$(git_prompt)${ps1_lambda} "
 
 alias bleeding='nix-env -f "<bleeding>" --option extra-binary-caches http://hydra.nixos.org --option extra-binary-caches http://hydra.cryp.to'
