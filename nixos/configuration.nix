@@ -43,7 +43,7 @@
   environment.shellInit = 
     ''
       NIX_PATH=/nix/var/nix/profiles/per-user/root/channels/nixos
-      NIX_PATH=$NIX_PATH:bleeding=/root/nixpkgs
+      NIX_PATH=$NIX_PATH:bleeding=/nixpkgs
       NIX_PATH=$NIX_PATH:nixos-config=/etc/nixos/configuration.nix
       export NIX_PATH
     '';
