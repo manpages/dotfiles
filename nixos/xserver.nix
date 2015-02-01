@@ -1,16 +1,34 @@
 { pkgs, ... }:
 
+let kdenliveWrapped = pkgs.kde4.wrapper pkgs.kde4.kdenlive; in
 let
 
   utils = [ pkgs.firefoxWrapper
-            pkgs.chromium
+            pkgs.chromiumDev
+            pkgs.skype
+
             pkgs.pulseaudio
             pkgs.pavucontrol
+
             pkgs.mplayer
             pkgs.ffmpeg
             pkgs.vlc
-            pkgs.rxvt_unicode
-            pkgs.skype
+
+            pkgs.rxvt_unicode_with-plugins
+            pkgs.urxvt_perls
+
+            pkgs.blender
+            pkgs.inkscape
+            pkgs.gimp
+            kdenliveWrapped
+
+            pkgs.autocutsel
+            pkgs.clipit
+
+            pkgs.zathura
+            pkgs.mcomix
+            pkgs.fbreader
+            pkgs.calibre
           ];
 
   fonts = [ pkgs.cantarell_fonts
@@ -26,7 +44,7 @@ let
 in 
 {
   # Use wicd
-  imports = [ ./wicd.nix ];
+  imports = [ ./wicd.nix ./unfree.nix ];
   # Use pulse
   hardware.pulseaudio.enable = true;
   services.xserver = {

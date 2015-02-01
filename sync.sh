@@ -1,4 +1,5 @@
 [ -z "$1" ] && dest="/home/sweater/github/dotfiles" || dest=$1
+[ -z "$2" ] &&  msg="Dotfiles autosync"             ||  msg=$2
 home='/home/sweater'
 arrows="→ ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛"
 for c in \
@@ -25,5 +26,5 @@ cp -ut "${dest}/nixos" /etc/nixos/*nix
 cd "${dest}"
 git add .
 git status
-git commit -am 'Dotfiles autosync'
+git commit -am "$msg"
 git push origin master

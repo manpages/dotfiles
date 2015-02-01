@@ -39,11 +39,25 @@
                                  pkgs.acpi
                                  pkgs.proxychains
                                  pkgs.nginx
+                                 pkgs.httpie
+                                 pkgs.w3m
+                                 pkgs.lynx
+                                 pkgs.ncurses
+                                 pkgs.newsbeuter
+                                 pkgs.sshfsFuse
+                                 pkgs.wget
+                                 pkgs.curl
+                                 pkgs.unrar
+                                 pkgs.nettools
+                                 pkgs.linuxConsoleTools
+                                 pkgs.kexectools
+                                 pkgs.postgresql
+                                 pkgs.figlet
                                ];
   environment.shellInit = 
     ''
       NIX_PATH=/nix/var/nix/profiles/per-user/root/channels/nixos
-      NIX_PATH=$NIX_PATH:bleeding=/nixpkgs
+      NIX_PATH=$NIX_PATH:nixpkgs=/nixpkgs
       NIX_PATH=$NIX_PATH:nixos-config=/etc/nixos/configuration.nix
       export NIX_PATH
     '';

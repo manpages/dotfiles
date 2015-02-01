@@ -1,13 +1,21 @@
 # i3 desktop config
 { pkgs, ... }:
 
+let
+
+  conkyX11Rss = pkgs.conky.override { x11Support=true;
+                                      wireless=true;
+                                      luaSupport=true;
+                                      rss=true; };
+
+in
 {
   environment.systemPackages = [
     pkgs.dmenu
     pkgs.feh
     pkgs.i3lock
     pkgs.i3status
-    pkgs.conky
+    conkyX11Rss
     pkgs.scrot
   ];
 
