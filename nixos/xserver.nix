@@ -34,10 +34,13 @@ let
   fonts = [ pkgs.cantarell_fonts
             pkgs.corefonts
             pkgs.dejavu_fonts
+            pkgs.dina-font
             pkgs.dosemu_fonts
             pkgs.freefont_ttf
-            pkgs.liberation_ttf
             pkgs.terminus_font
+            pkgs.gyre-fonts
+            pkgs.lohit-fonts
+            pkgs.proggyfonts
             pkgs.ubuntu_font_family
           ];
 

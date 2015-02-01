@@ -1,10 +1,8 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
+  networking.hostName = "brainstorm"; 
+
   imports =
     [ ./lenovoThinkPadE530c.nix
       ./xserver.nix
@@ -13,6 +11,7 @@
       ./unfree.nix
       ./windows.nix
       ./nginx.nix
+      ./haskell.nix
     ];
 
   boot.loader.grub = {
@@ -21,15 +20,14 @@
     device = "/dev/sda";
   };
 
-  networking.hostName = "brainstorm"; 
-
   i18n = {
     consoleFont = "lat9w-16";
     consoleKeyMap = "us";
     defaultLocale = "en_US.UTF-8";
   };
 
-  environment.systemPackages = [ pkgs.gitAndTools.gitFull
+  environment.systemPackages = [ pkgs.nix-repl
+                                 pkgs.gitAndTools.gitFull
                                  pkgs.vimHugeX
                                  pkgs.screen
                                  pkgs.tmux
