@@ -29,6 +29,8 @@ let
             pkgs.mcomix
             pkgs.fbreader
             pkgs.calibre
+
+            pkgs.xlibs.xbacklight
           ];
 
   fonts = [ pkgs.cantarell_fonts
