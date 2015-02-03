@@ -10,6 +10,29 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
       warp scotty
     ]);
 
+    codeEnv = pkgs.buildEnv {
+      name = "code-env";
+      paths = [
+        pkgs.vimPlugins.command-t
+
+        pkgs.nodePackages.mocha
+        pkgs.nodePackages.phantomjs
+        pkgs.nodejs
+
+        pkgs.haskellngPackages.cabal2nix
+        pkgs.haskellngPackages.ghc
+
+        pkgs.ubuntu_font_family
+      ];
+    };
+
+    funEnv = pkgs.buildEnv {
+      name = "fun-env";
+      paths = [
+        pkgs.python27Packages.livestreamer
+      ];
+    };
+
   };
   allowUnfree = true;
 }

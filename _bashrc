@@ -1,5 +1,7 @@
 set -o vi
 
+export EDITOR="vim"
+
 # Haskell
 NIX_GHC_VERSION=$(ghc --numeric-version)
 export NIX_GHC="$HOME/.nix-profile/bin/ghc"
@@ -25,5 +27,3 @@ git_prompt() {
 }
 
 export PS1="${ps1_date} ${ps1_user} ${ps1_path}\n\$(git_prompt)${ps1_lambda} "
-
-alias bleeding='nix-env -f "<bleeding>" --option extra-binary-caches http://hydra.nixos.org --option extra-binary-caches http://hydra.cryp.to'

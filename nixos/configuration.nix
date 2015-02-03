@@ -11,7 +11,6 @@
       ./unfree.nix
       ./windows.nix
       ./nginx.nix
-      ./haskell.nix
     ];
 
   boot.loader.grub = {
@@ -46,11 +45,13 @@
                                  pkgs.wget
                                  pkgs.curl
                                  pkgs.unrar
+                                 pkgs.unzip
                                  pkgs.nettools
                                  pkgs.linuxConsoleTools
                                  pkgs.kexectools
                                  pkgs.postgresql
                                  pkgs.figlet
+                                 pkgs.gnupg
                                ];
   environment.shellInit = 
     ''
