@@ -30,6 +30,7 @@ let
             pkgs.fbreader
             pkgs.calibre
 
+            pkgs.xclip
             pkgs.xlibs.xbacklight
           ];
 
