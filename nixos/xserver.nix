@@ -32,6 +32,8 @@ let
 
             pkgs.xclip
             pkgs.xlibs.xbacklight
+
+            pkgs.wireshark-gtk
           ];
 
   fonts = [ pkgs.cantarell_fonts

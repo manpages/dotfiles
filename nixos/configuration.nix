@@ -52,10 +52,14 @@
                                  pkgs.postgresql
                                  pkgs.figlet
                                  pkgs.gnupg
+                                 pkgs.tcpdump
+                                 pkgs.strace
+                                 pkgs.traceroute
+                                 pkgs.nmap
                                ];
   environment.shellInit = 
     ''
-      NIX_PATH=/nix/var/nix/profiles/per-user/root/channels/nixos
+      NIX_PATH=/nixpkgs
       NIX_PATH=$NIX_PATH:nixpkgs=/nixpkgs
       NIX_PATH=$NIX_PATH:nixos-config=/etc/nixos/configuration.nix
       export NIX_PATH
