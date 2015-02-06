@@ -15,12 +15,14 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
       paths = [
         pkgs.vimPlugins.command-t
 
+        pkgs.nodePackages.typescript
         pkgs.nodePackages.mocha
         pkgs.nodePackages.phantomjs
         pkgs.nodejs
 
         pkgs.haskellngPackages.cabal2nix
         pkgs.haskellngPackages.ghc
+        pkgs.haskellngPackages.ghcjs
 
         pkgs.ubuntu_font_family
       ];

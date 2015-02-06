@@ -11,6 +11,7 @@
       ./unfree.nix
       ./windows.nix
       ./nginx.nix
+      ./pentest.nix
     ];
 
   boot.loader.grub = {
@@ -59,7 +60,7 @@
                                ];
   environment.shellInit = 
     ''
-      NIX_PATH=/nixpkgs
+      NIX_PATH=/nix/var/nix/profiles/per-user/root/channels/nixos
       NIX_PATH=$NIX_PATH:nixpkgs=/nixpkgs
       NIX_PATH=$NIX_PATH:nixos-config=/etc/nixos/configuration.nix
       export NIX_PATH
