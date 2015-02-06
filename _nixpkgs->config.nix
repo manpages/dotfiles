@@ -22,7 +22,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
 
         pkgs.haskellngPackages.cabal2nix
         pkgs.haskellngPackages.ghc
-        pkgs.haskellngPackages.ghcjs
+        pkgs.ghc.ghcjs
 
         pkgs.ubuntu_font_family
       ];
