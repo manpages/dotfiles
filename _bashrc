@@ -26,4 +26,4 @@ git_prompt() {
   fi
 }
 
-export PS1="${ps1_date} ${ps1_user} ${ps1_path}\n\$(git_prompt)${ps1_lambda} "
+export PS1="${ps1_date} ${ps1_user} ${ps1_path} \$(git_prompt)\n${ps1_lambda} "
