@@ -24,6 +24,8 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.haskellngPackages.ghc
         pkgs.ghc.ghcjs
 
+        pkgs.python27Full
+
         pkgs.ubuntu_font_family
       ];
     };
