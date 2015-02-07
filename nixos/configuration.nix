@@ -75,6 +75,15 @@
     shell = "/run/current-system/sw/bin/bash";
   };
 
+  users.extraUsers.guest = {
+    name = "guest";
+    group = "users";
+    uid = 1001;
+    createHome = true;
+    home = "/home/guest";
+    shell = "/run/current-system/sw/bin/bash";
+  };
+
   services.cron = {
     enable = true;
     cronFiles = [ "/root/cron.conf" ];

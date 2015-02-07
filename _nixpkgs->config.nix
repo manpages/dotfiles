@@ -32,6 +32,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
       name = "fun-env";
       paths = [
         pkgs.python27Packages.livestreamer
+        pkgs.firefoxWrapper
       ];
     };
 
