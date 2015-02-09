@@ -20,7 +20,7 @@ ${hydraConfig}
 """ > hydra.nginx
 nixos-rebuild switch
 createuser -U root hydra -P # Enter ${hydraPgSqlPassword}
-sudo -u hydra echo -n "localhost:*:hydra:hydra:hydra123qwe123" > ~/.pgpass
+sudo -u hydra echo -n "localhost:*:hydra:hydra:${hydraPgSqlPassword}" > ~/.pgpass
 psql -U root postgres -c 'CREATE DATABASE hydra;'
 nixos-rebuild switch
 '';
@@ -110,12 +110,12 @@ in
       enable = true;
       dbi = "dbi:Pg:dbname=hydra;host=localhost;user=hydra;";
       package = (import "/root/hydra/release.nix" {}).build.x86_64-linux;
-      hydraURL = "http://hydra.scriptores.com/";
+      hydraURL = "http://hydra.host.domain/";
       listenHost = "localhost";
       port = 3000;
       minimumDiskFree = 5;  # in GB
       minimumDiskFreeEvaluator = 2;
-      notificationSender = "hydra@yourserver.com";
+      notificationSender = "hydra@host.domain";
       logo = null;
       debugServer = false;
     };
