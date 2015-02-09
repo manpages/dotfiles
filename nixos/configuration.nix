@@ -12,6 +12,7 @@
       ./windows.nix
       ./nginx.nix
       ./pentest.nix
+      ./hydra.nix
     ];
 
   boot.loader.grub = {

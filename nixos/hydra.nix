@@ -1,14 +1,8 @@
 { config, pkgs, ... }:
-let
-  # make sure we always have the latest module
-  hydra = pkgs.fetchgit {
-    url = https://github.com/NixOS/hydra;
-    rev = "refs/heads/master";
-    sha256 = "";
-  };
-in {
 
-  require = [ "${hydra}/hydra-module.nix" ];
+{
+
+  require = [ "/root/hydra/hydra-module.nix" ];
 
   services = {
     # for sending emails (optional)
@@ -25,7 +19,7 @@ in {
     };
 
     # actual Hydra config
-    hydra = {
+    services.hydra = {
       enable = true;
       dbi = "dbi:Pg:dbname=hydra;host=localhost;user=hydra;";
       package = (import "${hydra}/release.nix" {}).build.x86_64-linux;
