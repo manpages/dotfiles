@@ -10,7 +10,6 @@
       ./i3.nix
       ./unfree.nix
       ./windows.nix
-      ./nginx.nix
       ./pentest.nix
       ./hydra.nix
     ];
@@ -52,13 +51,13 @@
                                  pkgs.vpnc
                                  pkgs.linuxConsoleTools
                                  pkgs.kexectools
-                                 pkgs.postgresql
                                  pkgs.figlet
                                  pkgs.gnupg
                                  pkgs.tcpdump
                                  pkgs.strace
                                  pkgs.traceroute
                                  pkgs.nmap
+                                 pkgs.openssl
                                ];
   environment.shellInit = 
     ''
