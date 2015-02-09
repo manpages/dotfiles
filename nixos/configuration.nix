@@ -48,6 +48,7 @@
                                  pkgs.unrar
                                  pkgs.unzip
                                  pkgs.nettools
+                                 pkgs.vpnc
                                  pkgs.linuxConsoleTools
                                  pkgs.kexectools
                                  pkgs.postgresql

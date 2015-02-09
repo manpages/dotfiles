@@ -4,6 +4,7 @@ let
   hydra = pkgs.fetchgit {
     url = https://github.com/NixOS/hydra;
     rev = "refs/heads/master";
+    sha256 = "";
   };
 in {
 
