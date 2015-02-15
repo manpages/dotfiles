@@ -85,6 +85,15 @@
     shell = "/run/current-system/sw/bin/bash";
   };
 
+  users.extraUsers.dork = {
+    name = "dork";
+    group = "users";
+    uid = 1002;
+    createHome = true;
+    home = "/home/dork";
+    shell = "/run/current-system/sw/bin/bash";
+  };
+
   services.cron = {
     enable = true;
     cronFiles = [ "/root/cron.conf" ];
