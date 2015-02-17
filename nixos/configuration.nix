@@ -50,6 +50,8 @@
                                  pkgs.nettools
                                  pkgs.vpnc
                                  pkgs.linuxConsoleTools
+                                 pkgs.psmisc
+                                 pkgs.lm_sensors
                                  pkgs.kexectools
                                  pkgs.figlet
                                  pkgs.gnupg
