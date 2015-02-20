@@ -12,6 +12,7 @@
       ./windows.nix
       ./pentest.nix
       ./hydra.nix
+      ./virtualbox.nix
     ];
 
   boot.loader.grub = {
@@ -95,6 +96,8 @@
     home = "/home/dork";
     shell = "/run/current-system/sw/bin/bash";
   };
+
+  users.extraGroups.vboxusers.members = [ "sweater" ];
 
   services.cron = {
     enable = true;
