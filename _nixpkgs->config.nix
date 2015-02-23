@@ -27,6 +27,8 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.python27Full
 
         pkgs.ubuntu_font_family
+
+        pkgs.vagrant
       ];
     };
 

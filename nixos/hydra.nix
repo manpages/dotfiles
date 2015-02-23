@@ -8,6 +8,7 @@ nothingToSeeHereSkipToFunctionBody = true;
 provision = ''
 # As root
 cd
+git clone https://github.com/NixOS/hydra
 mkdir ssl
 cd ssl
 openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -keyout hydra.key -out hydra.crt
