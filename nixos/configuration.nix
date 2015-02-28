@@ -107,4 +107,6 @@
     cronFiles = [ "/root/cron.conf" ];
   };
 
+  services.openvpn.enable = true;
+
 }
