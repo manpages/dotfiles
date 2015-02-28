@@ -111,8 +111,8 @@ in
       enable = true;
       dbi = "dbi:Pg:dbname=hydra;host=localhost;user=hydra;";
       package = (import "/root/hydra/release.nix" {}).build.x86_64-linux;
-      hydraURL = "http://hydra.host.domain/";
-      listenHost = "localhost";
+      hydraURL = "http://localhost/";
+      listenHost = "0.0.0.0";
       port = 3000;
       minimumDiskFree = 5;  # in GB
       minimumDiskFreeEvaluator = 2;
