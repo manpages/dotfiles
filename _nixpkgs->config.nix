@@ -3,13 +3,6 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
 {
   packageOverrides = pkgs: rec {
 
-    haskellEnvDemo = pkgs.haskellngPackages.ghcWithPackages (p: with p; [
-    ]);
-
-    haskellWeb     = pkgs.haskellngPackages.ghcWithPackages (p: with p; [
-      warp scotty
-    ]);
-
     codeEnv = pkgs.buildEnv {
       name = "code-env";
       paths = [
@@ -20,9 +13,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.nodePackages.phantomjs
         pkgs.nodejs
 
-        pkgs.haskellngPackages.cabal2nix
-        pkgs.haskellngPackages.ghc
-        pkgs.ghc.ghcjs
+        pkgs.haskell-ng.compiler.ghcHEAD
 
         pkgs.python27Full
 

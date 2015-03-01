@@ -8,7 +8,7 @@ export NIX_GHC="$HOME/.nix-profile/bin/ghc"
 export NIX_GHCPKG="$HOME/.nix-profile/bin/ghc-pkg"
 export NIX_GHC_DOCDIR="$HOME/.nix-profile/share/doc/ghc/html"
 export NIX_GHC_LIBDIR="$HOME/.nix-profile/lib/ghc-${NIX_GHC_VERSION}"
-export NIX_PATH="testing=$HOME/github/nixpkgs:$NIX_PATH"
+export NIX_PATH="ghcjs=$HOME/github/nixpkgs-ghcjs:testing=$HOME/github/nixpkgs:$NIX_PATH"
 
 export PATH=$HOME/github/usr-local-bin:$PATH
 
