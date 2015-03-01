@@ -11,6 +11,14 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
       cabal2nix
     ]);
 
+    lshEnv = pkgs.buildEnv {
+      name  = "lsh-env";
+      paths = [
+        pkgs.mongodb pkgs.nodePackages.node-gyp
+        pkgs.nodePackages.coffee-script
+      ];
+    };
+
     codeEnv = pkgs.buildEnv {
       name = "code-env";
       paths = [
@@ -28,6 +36,8 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.ubuntu_font_family
 
         pkgs.vagrant
+
+        pkgs.gnumake
       ];
     };
 

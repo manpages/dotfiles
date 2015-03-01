@@ -64,6 +64,7 @@
                                  pkgs.traceroute
                                  pkgs.nmap
                                  pkgs.openssl
+                                 pkgs.gcc
                                ];
   environment.shellInit = 
     ''
