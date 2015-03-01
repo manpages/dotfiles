@@ -3,6 +3,14 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
 {
   packageOverrides = pkgs: rec {
 
+    webHaskell = pkgs.haskell-ng.packages.ghc784.ghcWithPackages (p: with p; [
+      scotty acid-state
+    ]);
+
+    binHaskell = pkgs.haskell-ng.packages.ghc784.ghcWithPackages (p: with p; [
+      cabal2nix
+    ]);
+
     codeEnv = pkgs.buildEnv {
       name = "code-env";
       paths = [
@@ -13,7 +21,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.nodePackages.phantomjs
         pkgs.nodejs
 
-        pkgs.haskell-ng.compiler.ghcHEAD
+        binHaskell
 
         pkgs.python27Full
 
