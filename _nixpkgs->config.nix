@@ -16,6 +16,9 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
       paths = [
         pkgs.mongodb pkgs.nodePackages.node-gyp
         pkgs.nodePackages.coffee-script
+        pkgs.nodePackages.uglify-js
+        pkgs.nodePackages.xtend
+        pkgs.nodePackages.browserify
       ];
     };
 
