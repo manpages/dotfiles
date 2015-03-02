@@ -18,6 +18,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.nodePackages.coffee-script
         pkgs.nodePackages.uglify-js
         pkgs.nodePackages.browserify
+        pkgs.emacs
       ];
     };
 
