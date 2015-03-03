@@ -20,6 +20,17 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
+;; warm and fuzzy
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(setq ido-create-new-buffer 'always)
+
+(ido-mode 1)
+;;(require 'icicles)
+;;(require 'fuzzy-match)
+;;(setq icicle-TAB-completion-methods '(fuzzy vanilla basic))
+;;(icy-mode)
+
 ;; backups
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying-when-linked t

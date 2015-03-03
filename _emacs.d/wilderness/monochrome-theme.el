@@ -28,7 +28,8 @@
       (dgray "#8f8f89")
       (sgray "light slate gray")
       (fifty "#505050")
-      (vgray "#101010"))
+      (vgray "#101010")
+)
 
   (custom-theme-set-faces
    'monochrome
@@ -38,7 +39,7 @@
    `(cursor ((,class (:background ,lgray))))
 
    ;; Highlighting faces
-   `(fringe ((,class (:foreground ,fifty :background ,black))))
+   `(fringe ((,class (:foreground ,black :background ,black))))
    `(highlight ((,class (:foreground ,black :background ,dgray))))
    `(region ((,class (:foreground ,black :background ,dgray))))
    `(secondary-selection ((,class (:foreground: ,black :background ,sgray))))
@@ -48,7 +49,7 @@
    `(trailing-whitespace ((,class (:background "red"))))
 
    ;; Mode line faces
-   `(vertical-border ((,class (:foreground ,black :background ,black))))
+   `(vertical-border ((,class (:foreground ,vgray :background ,fifty))))
 
    `(mode-line ((,class (:box (:line-width -1 :style released-button)
 			      :background ,black :foreground ,white))))
