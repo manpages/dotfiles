@@ -24,7 +24,8 @@ do
   cp -u $globc "${dest}/${target}"
 done
 cp -ut "${dest}/nixos" /etc/nixos/*nix
-cp -ru ${home}/.emacs.d ${dest}/_emacs.d
+mkdir -p ${dest}/_emacs.d/wilderness
+cp -ru ${home}/.emacs.d/wilderness ${dest}/_emacs.d/wilderness
 cd "${dest}"
 git add .
 git status
