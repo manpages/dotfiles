@@ -10,11 +10,12 @@ for c in \
     '.tmux.conf' \
     '.xsession' \
     '.bash_profile' \
-    .emacs*
+    '.emacs' \
+    .emacs.d/*/*
 do
   cc=${c/\./_}
   target=${cc//\//->}
-  cp -u "$home/$c" "${dest}/${target}"
+  cp -u $home/$c "${dest}/${target}"
 done
 for globc in \
     '/root/cron.conf'
