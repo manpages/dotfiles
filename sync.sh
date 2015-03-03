@@ -26,7 +26,7 @@ done
 cp -ut "${dest}/nixos" /etc/nixos/*nix
 mkdir -p ${dest}/_emacs.d 2>/dev/null
 cp -ru ${home}/.emacs.d/wilderness ${dest}/_emacs.d/
-cp -ru ${home}/.i3 ${dest}/_i3
+cp -ru ${home}/.i3/* ${dest}/_i3/
 cd "${dest}"
 git add .
 git status
