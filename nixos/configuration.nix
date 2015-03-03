@@ -65,6 +65,9 @@
                                  pkgs.nmap
                                  pkgs.openssl
                                  pkgs.gcc
+                                 pkgs.mtools
+                                 pkgs.cdrkit
+                                 pkgs.syslinux
                                ];
   environment.shellInit = 
     ''

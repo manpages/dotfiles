@@ -1,3 +1,4 @@
+
 ;; get melpa
 (require 'package)
 (package-initialize)
@@ -26,10 +27,6 @@
 (setq ido-create-new-buffer 'always)
 
 (ido-mode 1)
-;;(require 'icicles)
-;;(require 'fuzzy-match)
-;;(setq icicle-TAB-completion-methods '(fuzzy vanilla basic))
-;;(icy-mode)
 
 ;; backups
 (setq backup-directory-alist `(("." . "~/.saves")))
