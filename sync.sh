@@ -10,8 +10,7 @@ for c in \
     '.tmux.conf' \
     '.xsession' \
     '.bash_profile' \
-    '.emacs' \
-    .emacs.d/*/*
+    '.emacs'
 do
   cc=${c/\./_}
   target=${cc//\//->}
@@ -25,6 +24,7 @@ do
   cp -u $globc "${dest}/${target}"
 done
 cp -ut "${dest}/nixos" /etc/nixos/*nix
+cp -ru ${home}/.emacs.d ${dest}/_emacs.d
 cd "${dest}"
 git add .
 git status
