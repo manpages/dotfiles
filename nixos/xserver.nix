@@ -58,7 +58,7 @@ in
   services.xserver = {
     enable = true;
     layout = "lv,ru";
-    xkbOptions = "grp:alt_shift_toggle";
+    xkbOptions = "grp:caps_toggle";
     synaptics = {
       enable = true;
       minSpeed = "1.0"; 
