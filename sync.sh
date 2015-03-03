@@ -3,20 +3,22 @@
 home='/home/sweater'
 arrows="→ ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛"
 for c in \
-  '.bashrc' \
-  '.nixpkgs/config.nix' \
-  '.newsbeuter/urls' \
-  '.vimrc' \
-  '.tmux.conf' \
-  '.xsession' \
-  '.bash_profile'
+    '.bashrc' \
+    '.nixpkgs/config.nix' \
+    '.newsbeuter/urls' \
+    '.vimrc' \
+    '.tmux.conf' \
+    '.xsession' \
+    '.bash_profile' \
+    '.emacs'
 do
   cc=${c/\./_}
   target=${cc//\//->}
   cp -u "$home/$c" "${dest}/${target}"
 done
 for globc in \
-  '/root/cron.conf'
+    '/root/cron.conf' \
+    "${home}/.emacs.d"
 do
   cc=${globc/\./_}
   target=${cc//\//->}
