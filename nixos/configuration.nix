@@ -13,13 +13,8 @@
       ./pentest.nix
       ./hydra.nix
       ./virtualbox.nix
+      ./grub2.nix
     ];
-
-  boot.loader.grub = {
-    enable = true;
-    version = 2;
-    device = "/dev/sda";
-  };
 
   i18n = {
     consoleFont = "lat9w-16";
