@@ -39,6 +39,8 @@
   version-control t)
 
 ;; boring shit
+(set-cursor-color "#997A8D") 
+(set-mouse-color "#997A8D") 
 (blink-cursor-mode 0)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
