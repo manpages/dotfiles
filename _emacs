@@ -1,4 +1,3 @@
-
 ;; get melpa
 (require 'package)
 (package-initialize)
