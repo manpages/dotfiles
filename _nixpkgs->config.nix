@@ -52,6 +52,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.vagrant
 
         pkgs.gnumake
+        pkgs.boost
       ];
     };
 
