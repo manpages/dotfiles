@@ -166,7 +166,7 @@
    `(org-link ((t (:foreground ,sgray :underline t))))
    `(org-todo ((t (:bold t :foreground "red"))))
    `(org-done ((t (:bold t :foreground "green"))))
-
+   
    ;; helm
    `(helm-header ((t (:foreground ,dgray :background ,black :underline nil :box nil))))
    `(helm-source-header
