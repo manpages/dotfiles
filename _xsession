@@ -1,4 +1,8 @@
 clipit &
-~/.fehbg &
 xrdb ~/.Xresources &
+firefox &
+emacs &
+urxvt -e newsbeuter &
+( killall ssh; ${HOME}/github/usr-local-bin/forward memorici.de:21984 9050 ) &
+~/.fehbg &
 exec i3
