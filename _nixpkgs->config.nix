@@ -56,6 +56,14 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
       ];
     };
 
+    androidEnv = pkgs.buildEnv {
+      name = "android-env";
+      paths = [
+        pkgs.androidsdk_4_4
+	pkgs.maven pkgs.scala pkgs.sbt
+      ];
+    };
+
     funEnv = pkgs.buildEnv {
       name = "fun-env";
       paths = [
