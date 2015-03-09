@@ -6,6 +6,9 @@
 ;; magit
 (require 'magit)
 
+;; emacs-lisp
+(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+
 ;; my key-bindings
 (load "~/.emacs.d/wilderness/defuns.el")
 (global-set-key [(control ?w)] 'kill-region-or-backward-word)
@@ -20,6 +23,7 @@
 
 ;; haskell-mode with heuristic autocompletion
 (require 'haskell-mode-autoloads)
+(add-hook 'haskell-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
@@ -58,12 +62,12 @@
 (set-default-font "Ubuntu Mono-8")
 (set-face-background 'rainbow-delimiters-unmatched-face "red")
 (set-face-foreground 'rainbow-delimiters-unmatched-face "black")
-(set-face-foreground 'rainbow-delimiters-depth-9-face "#E5E5E5")
-(set-face-foreground 'rainbow-delimiters-depth-8-face "#303030")
-(set-face-foreground 'rainbow-delimiters-depth-6-face "#FAFAFA")
-(set-face-foreground 'rainbow-delimiters-depth-4-face "#A6A6A6")
-(set-face-foreground 'rainbow-delimiters-depth-5-face "#686868")
-(set-face-foreground 'rainbow-delimiters-depth-2-face "#909000")
+(set-face-foreground 'rainbow-delimiters-depth-9-face "#BBBBBB")
+(set-face-foreground 'rainbow-delimiters-depth-8-face "#90B0B0")
+(set-face-foreground 'rainbow-delimiters-depth-6-face "#B0B095")
+(set-face-foreground 'rainbow-delimiters-depth-4-face "#907590")
+(set-face-foreground 'rainbow-delimiters-depth-5-face "#B0B0B0")
+(set-face-foreground 'rainbow-delimiters-depth-2-face "#909075")
 (set-face-foreground 'rainbow-delimiters-depth-1-face "#909090")
-(set-face-foreground 'rainbow-delimiters-depth-7-face "#A0A0A0")
-(set-face-foreground 'rainbow-delimiters-depth-3-face "#009090") 
+(set-face-foreground 'rainbow-delimiters-depth-7-face "#B090B0")
+(set-face-foreground 'rainbow-delimiters-depth-3-face "#759090") 
