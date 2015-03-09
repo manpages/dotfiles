@@ -23,22 +23,12 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
-;; C++
-(add-hook 'c++-mode-hook 'irony-mode)
-(add-hook 'c-mode-hook 'irony-mode)
-(add-hook 'objc-mode-hook 'irony-mode)
-
-(defun my-irony-mode-hook ()
-  (define-key irony-mode-map [remap completion-at-point]
-    'irony-completion-at-point-async)
-  (define-key irony-mode-map [remap complete-symbol]
-    'irony-completion-at-point-async))
-(add-hook 'irony-mode-hook 'my-irony-mode-hook)
-(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-
-(eval-after-load 'company
-  '(add-to-list 'company-backends 'company-irony))
-(add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
+;; coffee-script (I know, right?)
+(add-hook 'coffee-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'after-save-hook
+	  (lambda ()
+	    (when (string-match "\.coffee$" (buffer-name))
+	      (coffee-compile-file)))) 
 
 ;; warm and fuzzy
 (setq ido-enable-flex-matching t)
@@ -66,3 +56,14 @@
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 (set-default-font "Ubuntu Mono-8")
+(set-face-background 'rainbow-delimiters-unmatched-face "red")
+(set-face-foreground 'rainbow-delimiters-unmatched-face "black")
+(set-face-foreground 'rainbow-delimiters-depth-9-face "#E5E5E5")
+(set-face-foreground 'rainbow-delimiters-depth-8-face "#303030")
+(set-face-foreground 'rainbow-delimiters-depth-6-face "#FAFAFA")
+(set-face-foreground 'rainbow-delimiters-depth-4-face "#A6A6A6")
+(set-face-foreground 'rainbow-delimiters-depth-5-face "#686868")
+(set-face-foreground 'rainbow-delimiters-depth-2-face "#909000")
+(set-face-foreground 'rainbow-delimiters-depth-1-face "#909090")
+(set-face-foreground 'rainbow-delimiters-depth-7-face "#A0A0A0")
+(set-face-foreground 'rainbow-delimiters-depth-3-face "#009090") 
