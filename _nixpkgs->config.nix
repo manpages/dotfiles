@@ -20,6 +20,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.emacs24Packages.haskellModeGit
         pkgs.emacs24Packages.gitModes
         pkgs.emacs24Packages.coffee
+        pkgs.cmake pkgs.clang
       ];
     };
 
