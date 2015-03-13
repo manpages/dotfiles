@@ -1,0 +1,48 @@
+" ==VimperatorColorSchema==
+" name: Base16 MixedChalk Schema
+" ==/VimperatorColorSchema==
+" 
+
+"Hint section
+hi Hint font-family: Sans; font-size: 15px; font-weight: bold; color: white; background-color: rgba(0, 0, 0, 0.75); border: solid 1px LightGray; text-transform: uppercase;
+hi Hint::after content: attr(number);
+hi HintActive background: blue; color: #f6e9e9;
+hi HintElem background-color: #222222; color: #f6e9e9;
+hi HintImage opacity: .5;
+
+hi StatusLine     color: #0a0406; background: #0a0406; font-weight: normal; font-size: 8pt;
+
+hi Normal     color:  #8f8f89;  background: #0a0406; font-size: 8pt; opacity: 0.9;
+hi CmdLine    color:  #8f8f89;  background: #0a0406; font-size: 8pt;
+hi InfoMsg    color:  #8f8f89;  background: #0a0406; font-size: 8pt;
+hi ModeMsg    color:  #8f8f89;  background: #0a0406; font-size: 8pt;
+hi MoreMsg    color:  #568c3b; background: #0a0406;
+hi LineNr   color:  #d22d72; background: #0a0406; font-size: 8pt;
+hi Question   color: #8a8a0f;  background: #0a0406;  font-size: 8pt;
+hi WarningMsg   color: #d22d72;  background: #0a0406;  font-size: 8pt;
+hi ErrorMsg   color: #0a0406;  background: red;  font-size: 8pt;
+hi NonText    background: #0a0406;
+hi Null     color: CornflowerBlue;
+hi Tag      color: CornflowerBlue;
+hi Number   color: CornflowerBlue;
+
+hi CompTitle    background: #1c1c1c;
+hi CompTitle>*  color: #935c25; border-bottom: 1px solid #3c3c3f; padding: 1px 0.5ex;
+hi CompItem[selected] color: cyan;  background: #333;
+hi CompDesc   color: #b72dd2;
+
+hi Title    color:  #0a0406;
+hi Indicator    color:  #8a8a0f;
+hi String   color:  #0a0406;
+hi Number   color:  #0a0406;
+hi Object   color: #2d8f6f;
+hi Function   color:  #257fad;
+hi URL    color:  #568c3b;
+
+hi TabNumber  color: #0a0406; font-weight: bold; font-size:10pt;
+
+style -name tab chrome://* <<EOM
+  .tabbrowser-strip {
+    background                         : #0a0406 !important;
+  }
+EOM
