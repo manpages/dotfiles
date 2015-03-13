@@ -65,7 +65,7 @@ in
       maxSpeed = "2.0";
       tapButtons = false;
       twoFingerScroll = true;
-      horizontalScroll = false;
+      horizontalScroll = true;
     };
     displayManager.slim = {
       enable = true;

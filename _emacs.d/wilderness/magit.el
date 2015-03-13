@@ -5,5 +5,5 @@
      (set-face-background 'magit-item-highlight "#231f23")
      (set-face-foreground 'magit-item-highlight "#929792")
      (set-face-foreground 'magit-diff-none "#535353")
-     (set-face-foreground 'magit-diff-hunk-header "#f3faf4")
+     (set-face-foreground 'magit-diff-hunk-header "#000000")
      (set-face-foreground 'magit-branch "#a5aea5")))
