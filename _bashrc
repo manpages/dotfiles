@@ -27,4 +27,6 @@ git_prompt() {
   fi
 }
 
+alias ls='ls -p'
+
 export PS1="${ps1_date} ${ps1_user} ${ps1_path} \$(git_prompt)\n${ps1_lambda} "

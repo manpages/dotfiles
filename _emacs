@@ -12,6 +12,8 @@
 ;; my key-bindings
 (load "~/.emacs.d/wilderness/defuns.el")
 (global-set-key [(control ?w)] 'kill-region-or-backward-word)
+(global-set-key [(control ?k)] 'kill-region-or-entire-line)
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
 ;; prettify haskell
 (global-prettify-symbols-mode t)
