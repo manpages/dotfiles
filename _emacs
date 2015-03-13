@@ -5,6 +5,7 @@
 
 ;; magit
 (require 'magit)
+(load-file "~/.emacs.d/wilderness/magit.el")
 
 ;; emacs-lisp
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
@@ -13,7 +14,7 @@
 (load "~/.emacs.d/wilderness/defuns.el")
 (global-set-key [(control ?w)] 'kill-region-or-backward-word)
 (global-set-key [(control ?k)] 'kill-region-or-entire-line)
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(global-set-key (kbd "<escape>") 'keyboard-quit)
 
 ;; prettify haskell
 (global-prettify-symbols-mode t)
