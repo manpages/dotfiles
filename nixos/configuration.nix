@@ -60,6 +60,7 @@
                                  pkgs.nmap
                                  pkgs.openssl
                                  pkgs.gcc
+                                 pkgs.gnupg
                                  pkgs.mtools
                                  pkgs.cdrkit
                                  pkgs.syslinux
@@ -96,6 +97,15 @@
     uid = 1002;
     createHome = true;
     home = "/home/dork";
+    shell = "/run/current-system/sw/bin/bash";
+  };
+
+  users.extraUsers.android = {
+    name = "android";
+    group = "wheel";
+    uid = 1003;
+    createHome = true;
+    home = "/home/android";
     shell = "/run/current-system/sw/bin/bash";
   };
 
