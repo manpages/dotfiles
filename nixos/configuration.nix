@@ -61,7 +61,7 @@
                                  pkgs.nmap
                                  pkgs.openssl
                                  pkgs.gcc
-                                 pkgs.gnupg
+                                 pkgs.gnupg21
                                  pkgs.mtools
                                  pkgs.cdrkit
                                  pkgs.syslinux
