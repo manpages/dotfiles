@@ -14,6 +14,7 @@
       ./hydra.nix
       ./virtualbox.nix
       ./grub2.nix
+      /root/udev.nix
     ];
 
   i18n = {
