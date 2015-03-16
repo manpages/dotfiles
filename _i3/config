@@ -153,3 +153,5 @@ bindcode $mod+107 exec scrot -e 'mv $f /tmp'
 assign [class="Firefox"] 2
 assign [title="newsbeuter"] 8
 assign [class="Skype"] 14
+
+bindsym Control+Shift+$mod+l exec slimlock

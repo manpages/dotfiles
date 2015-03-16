@@ -72,8 +72,8 @@ in
       autoLogin = false;
       defaultUser = "sweater";
       theme = pkgs.fetchurl {
-        url = https://github.com/jagajaga/nixos-slim-theme/archive/1.0.tar.gz;
-        sha256 = "08ygjn5vhn3iavh36pdcb15ij3z34qnxp20xh3s1hy2hrp63s6kn";
+        url    = "https://github.com/jagajaga/nixos-slim-theme/archive/Final.tar.gz";
+        sha256 = "4cab5987a7f1ad3cc463780d9f1ee3fbf43603105e6a6e538e4c2147bde3ee6b";
       };
     };
   };
