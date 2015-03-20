@@ -27,7 +27,7 @@
 ;; haskell-mode with heuristic autocompletion
 (require 'haskell-mode-autoloads)
 (add-hook 'haskell-mode-hook 'rainbow-delimiters-mode)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
 ;; coffee-script (I know, right?)
