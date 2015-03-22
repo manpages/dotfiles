@@ -43,6 +43,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.nodePackages.mocha
         pkgs.nodePackages.phantomjs
         pkgs.nodejs
+        pkgs.darcs
 
         binHaskell
 
