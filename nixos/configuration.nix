@@ -65,6 +65,7 @@
                                  pkgs.mtools
                                  pkgs.cdrkit
                                  pkgs.syslinux
+                                 pkgs.qemu
                                ];
   environment.shellInit = 
     ''
