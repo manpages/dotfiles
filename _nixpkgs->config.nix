@@ -3,10 +3,11 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
 {
   packageOverrides = pkgs: rec {
 
-    npmLatest = pkgs.stdenv.lib.overrideDerivation pkgs.nodePackages.npm (oldAttrs : {
+    npmLatest = pkgs.stdenv.lib.overrideDerivation pkgs.nodejs (oldAttrs : {
        src = pkgs.fetchgit {
          url = https://github.com/joyent/node.git;
-	 sha256 = "45a76a7019ef503617c58218ced8308ef4fa4355218596ef4d8ea7ecfcb14c5e";
+         rev = "4d9c81b7e2";
+         sha256 = "02n6zfsp7hmllzswb2dmqm21h390lrp4gs8n11l12kbz812na6sz";
        };
     });
 
