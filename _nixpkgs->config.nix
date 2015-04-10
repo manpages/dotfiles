@@ -3,8 +3,12 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
 {
   packageOverrides = pkgs: rec {
 
-    npmLatest = pkgs.stdenv.lib.overrideDerivation pkgs.npm (oldAttrs : {
-    })
+    npmLatest = pkgs.stdenv.lib.overrideDerivation pkgs.nodePackages.npm (oldAttrs : {
+       src = pkgs.fetchgit {
+         url = https://github.com/joyent/node.git;
+	 sha256 = "45a76a7019ef503617c58218ced8308ef4fa4355218596ef4d8ea7ecfcb14c5e";
+       };
+    });
 
     webHaskell = pkgs.haskell-ng.packages.ghc784.ghcWithPackages (p: with p; [
       scotty acid-state
@@ -45,7 +49,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.nodePackages.typescript
         pkgs.nodePackages.mocha
         pkgs.nodePackages.phantomjs
-        pkgs.nodejs
+	npmLatest
         pkgs.darcs
 
         binHaskell
