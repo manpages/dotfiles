@@ -3,6 +3,9 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
 {
   packageOverrides = pkgs: rec {
 
+    npmLatest = pkgs.stdenv.lib.overrideDerivation pkgs.npm (oldAttrs : {
+    })
+
     webHaskell = pkgs.haskell-ng.packages.ghc784.ghcWithPackages (p: with p; [
       scotty acid-state
     ]);
