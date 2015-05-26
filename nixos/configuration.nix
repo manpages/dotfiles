@@ -6,7 +6,7 @@
   imports =
     [ ./lenovoThinkPadE530c.nix
       ./xserver.nix
-      ./laptopLatvia.nix
+      ./croatia.nix
       ./i3.nix
       ./unfree.nix
       ./windows.nix
