@@ -11,13 +11,13 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
        };
     });
 
-    webHaskell = pkgs.haskell.packages.ghc784.ghcWithPackages (p: with p; [
-      scotty acid-state
-    ]);
+    #webHaskell = pkgs.haskell.packages.ghc784.ghcWithPackages (p: with p; [
+    #  scotty acid-state
+    #]);
 
-    binHaskell = pkgs.haskell.packages.ghc784.ghcWithPackages (p: with p; [
-      cabal2nix
-    ]);
+    #binHaskell = pkgs.haskell.packages.ghc784.ghcWithPackages (p: with p; [
+    #  cabal2nix
+    #]);
 
     emacsEnv = pkgs.buildEnv {
       name  = "emacs-env";
@@ -45,7 +45,6 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
     codeEnv = pkgs.buildEnv {
       name = "code-env";
       paths = [
-      	binHaskell
 
         pkgs.vimPlugins.command-t
 

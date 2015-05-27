@@ -2,6 +2,7 @@
 
 {
   networking.hostName = "brainstorm"; 
+  networking.firewall.enable = false;
 
   imports =
     [ ./lenovoThinkPadE530c.nix
@@ -14,6 +15,7 @@
       ./hydra.nix
       ./virtualbox.nix
       ./grub2.nix
+      ./distributed.nix
       /root/udev.nix
     ];
 
@@ -23,8 +25,8 @@
     defaultLocale = "en_US.UTF-8";
   };
 
-  nix.trustedBinaryCaches = [ "http://hydra.nixos.org" "http://hydra.cryp.to" ];
-  nix.binaryCaches        = [ "https://cache.nixos.org" "http://hydra.nixos.org" "http://hydra.cryp.to" ];
+  nix.trustedBinaryCaches = [ ];
+  nix.binaryCaches        = [ "https://cache.nixos.org" ];
 
   environment.systemPackages = [ pkgs.nix-repl
                                  pkgs.gitAndTools.gitFull
