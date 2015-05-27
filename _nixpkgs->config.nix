@@ -11,11 +11,11 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
        };
     });
 
-    webHaskell = pkgs.haskell-ng.packages.ghc784.ghcWithPackages (p: with p; [
+    webHaskell = pkgs.haskell.packages.ghc784.ghcWithPackages (p: with p; [
       scotty acid-state
     ]);
 
-    binHaskell = pkgs.haskell-ng.packages.ghc784.ghcWithPackages (p: with p; [
+    binHaskell = pkgs.haskell.packages.ghc784.ghcWithPackages (p: with p; [
       cabal2nix
     ]);
 
@@ -45,15 +45,14 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
     codeEnv = pkgs.buildEnv {
       name = "code-env";
       paths = [
+      	binHaskell
+
         pkgs.vimPlugins.command-t
 
         pkgs.nodePackages.typescript
         pkgs.nodePackages.mocha
         pkgs.nodePackages.phantomjs
 	npmLatest
-        pkgs.darcs
-
-        binHaskell
 
         pkgs.python27Full
 
