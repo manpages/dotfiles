@@ -23,4 +23,4 @@ map K <nop>
 nnoremap <PageUp> <nop>
 noremap <PageDown> <nop>
 """"""""""""""""""""""""""""""
-au BufRead,BufEnter ~/github/*icfpc*tbd*/* set expandtab tabstop=4 shiftwidth=4
+autocmd BufRead,BufEnter ~/github/*icfpc*tbd*/* set expandtab tabstop=4 shiftwidth=4
