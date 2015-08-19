@@ -3,21 +3,20 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
 {
   packageOverrides = pkgs: rec {
 
-    npmLatest = pkgs.stdenv.lib.overrideDerivation pkgs.nodejs (oldAttrs : {
-       src = pkgs.fetchgit {
-         url = https://github.com/joyent/node.git;
-         rev = "4d9c81b7e2";
-         sha256 = "02n6zfsp7hmllzswb2dmqm21h390lrp4gs8n11l12kbz812na6sz";
-       };
-    });
+    binNode = with pkgs.nodePackages; [
+      bower
+      grunt-cli
+      pulp
+    ] ++ [ pkgs.nodejs ];
 
-    #webHaskell = pkgs.haskell.packages.ghc784.ghcWithPackages (p: with p; [
-    #  scotty acid-state
-    #]);
+    binHaskell = pkgs.haskell.packages.ghc7101.ghcWithPackages ( x: with x; [
+      cabal2nix cabal-install hlint xmonad xmobar blog impurescript
+    ]);
 
-    #binHaskell = pkgs.haskell.packages.ghc784.ghcWithPackages (p: with p; [
-    #  cabal2nix
-    #]);
+    haskellEnv = pkgs.buildEnv {
+      name = "haskell-env";
+      paths = [ binNode binHaskell ];
+    };
 
     emacsEnv = pkgs.buildEnv {
       name  = "emacs-env";
@@ -26,6 +25,9 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
         pkgs.emacs24Packages.rainbowDelimiters
         pkgs.emacs24Packages.idris
         pkgs.emacs24Packages.haskellModeGit
+        pkgs.haskell.packages.ghc784.stylish-haskell
+        pkgs.haskell.packages.ghc784.hasktags
+	      pkgs.haskell.packages.ghc784.ghc-mod
         pkgs.emacs24Packages.gitModes
         pkgs.emacs24Packages.coffee
         pkgs.cmake pkgs.clang
@@ -45,22 +47,14 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
     codeEnv = pkgs.buildEnv {
       name = "code-env";
       paths = [
-
+        pkgs.vimHugeX
         pkgs.vimPlugins.command-t
 
         pkgs.nodePackages.typescript
+        pkgs.nodejs
         pkgs.nodePackages.mocha
         pkgs.nodePackages.phantomjs
-	npmLatest
-
-        pkgs.python27Full
-
-        pkgs.ubuntu_font_family
-
-        pkgs.vagrant
-
-        pkgs.gnumake
-        pkgs.boost
+        pkgs.darcs
       ];
     };
 
@@ -68,7 +62,7 @@ with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
       name = "android-env";
       paths = [
         pkgs.androidsdk_4_4
-	pkgs.maven pkgs.scala pkgs.sbt
+	      pkgs.maven pkgs.scala pkgs.sbt
       ];
     };
 
