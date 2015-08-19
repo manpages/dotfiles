@@ -12,7 +12,6 @@ set expandtab
 """"""""""""""""""""""""""""""
 syntax off
 filetype on
-autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
 """"""""""""""""""""""""""""""
 let mapleader=","
 set pastetoggle=<Leader>v
@@ -23,4 +22,5 @@ map K <nop>
 nnoremap <PageUp> <nop>
 noremap <PageDown> <nop>
 """"""""""""""""""""""""""""""
-autocmd BufRead,BufEnter ~/github/*icfpc*tbd*/* set expandtab tabstop=4 shiftwidth=4
+autocmd BufRead,BufEnter ~/github/*icfpc*tbd*/*py set expandtab tabstop=4 shiftwidth=4
+autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
