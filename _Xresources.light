@@ -24,12 +24,14 @@ URxvt.url-select.button: 1
 URxvt.url-select.launcher: /usr/bin/env firefox
 URxvt.url-select.underline: true
 
-! Base16 shapeshifter
-! Scheme: Tyler Benziger (http://tybenz.com)
+#define emacsBG #0a0406
+#define emacsFG #8f8f89
+#define emacsCC #a98f8f
 
 ! tangoesque scheme
-*foreground: #111111
+*foreground: emacsBG
 *background: #fafbfc
+*cursorColor: emacsCC
 ! Black (not tango) + DarkGrey
 *color8:     #000000
 *color0:     #555753
