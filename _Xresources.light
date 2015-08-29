@@ -28,29 +28,29 @@ URxvt.url-select.underline: true
 ! Scheme: Tyler Benziger (http://tybenz.com)
 
 ! tangoesque scheme
-*background: #111111
-*foreground: #fafbfc
+*foreground: #111111
+*background: #fafbfc
 ! Black (not tango) + DarkGrey
-*color0:     #000000
-*color8:     #555753
+*color8:     #000000
+*color0:     #555753
 ! DarkRed + Red
-*color1:     #ff6565
-*color9:     #ff8d8d
+*color9:     #ff6565
+*color1:     #ff8d8d
 ! DarkGreen + Green
-*color2:    #53d44f
-*color10:     #c8e7a8
+*color10:    #53d44f
+*color2:     #c8e7a8
 ! DarkYellow + Yellow
-*color3:    #efef7d
-*color11:     #ffa103
+*color11:    #ea993d
+*color3:     #ff6123
 ! DarkBlue + Blue
-*color4:    #200a87
-*color12:     #3465a4
+*color12:    #200a87
+*color4:     #3465a4
 ! DarkMagenta + Magenta
-*color5:    #ae5c00
-*color13:     #fff000
+*color13:    #ce5c00
+*color5:     #f0cd00
 !DarkCyan + Cyan (both not tango)
-*color6:    #89b6e2
-*color14:     #ffabe0
+*color14:    #89b6e2
+*color6:     #ffabe0
 ! LightGrey + White
-*color7:    #0cacac
-*color15:     #ffffff
+*color15:    #0cacac
+*color7:     #ffffff
