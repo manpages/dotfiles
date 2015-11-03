@@ -1,16 +1,16 @@
 { pkgs }:
-with import /nixpkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
+#with import /nix/pkgs/pkgs/development/haskell-modules/lib.nix { inherit pkgs; };
 {
   packageOverrides = pkgs: rec {
 
     binNode = with pkgs.nodePackages; [
       bower
       grunt-cli
-      pulp
+      #pulp
     ] ++ [ pkgs.nodejs ];
 
-    binHaskell = pkgs.haskell.packages.ghc7101.ghcWithPackages ( x: with x; [
-      cabal2nix cabal-install hlint xmonad xmobar blog impurescript
+    binHaskell = pkgs.haskell.packages.ghc7102.ghcWithPackages ( x: with x; [
+      cabal2nix cabal-install hlint xmonad xmobar
     ]);
 
     haskellEnv = pkgs.buildEnv {

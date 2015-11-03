@@ -1,2 +1,4 @@
+{...}:
 { pkgs, ... }:
-{ services.virtualboxHost.enable = true; }
+{ virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "guest" "sweater" ]; }

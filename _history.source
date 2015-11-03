@@ -1,0 +1,6 @@
+HISTCONTROL=ignoredups:erasedups
+HISTIGNORE=' *:cd:cd *:rm *:ls:ls *'
+HISTSIZE=''
+shopt -s histappend
+PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" #history -n; history -w;
+

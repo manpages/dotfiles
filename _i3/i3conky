@@ -1,3 +1,4 @@
+
 background no
 out_to_console yes
 out_to_x no
@@ -8,27 +9,21 @@ use_spacer none
 #⌂ ${fs_free /home} \
 
 TEXT
-${if_up enp12s0}— \
-u${upspeedf enp12s0}KiB d${downspeedf enp12s0}KiB \
+${if_up enp9s0}— \
+u${upspeedf enp9s0}KiB d${downspeedf enp9s0}KiB \
 ${endif}\
-${if_up wlp3s0}₩: \
-u${upspeedf wlp3s0}KiB \
-d${downspeedf wlp3s0}KiB \
-${endif} \
-${if_up eth0}— \
-u${upspeedf eth0}KiB d${downspeedf eth0}KiB \
-${endif}\
-${if_up wlan0}₩: \
-u${upspeedf wlan0}KiB \
-d${downspeedf wlan0}KiB \
+${if_up wlp8s0}₩: \
+u${upspeedf wlp8s0}KiB \
+d${downspeedf wlp8s0}KiB \
 ${endif} \
 ⛁ ${memperc}% / ${fs_free /} \
-⚡ ${battery_percent BAT0}% \
+⚡ ${exec acpi | grep -oE "[0-9]+%"} \
 ↑ ${uptime_short} \
-BC<${tztime America/Vancouver %k:%M}> \
-MI<${tztime US/Eastern %k:%M}> \
-UA<${tztime Europe/Kiev %k:%M}> \
-LV<${tztime Europe/Riga %k:%M}> \
-MS<${tztime Europe/Moscow %k:%M}> \
-VL<${tztime Asia/Vladivostok %k:%M}> \
-★ ${time %a %b %d %k:%M}
+BC ${tztime America/Vancouver %k:%M} · \
+MI ${tztime US/Eastern %k:%M} · \
+HR ${tztime Europe/Zagreb %k:%M} · \
+UA ${tztime Europe/Kiev %k:%M} · \
+LV ${tztime Europe/Riga %k:%M} · \
+MS ${tztime Europe/Moscow %k:%M} · \
+VL ${tztime Asia/Vladivostok %k:%M} ★ \
+${time %a %b %d %k:%M}

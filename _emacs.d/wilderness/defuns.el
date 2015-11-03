@@ -19,3 +19,24 @@ Author: Xah Lee"
       (progn (setq p1 (point-min))
              (setq p2 (point-max))))
     (kill-region p1 p2)))
+
+(defun dark ()
+  (interactive)
+  "Make the colorscheme light"
+  (load-file "~/.emacs.d/wilderness/monochrome-theme.el"))
+
+(defun light ()
+  "Make the colorscheme light"
+  (interactive)
+  (load-file "~/.emacs.d/wilderness/monochrome-light.el"))
+
+(defun syntax-color-hex ()
+  (interactive)
+  (font-lock-add-keywords
+   nil
+   '(("#[abcdef[:digit:]]\\{6\\}"
+      (0 (put-text-property
+          (match-beginning 0)
+          (match-end 0)
+          'face (list :background (match-string-no-properties 0)))))))
+  (font-lock-fontify-buffer))

@@ -1,125 +1,20 @@
 { config, pkgs, ... }:
 
-{
-  networking.hostName = "brainstorm"; 
-  networking.firewall.enable = false;
-
-  imports =
-    [ ./lenovoThinkPadE530c.nix
-      ./xserver.nix
-      ./croatia.nix
-      ./i3.nix
-      ./unfree.nix
-      ./windows.nix
-      ./pentest.nix
-      ./hydra.nix
-      ./virtualbox.nix
-      ./grub2.nix
-      ./distributed.nix
-      /root/udev.nix
-    ];
-
-  i18n = {
-    consoleFont = "lat9w-16";
-    consoleKeyMap = "us";
-    defaultLocale = "en_US.UTF-8";
-  };
-
-  nix.trustedBinaryCaches = [ ];
-  nix.binaryCaches        = [ "https://cache.nixos.org" ];
-
-  environment.systemPackages = [ pkgs.nix-repl
-                                 pkgs.gitAndTools.gitFull
-                                 pkgs.vimHugeX
-                                 pkgs.screen
-                                 pkgs.tmux
-                                 pkgs.htop
-                                 pkgs.mosh
-                                 pkgs.autossh
-                                 pkgs.acpi
-                                 pkgs.proxychains
-                                 pkgs.nginx
-                                 pkgs.httpie
-                                 pkgs.w3m
-                                 pkgs.lynx
-                                 pkgs.ncurses
-                                 pkgs.newsbeuter
-                                 pkgs.sshfsFuse
-                                 pkgs.wget
-                                 pkgs.curl
-                                 pkgs.unrar
-                                 pkgs.unzip
-                                 pkgs.nettools
-                                 pkgs.vpnc
-                                 pkgs.linuxConsoleTools
-                                 pkgs.psmisc
-                                 pkgs.lm_sensors
-                                 pkgs.kexectools
-                                 pkgs.figlet
-                                 pkgs.gnupg
-                                 pkgs.tcpdump
-                                 pkgs.strace
-                                 pkgs.traceroute
-                                 pkgs.nmap
-                                 pkgs.openssl
-                                 pkgs.gcc
-                                 pkgs.gnupg21
-                                 pkgs.mtools
-                                 pkgs.cdrkit
-                                 pkgs.syslinux
-                                 pkgs.qemu
-                               ];
-  environment.shellInit = 
-    ''
-      NIX_PATH=/nix/var/nix/profiles/per-user/root/channels/nixos
-      NIX_PATH=$NIX_PATH:nixpkgs=/nixpkgs
-      NIX_PATH=$NIX_PATH:nixos-config=/etc/nixos/configuration.nix
-      export NIX_PATH
-    '';
-
-  users.extraUsers.sweater = {
-    name = "sweater";
-    group = "wheel";
-    uid = 1000;
-    createHome = true;
-    home = "/home/sweater";
-    shell = "/run/current-system/sw/bin/bash";
-  };
-
-  users.extraUsers.guest = {
-    name = "guest";
-    group = "users";
-    uid = 1001;
-    createHome = true;
-    home = "/home/guest";
-    shell = "/run/current-system/sw/bin/bash";
-  };
-
-  users.extraUsers.dork = {
-    name = "dork";
-    group = "users";
-    uid = 1002;
-    createHome = true;
-    home = "/home/dork";
-    shell = "/run/current-system/sw/bin/bash";
-  };
-
-  users.extraUsers.android = {
-    name = "android";
-    group = "wheel";
-    uid = 1003;
-    createHome = true;
-    home = "/home/android";
-    shell = "/run/current-system/sw/bin/bash";
-  };
-
-  users.extraGroups.vboxusers.members = [ "sweater" ];
-
-  services.cron = {
-    enable = true;
-    cronFiles = [ "/root/cron.conf" ];
-  };
-
-  services.openvpn.enable = true;
-
+{ imports = [ ./hardware-configuration.nix
+              (import ./packages.nix {}                                 )
+              (import ./users.nix { wheel = { sweater = "sweater"; };
+                                    users = { guest = "guest";     }; } )
+              (import ./countries/slovakia.nix {}                        )
+              (import ./boot/windows.nix       {}                        )
+              (import ./boot/grub2.nix         { device = "/dev/sda"; }  )
+              (import ./xserver.nix            {}                        )
+              (import ./virtualbox.nix         {}                        )
+              (import ./memoricide.nix         {}                        )
+              (import ./xmonad.nix             {}                        )
+              (import ./gpu.nix                { kind = "optimus"; }     )
+              (import ./networking.nix         { ssh = true; 
+                                                 name = "chill"; }       ) ]; 
+  nix.binaryCachePublicKeys = [ "hydra.nixos.org-1:CNHJZBh9K4tP3EKF6FkkgeVYsS3ohTl+oS0Qa8bezVs=" "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" ]; 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "guest" "sweater" ];
 }

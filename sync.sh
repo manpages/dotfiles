@@ -1,5 +1,5 @@
-[ -z "$1" ] && dest="/home/sweater/github/dotfiles" || dest=$1
-[ -z "$2" ] &&  msg="Dotfiles autosync"             ||  msg=$2
+[ -z "$1" ] &&  msg="Dotfiles autosync"             ||  msg=$1
+[ -z "$2" ] && dest="/home/sweater/github/dotfiles" || dest=$2
 home='/home/sweater'
 arrows="→ ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛"
 for c in \
@@ -10,7 +10,9 @@ for c in \
     '.tmux.conf' \
     '.xsession' \
     '.bash_profile' \
-    '.emacs'
+    '.emacs' \
+    '.history.source' \
+    '.ghcPkgUtils.source'
 do
   cc=${c/\./_}
   target=${cc//\//->}

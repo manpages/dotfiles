@@ -3,6 +3,7 @@ xrdb ~/.Xresources &
 firefox &
 emacs &
 urxvt -e newsbeuter &
-( sleep 5; killall ssh; ${HOME}/github/usr-local-bin/forward memorici.de:21984 9050 ) &
+( sleep 5; killall ssh; sh ${HOME}/forward ) &
 ~/.fehbg &
-exec i3
+xsetroot -cursor_name left_ptr &
+exec xmonad

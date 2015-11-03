@@ -1,21 +1,20 @@
 set -o vi
 
 export EDITOR="vim"
+export TERM="screen-256color"
 
 # Haskell
+source ~/.ghcPkgUtils.source
 NIX_GHC_VERSION=$(ghc --numeric-version)
 export NIX_GHC="$HOME/.nix-profile/bin/ghc"
 export NIX_GHCPKG="$HOME/.nix-profile/bin/ghc-pkg"
 export NIX_GHC_DOCDIR="$HOME/.nix-profile/share/doc/ghc/html"
 export NIX_GHC_LIBDIR="$HOME/.nix-profile/lib/ghc-${NIX_GHC_VERSION}"
-export NIX_PATH="ghcjs=$HOME/github/nixpkgs-ghcjs:testing=$HOME/github/nixpkgs:$NIX_PATH"
 
-export PATH=$HOME/github/usr-local-bin:$PATH
-
-ps1_date="\[$(tput bold)\]\[$(tput setaf 8)\]\$(date +'%a %b %d %H:%M:%S:%N')"
-ps1_user="\[$(tput setaf 241)\]\u\[$(tput setaf 8)\]@\[$(tput setaf 241)\]\h"
-ps1_path="\[$(tput setaf 8)\]\w"
-ps1_lambda="\[$(tput setaf 8)\]λ\[$(tput sgr0)\]"
+ps1_date="\[$(tput bold)\]\[$(tput setaf 242)\]\$(date +'%a %b %d %H:%M:%S:%N')"
+ps1_user="\[$(tput setaf 250)\]\u\[$(tput setaf 242)\]@\[$(tput setaf 250)\]\h"
+ps1_path="\[$(tput setaf 242)\]\w"
+ps1_lambda="\[$(tput setaf 242)\]λ\[$(tput sgr0)\]"
 for x in {0..256}; do
   ps1_tester="${ps1_tester}\[$(tput setaf $x)\]$x"
 done
@@ -27,15 +26,33 @@ git_prompt() {
   fi
 }
 
+nix-hs-shell() {
+  override=~/.nixpkgs/envs/haskell-cabal.nix
+  nix-shell -I pwd=$PWD --pure "$@" $override
+}
+
+nix-hs-build() {
+  nix-shell -p haskellPackages.cabal2nix \
+    --command 'echo \"cabal2nix $PWD $@ > default.nix\"'
+}
+
 envfile="$HOME/.gnupg/gpg-agent.env"
 if [[ -e "$envfile" ]] && kill -0 $(grep GPG_AGENT_INFO "$envfile" | cut -d: -f 2) 2>/dev/null; then
     eval "$(cat "$envfile")"
 else
     eval "$(gpg-agent --daemon --enable-ssh-support --write-env-file "$envfile")"
 fi
+
+# ALIASES
+alias ls='ls -p'
+alias p='proxychains4'
+alias stack='stack --extra-lib-dirs=/nix/store/31w31mc8immhpnmxvcl4l0fvc3i5iwh0-zlib-1.2.8/lib'
+
+# SOURCES
+source ~/.history.source
+
+# ENV
+export PS1="${ps1_date} ${ps1_user} ${ps1_path} \$(git_prompt)\n${ps1_lambda} "
+export PATH=$HOME/github/usr-local-bin:$PATH
 export GPG_AGENT_INFO  # the env file does not contain the export statement
 export SSH_AUTH_SOCK   # enable gpg-agent for ssh
-
-alias ls='ls -p'
-
-export PS1="${ps1_date} ${ps1_user} ${ps1_path} \$(git_prompt)\n${ps1_lambda} "
