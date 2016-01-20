@@ -22,5 +22,7 @@ map K <nop>
 nnoremap <PageUp> <nop>
 noremap <PageDown> <nop>
 """"""""""""""""""""""""""""""
-autocmd BufRead,BufEnter ~/github/*icfpc*tbd*/*py set expandtab tabstop=4 shiftwidth=4
-autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
+autocmd BufRead,BufEnter ~/github/*icfpc*tbd*/*py setlocal expandtab tabstop=4 shiftwidth=4
+autocmd FileType make setlocal noexpandtab shiftwidth=4 softtabstop=0
+""""""""""""""""""""""""""""""
+autocmd BufRead,BufEnter *.txt,*.md,*.markdown setlocal textwidth=72
