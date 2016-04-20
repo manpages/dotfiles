@@ -2,7 +2,7 @@
 home='/home/sweater'
 for c in \
     '.bashrc' \
-    '_tmux.conf' \
+    '.tmux.conf' \
     '.nixpkgs/config.nix' \
     '.newsbeuter/urls' \
     '.vimrc' \
@@ -14,7 +14,7 @@ for c in \
     '.vimperator/base16-mixedchalk.vimp' \
     '.vimperator/base16-mixedchalk.uicolors.vimp' \
     '.ghcPkgUtils.source' \
-    '.history.source'
+    '.Xresources'
 do
       cc=${c/\./_}
       target=${cc//\//->}

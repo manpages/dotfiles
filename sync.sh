@@ -12,6 +12,7 @@ for c in \
     '.bash_profile' \
     '.emacs' \
     '.history.source' \
+    '.Xresources' \
     '.ghcPkgUtils.source'
 do
   cc=${c/\./_}
