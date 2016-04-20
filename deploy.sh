@@ -11,8 +11,9 @@ for c in \
     '.bash_profile' \
     '.emacs' \
     '.vimperatorrc' \
-    '.vimperator/base16-mixedchalk.vimp' \
-    '.vimperator/base16-mixedchalk.uicolors.vimp' \
+    '.vimperator/wilderness/base16-mixedchalk.vimp' \
+    '.vimperator/wilderness/base16-mixedchalk.uicolors.vimp' \
+    '.vimperator/wilderness/base16-mixedchalk.uicolors.vimp' \
     '.ghcPkgUtils.source' \
     '.Xresources'
 do

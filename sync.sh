@@ -4,6 +4,7 @@ home='/home/sweater'
 arrows="→ ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛"
 for c in \
     '.bashrc' \
+    '.tmux.conf' \
     '.nixpkgs/config.nix' \
     '.newsbeuter/urls' \
     '.vimrc' \
@@ -11,9 +12,12 @@ for c in \
     '.xsession' \
     '.bash_profile' \
     '.emacs' \
-    '.history.source' \
-    '.Xresources' \
-    '.ghcPkgUtils.source'
+    '.vimperatorrc' \
+    '.vimperator/wilderness/base16-mixedchalk.vimp' \
+    '.vimperator/wilderness/base16-mixedchalk.uicolors.vimp' \
+    '.vimperator/wilderness/base16-mixedchalk.uicolors.vimp' \
+    '.ghcPkgUtils.source' \
+    '.Xresources'
 do
   cc=${c/\./_}
   target=${cc//\//->}
@@ -29,7 +33,6 @@ done
 rsync -Pav /etc/nixos "${dest}/"
 mkdir -p ${dest}/_emacs.d 2>/dev/null
 cp -ru ${home}/.emacs.d/wilderness ${dest}/_emacs.d/
-cp -ru ${home}/.i3/* ${dest}/_i3/
 cd "${dest}"
 git add .
 git status

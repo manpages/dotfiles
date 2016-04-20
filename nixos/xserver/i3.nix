@@ -5,6 +5,7 @@
     pkgs.feh
     pkgs.i3lock
     pkgs.i3status
+    pkgs.conky
     pkgs.scrot
   ];
 
