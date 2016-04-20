@@ -1,0 +1,223 @@
+style htt* <<EOM
+/* Firefox Scrollbars */
+scrollbar {opacity: .25 !important;}
+
+/* Base */
+*, ::before, ::after {
+color: #8f8f89 !important; 
+border-color: #1f292e !important;
+outline-color: #1f292e !important;
+text-shadow: none !important;
+box-shadow: none !important;
+-moz-box-shadow: none !important;
+background-color: transparent !important;
+}
+
+html * {
+color: inherit !important;
+}
+
+p::first-letter,
+h1::first-letter,
+h2::first-letter,
+p::first-line {
+
+color: inherit !important; 
+background: none !important;
+}
+
+/* :: Give solid BG :: */
+
+/* element */
+b,i,u,strong{color:#568c3b}
+
+
+html, 
+body,
+li ul,
+ul li,
+table,
+header,
+article,
+section,
+nav,
+menu,
+aside,
+
+/* common */
+
+[class*="nav"],
+[class*="open"],
+[id*="ropdown"], /*dropdown*/
+[class*="ropdown"], 
+div[class*="menu"],
+[class*="tooltip"],
+div[class*="popup"], 
+div[id*="popup"],
+
+/* Notes, details, etc.  Maybe useful */
+div[id*="detail"],div[class*="detail"],
+div[class*="note"], span[class*="note"],
+div[class*="description"],
+
+/* Also common */
+div[class*="content"], div[class*="container"],
+
+/* Popup divs that use visibility: hidden and display: none */
+div[style*="display: block"], 
+div[style*="visibility: visible"] {
+background-color: #0a0406 !important
+}
+
+
+
+/*: No BG :*/
+*:not(:empty):not(span):not([class="html5-volume-slider html5-draggable"]):not([class="html5-player-chrome html5-stop-propagation"]), *::before, *::after,
+td:empty, p:empty, div:empty:not([role]):not([style*="flashblock"]):not([class^="html5"]):not([class*="noscriptPlaceholder"]) {
+background-image: none !important;
+}
+
+/*: Filter non-icons :*/
+span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not([id*="star"]):not([id*="rating"]):not([class*="rating"]):not([class*="prite"]) {
+background-image: none !important;
+text-indent: 0 !important;
+}
+
+/*: Image opacity :*/
+/* img, svg             {opacity: .75 !important;}
+ * img:hover, svg:hover {opacity: 1 !important;}
+ */
+
+/* Highlight */
+::-moz-selection {
+background-color: #c1e4f6 !important;
+color: #516d7b !important;
+}
+
+/* ::: anchor/links ::: */
+
+a {
+color: #2d8f6f !important; 
+background-color: #0a0406 !important;
+opacity: 1 !important; 
+text-indent: 0 !important;
+}
+
+a:link         {color: #257fad !important;} /* hyperlink */
+a:visited      {color: #5d5db1 !important;}
+a:hover        {color: #8a8a0f !important; background-color: #1f292e !important;}
+a:active       {color: #935c25 !important;}
+
+/* "Top level" div */
+
+body > div {background-color: inherit !important;}
+
+/* :::::: Text Presentation :::::: */
+
+summary, details                   {background-color: inherit !important}
+kbd, time, label, .date            {color: #568c3b !important}
+acronym, abbr                      {border-bottom: 1px dotted !important; cursor: help !important;}
+mark,code,pre,samp,blockquote      {background-color: #1f292e !important}
+
+
+/* :::::: Headings :::::: */
+
+h1,h2,h3,h4,h5,h6  { 
+
+background-image: none !important;
+border-radius: 5px !important;
+-moz-border-radius: 5px !important;
+-webkit-border-radius: 5px !important; 
+text-indent: 0 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {background-color: #1f292e !important}
+
+
+h1,h2{color:#568c3b!important}
+h3,h4{color:#8a8a0f!important}
+h5,h6{color:#935c25!important}
+
+/* :::::: Tables, cells :::::: */
+
+table table {background: #1f292e !important;}
+th, caption {background: #0a0406 !important;}
+
+/* ::: Inputs, textareas ::: */
+
+input, textarea, button,
+select,option,optgroup{
+
+color: #7195a8 !important;
+background: none #1f292e !important;
+-moz-appearance: none !important; 
+-webkit-appearance: none !important;
+}
+
+input,
+textarea, 
+button {
+border-color: #7195a8 !important; 
+border-width: 1px !important;
+}
+
+/* :::::: Button styling :::::: */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+background: #1f292e !important;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+color: #516d7b !important;
+background: #c1e4f6 !important;
+}
+
+/* input[type="image"] {opacity: .85 !important}
+ * input[type="image"]:hover {opacity: .95 !important}
+ */
+
+/* Lightbox fix */
+html [id*="lightbox"] * {background-color: transparent !important;}
+html [id*="lightbox"] img {opacity: 1 !important;}
+
+/* Youtube Annotation */
+#movie_player-html5 .annotation {background: #1f292e !important}
+
+/* Mozilla addons shrink/expand sections */
+.expando a {background: none transparent  !important;}
+
+}
+
+
+@-moz-document url(about:newtab) {
+
+window {
+background: #0a0406 !important;
+}
+
+#newtab-scrollbox {
+background: transparent none !important;
+}
+
+.newtab-title {
+background-color: rgba(0,43,54,1) !important; 
+color: #8f8f89 !important;
+}
+
+}
+
+@-moz-document url(chrome://browser/content/browser.xul) {
+
+/* Browser Background */
+browser[type="content-primary"] {
+background-color: #0a0406 !important;
+} 
+
+}
+EOM

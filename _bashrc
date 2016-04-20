@@ -35,3 +35,6 @@ export PS1="${ps1_date} ${ps1_user} ${ps1_path} \$(git_prompt)\n${ps1_lambda} "
 export PATH=$HOME/github/usr-local-bin:$PATH
 export GPG_AGENT_INFO  # the env file does not contain the export statement
 export SSH_AUTH_SOCK   # enable gpg-agent for ssh
+
+# IT'S A TRAP
+trap 'echo -ne "\033]0;$BASH_COMMAND\007"' DEBUG
