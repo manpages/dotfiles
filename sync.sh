@@ -33,7 +33,8 @@ done
 rsync -Pav /etc/nixos "${dest}/"
 mkdir -p ${dest}/_emacs.d 2>/dev/null
 cp -ru ${home}/.emacs.d/wilderness ${dest}/_emacs.d/
-cp -ru ${home}/.js ${dest}/_js
+mkdir -p ${dest}/_js 2>/dev/null
+cp -ru ${home}/.js/* ${dest}/_js/
 cd "${dest}"
 git add .
 git status
