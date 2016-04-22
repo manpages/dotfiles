@@ -15,6 +15,7 @@ for c in \
     '.vimperator/wilderness/base16-mixedchalk.uicolors.vimp' \
     '.vimperator/wilderness/cyrillic.vimp' \
     '.ghcPkgUtils.source' \
+    '.arbtt/categorize.cfg' \
     '.Xresources'
 do
       cc=${c/\./_}

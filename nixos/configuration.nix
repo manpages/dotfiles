@@ -11,6 +11,7 @@
               (import ./packages.nix          {}                        )
               (import ./xmonad.nix            {}                        )
               (import ./xserver.nix           {}                        )
+              (import ./swap.nix              {}                        )
               (import ./networking.nix        { ssh = true; 
                                                 name = "chill"; }       ) ]; 
 }
