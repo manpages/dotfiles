@@ -1,5 +1,9 @@
 [ -z "$1" ] && dest="/home/sweater/github/dotfiles" || dest=$1
 home='/home/sweater'
+mkdir -p $home/.emacs.d
+mkdir -p $home/.vimperator
+mkdir -p $home/.arbtt
+mkdir -p $home/.js
 for c in \
     '.bashrc' \
     '.tmux.conf' \
@@ -25,5 +29,5 @@ do
       fi
       cp -v $dest/$target $home/$c
 done
-mkdir -p $home/.emacs.d
 cp -vru _emacs.d/wilderness $home/.emacs.d/
+cp -vru _js/* $home/.js/

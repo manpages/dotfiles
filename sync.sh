@@ -1,7 +1,6 @@
 [ -z "$1" ] &&  msg="Dotfiles autosync"             ||  msg=$1
 [ -z "$2" ] && dest="/home/sweater/github/dotfiles" || dest=$2
 home='/home/sweater'
-arrows="→ ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛"
 for c in \
     '.bashrc' \
     '.tmux.conf' \
@@ -34,6 +33,7 @@ done
 rsync -Pav /etc/nixos "${dest}/"
 mkdir -p ${dest}/_emacs.d 2>/dev/null
 cp -ru ${home}/.emacs.d/wilderness ${dest}/_emacs.d/
+cp -ru ${home}/.js ${dest}/_js
 cd "${dest}"
 git add .
 git status

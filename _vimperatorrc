@@ -2,3 +2,13 @@ set toolbars=none
 source ~/.vimperator/wilderness/base16-mixedchalk.uicolors.vimp
 source ~/.vimperator/wilderness/base16-mixedchalk.vimp
 source ~/.vimperator/wilderness/cyrillic.vimp
+
+javascript <<EOF
+(function() {
+  var x = document.location + ''
+  if (x.indexOf('github.com/') > -1) {
+    var t = document.title
+    document.title = t + '— GitHub'
+  }
+})()
+EOF
