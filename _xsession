@@ -6,4 +6,5 @@ urxvt -e newsbeuter &
 ( sleep 5; killall ssh; sh ${HOME}/forward ) &
 ~/.fehbg &
 xsetroot -cursor_name left_ptr &
+arbtt-capture &
 exec xmonad
