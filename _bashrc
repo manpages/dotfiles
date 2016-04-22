@@ -28,7 +28,6 @@ HISTCONTROL=ignoredups:erasedups
 HISTIGNORE=' *'
 HISTSIZE=''
 shopt -s histappend
-PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" #history -n; history -w;
 
 # ENV
 export PS1="${ps1_date} ${ps1_user} ${ps1_path} \$(git_prompt)\n${ps1_lambda} "
@@ -37,4 +36,4 @@ export GPG_AGENT_INFO  # the env file does not contain the export statement
 export SSH_AUTH_SOCK   # enable gpg-agent for ssh
 
 # IT'S A TRAP
-trap 'echo -ne "\033]0;$BASH_COMMAND\007"' DEBUG
+trap 'echo -ne "\033]2;$(pwd); $(history 1 | sed "s/^[ ]*[0-9]*[ ]*//g")\007"' DEBUG
