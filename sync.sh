@@ -17,6 +17,7 @@ for c in \
     '.vimperator/wilderness/cyrillic.vimp' \
     '.ghcPkgUtils.source' \
     '.arbtt/categorize.cfg' \
+    '.gitconfig' \
     '.Xresources'
 do
   cc=${c/\./_}
