@@ -16,6 +16,9 @@ let myAndroidSdk = pkgs.androidenv.androidsdk {
         myAndroidSdk
       ];
     };
+    myTexLive = pkgs.texLiveAggregationFun {
+      paths = [ pkgs.texLive pkgs.texLiveExtra pkgs.texLiveBeamer pkgs.lmodern ];
+    };
   };
 
 }
