@@ -26,12 +26,28 @@ for c in \
     '.muttrc'
 
 do
-      cc=${c/\./_}
-      target=${cc//\//->}
-      if [ -f $home/$c ]; then
-        cp -v $home/$c{,.backup}
-      fi
-      cp -v $dest/$target $home/$c
+    cc=${c/\./_}
+    target=${cc//\//->}
+    if [ -f $home/$c ]; then
+      cp -v $home/$c{,.backup}
+    fi
+    cp -v $dest/$target $home/$c
 done
-cp -vru _emacs.d/wilderness $home/.emacs.d/
-cp -vru _js/* $home/.js/
+
+for globc in \
+    '/root/cron.conf'
+
+do
+    # Restore global configs
+    cc=${globc/\./_}
+    target=${cc//\//->}
+    cp -u "${dest}/${target}" "${globc}"
+
+mkdir -p ${home}/.emacs.d
+cp -vru _emacs.d/wilderness ${home}/.emacs.d/
+
+mkdir -p ${home}/.js
+cp -vru _js/*               ${home}/.js/
+
+mkdir -p ${home}/.mutt
+cp -vru _mutt/includes      ${home}/.mutt/

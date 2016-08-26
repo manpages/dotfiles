@@ -28,10 +28,10 @@ set certificate_file  = ~/.mutt/certificates
 # Misc
 set move           = no
 set imap_keepalive = 900
-set signature      = ~/.mutt/signature
+set signature      = ~/.mutt/includes/signature
 
 # GPG
-source ~/.mutt/gpg.rc
+source ~/.mutt/includes/gpg.rc
 
 # Crypto
 set crypt_autosign            = yes
