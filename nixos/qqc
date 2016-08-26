@@ -1,0 +1,989 @@
+-- Logs begin at Thu 2015-03-26 02:17:47 EET, end at Fri 2015-08-14 11:32:17 EEST. --
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2370349 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2370332 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2370328 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2370326 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2370325 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2368582 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2368566 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2368518 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2368511 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd[1]: Started Name Service Cache Daemon.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2368471 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2368470 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2368445 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd[1]: Started udev Coldplug all Devices.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2368438 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2367905 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2367902 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2367890 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2367861 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2210205 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2210196 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2210191 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2844 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2849 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 2850 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 16 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 1 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 93138 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 1675906 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 1675909 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 1675910 of user dork.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 1675911 of user dork.
+Aug 14 04:39:38 thoughtflare systemd[1]: Started udev Wait for Complete Device Initialization.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: New session 1822796 of user sweater.
+Aug 14 04:39:38 thoughtflare systemd[1]: Reached target System Initialization.
+Aug 14 04:39:38 thoughtflare systemd[1]: Starting Daily Cleanup of Temporary Directories.
+Aug 14 04:39:38 thoughtflare systemd[1]: Started Daily Cleanup of Temporary Directories.
+Aug 14 04:39:38 thoughtflare systemd[1]: Reached target Timers.
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: Watching system buttons on /dev/input/event3 (Power Button)
+Aug 14 04:39:38 thoughtflare systemd-logind[2871]: Watching system buttons on /dev/input/event2 (Power Button)
+Aug 14 04:39:39 thoughtflare acpid[2872]: [1;39mclient connected from 672[0:0][0m
+Aug 14 04:39:39 thoughtflare acpid[2872]: 1 client rule loaded
+Aug 14 04:39:39 thoughtflare display-manager-start[663]: removing GPU device /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0/drm/card0 /dev/dri/card0
+Aug 14 04:39:39 thoughtflare display-manager-start[663]: xf86: remove device 0 /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0/drm/card0
+Aug 14 04:39:40 thoughtflare acpid[2872]: [1;39mclient connected from 672[0:0][0m
+Aug 14 04:39:40 thoughtflare acpid[2872]: 1 client rule loaded
+Aug 14 04:39:44 thoughtflare wicd-start[2869]: dhcpcd not running
+Aug 14 04:39:44 thoughtflare dhcpcd[3068]: [1;31mdhcpcd not running[0m
+Aug 14 04:39:44 thoughtflare kernel: e1000e: eno1 NIC Link is Down
+Aug 14 04:39:44 thoughtflare kernel: e1000e 0000:00:19.0: irq 39 for MSI/MSI-X
+Aug 14 04:39:44 thoughtflare kernel: e1000e 0000:00:19.0: irq 39 for MSI/MSI-X
+Aug 14 04:39:44 thoughtflare kernel: IPv6: ADDRCONF(NETDEV_UP): eno1: link is not ready
+Aug 14 04:39:44 thoughtflare wicd-start[2869]: Failed to connect to non-global ctrl_ifname: eno1  error: No such file or directory
+Aug 14 04:39:44 thoughtflare kernel: e1000e: eno1 NIC Link is Down
+Aug 14 04:39:44 thoughtflare wicd-start[2869]: dhcpcd not running
+Aug 14 04:39:44 thoughtflare dhcpcd[3076]: [1;31mdhcpcd not running[0m
+Aug 14 04:39:44 thoughtflare kernel: e1000e 0000:00:19.0: irq 39 for MSI/MSI-X
+Aug 14 04:39:44 thoughtflare kernel: e1000e 0000:00:19.0: irq 39 for MSI/MSI-X
+Aug 14 04:39:44 thoughtflare kernel: IPv6: ADDRCONF(NETDEV_UP): eno1: link is not ready
+Aug 14 04:39:44 thoughtflare wicd-start[2869]: Failed to connect to non-global ctrl_ifname: eno1  error: No such file or directory
+Aug 14 04:39:46 thoughtflare kernel: e1000e: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: Rx/Tx
+Aug 14 04:39:46 thoughtflare kernel: e1000e 0000:00:19.0 eno1: 10/100 speed: disabling TSO
+Aug 14 04:39:46 thoughtflare kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eno1: link becomes ready
+Aug 14 04:39:46 thoughtflare kernel: cfg80211: Calling CRDA to update world regulatory domain
+Aug 14 04:39:47 thoughtflare dhcpcd[3090]: DUID 00:01:00:01:1c:a5:96:5c:30:85:a9:99:0b:49
+Aug 14 04:39:47 thoughtflare dhcpcd[3090]: eno1: IAID a9:99:0b:49
+Aug 14 04:39:47 thoughtflare dhcpcd[3090]: eno1: soliciting an IPv6 router
+Aug 14 04:39:47 thoughtflare kernel: NET: Registered protocol family 17
+Aug 14 04:39:47 thoughtflare dhcpcd[3090]: eno1: soliciting a DHCP lease
+Aug 14 04:39:50 thoughtflare dhcpcd[3090]: eno1: offered 192.168.1.101 from 192.168.1.1
+Aug 14 04:39:55 thoughtflare dhcpcd[3090]: eno1: leased 192.168.1.101 for 43200 seconds
+Aug 14 04:39:55 thoughtflare dhcpcd[3090]: eno1: adding route to 192.168.1.0/24
+Aug 14 04:39:55 thoughtflare dhcpcd[3090]: eno1: adding default route via 192.168.1.1
+Aug 14 04:39:55 thoughtflare dhcpcd[3090]: forked to background, child pid 3147
+Aug 14 04:39:56 thoughtflare ntpd[2889]: Listen normally on 5 eno1 192.168.1.101:123
+Aug 14 04:39:56 thoughtflare ntpd[2889]: new interface(s) found: waking up resolver
+Aug 14 04:39:59 thoughtflare dhcpcd[3147]: [1;39meno1: no IPv6 Routers available[0m
+Aug 14 04:41:08 thoughtflare systemd[1]: [1;39mJob dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device/start timed out.[0m
+Aug 14 04:41:08 thoughtflare systemd[1]: [1;31mTimed out waiting for device dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device.[0m
+Aug 14 04:41:08 thoughtflare systemd[1]: [1;31mDependency failed for /dev/disk/by-uuid/2f3737cf-d861-4c7a-aa8b-3b9d8318be95.[0m
+Aug 14 04:41:08 thoughtflare systemd[1]: [1;31mDependency failed for Swap.[0m
+Aug 14 04:41:08 thoughtflare systemd-journal[443]: Suppressed 2 messages from /
+Aug 14 04:41:08 thoughtflare nixos[2556]: [1;31mswitching to system configuration /nix/store/vbffk7aggz7kimvmhw4z5f95s33fdvvb-nixos-15.07pre67160.d921092 failed (status 4)[0m
+Aug 14 04:42:44 thoughtflare autossh[6831]: starting ssh (count 14988)
+Aug 14 04:42:44 thoughtflare autossh[6831]: ssh child pid is 3962
+Aug 14 04:42:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 04:52:44 thoughtflare autossh[6831]: starting ssh (count 14989)
+Aug 14 04:52:44 thoughtflare autossh[6831]: ssh child pid is 6848
+Aug 14 04:52:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 04:58:31 thoughtflare sshd[28136]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 04:58:31 thoughtflare sshd[28136]: pam_unix(sshd:session): session closed for user dork
+Aug 14 04:58:31 thoughtflare systemd-logind[2871]: Removed session 2370325.
+Aug 14 04:58:37 thoughtflare sshd[24220]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 04:58:37 thoughtflare sshd[24220]: pam_unix(sshd:session): session closed for user dork
+Aug 14 04:58:37 thoughtflare systemd-logind[2871]: Removed session 2210196.
+Aug 14 04:58:53 thoughtflare sshd[11616]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 04:58:53 thoughtflare sshd[11616]: pam_unix(sshd:session): session closed for user dork
+Aug 14 04:58:53 thoughtflare systemd-logind[2871]: Removed session 2367902.
+Aug 14 04:59:06 thoughtflare sshd[28701]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 04:59:06 thoughtflare sshd[28701]: pam_unix(sshd:session): session closed for user dork
+Aug 14 04:59:06 thoughtflare systemd-logind[2871]: Removed session 2210205.
+Aug 14 05:02:44 thoughtflare autossh[6831]: starting ssh (count 14990)
+Aug 14 05:02:44 thoughtflare autossh[6831]: ssh child pid is 9709
+Aug 14 05:02:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 05:12:44 thoughtflare autossh[6831]: starting ssh (count 14991)
+Aug 14 05:12:44 thoughtflare autossh[6831]: ssh child pid is 12557
+Aug 14 05:12:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 05:22:44 thoughtflare autossh[6831]: starting ssh (count 14992)
+Aug 14 05:22:44 thoughtflare autossh[6831]: ssh child pid is 15391
+Aug 14 05:22:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 05:23:44 thoughtflare sshd[21978]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 05:23:44 thoughtflare sshd[21978]: pam_unix(sshd:session): session closed for user dork
+Aug 14 05:23:44 thoughtflare systemd-logind[2871]: Removed session 2210191.
+Aug 14 05:24:50 thoughtflare sshd[11993]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 05:24:50 thoughtflare sshd[11993]: pam_unix(sshd:session): session closed for user dork
+Aug 14 05:24:50 thoughtflare systemd-logind[2871]: Removed session 1675909.
+Aug 14 05:25:56 thoughtflare sshd[11995]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 05:25:56 thoughtflare sshd[10873]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 05:25:56 thoughtflare sshd[11991]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 05:25:56 thoughtflare sshd[11995]: pam_unix(sshd:session): session closed for user dork
+Aug 14 05:25:56 thoughtflare sshd[11991]: pam_unix(sshd:session): session closed for user dork
+Aug 14 05:25:56 thoughtflare sshd[10873]: pam_unix(sshd:session): session closed for user dork
+Aug 14 05:25:56 thoughtflare systemd-logind[2871]: Removed session 1675906.
+Aug 14 05:25:56 thoughtflare systemd-logind[2871]: Removed session 1675911.
+Aug 14 05:25:56 thoughtflare systemd-logind[2871]: Removed session 1675910.
+Aug 14 05:32:44 thoughtflare autossh[6831]: starting ssh (count 14993)
+Aug 14 05:32:44 thoughtflare autossh[6831]: ssh child pid is 18251
+Aug 14 05:32:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 05:42:44 thoughtflare autossh[6831]: starting ssh (count 14994)
+Aug 14 05:42:44 thoughtflare autossh[6831]: ssh child pid is 21083
+Aug 14 05:42:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 05:52:44 thoughtflare autossh[6831]: starting ssh (count 14995)
+Aug 14 05:52:44 thoughtflare autossh[6831]: ssh child pid is 23916
+Aug 14 05:52:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 06:02:44 thoughtflare autossh[6831]: starting ssh (count 14996)
+Aug 14 06:02:44 thoughtflare autossh[6831]: ssh child pid is 26753
+Aug 14 06:02:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 06:05:15 thoughtflare sshd[20437]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 06:05:15 thoughtflare sshd[20437]: pam_unix(sshd:session): session closed for user dork
+Aug 14 06:05:15 thoughtflare systemd-logind[2871]: Removed session 2370328.
+Aug 14 06:12:44 thoughtflare autossh[6831]: starting ssh (count 14997)
+Aug 14 06:12:44 thoughtflare autossh[6831]: ssh child pid is 29593
+Aug 14 06:12:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 06:17:48 thoughtflare sshd[6549]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 06:17:48 thoughtflare sshd[6431]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 06:17:48 thoughtflare sshd[6549]: pam_unix(sshd:session): session closed for user dork
+Aug 14 06:17:48 thoughtflare sshd[6431]: pam_unix(sshd:session): session closed for user dork
+Aug 14 06:17:48 thoughtflare systemd-logind[2871]: Removed session 2844.
+Aug 14 06:17:48 thoughtflare systemd-logind[2871]: Removed session 2849.
+Aug 14 06:22:44 thoughtflare autossh[6831]: starting ssh (count 14998)
+Aug 14 06:22:44 thoughtflare autossh[6831]: ssh child pid is 32439
+Aug 14 06:22:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 06:32:44 thoughtflare autossh[6831]: starting ssh (count 14999)
+Aug 14 06:32:44 thoughtflare autossh[6831]: ssh child pid is 2900
+Aug 14 06:32:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 06:38:01 thoughtflare sshd[28620]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 06:38:01 thoughtflare sshd[28620]: pam_unix(sshd:session): session closed for user dork
+Aug 14 06:38:01 thoughtflare systemd-logind[2871]: Removed session 2370326.
+Aug 14 06:42:44 thoughtflare autossh[6831]: starting ssh (count 15000)
+Aug 14 06:42:44 thoughtflare autossh[6831]: ssh child pid is 5752
+Aug 14 06:42:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 06:51:07 thoughtflare sshd[1246]: [1;31merror: mm_request_receive: socket closed[0m
+Aug 14 06:51:07 thoughtflare sshd[1246]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 06:51:07 thoughtflare systemd-logind[2871]: Removed session 2370372.
+Aug 14 06:52:44 thoughtflare autossh[6831]: starting ssh (count 15001)
+Aug 14 06:52:44 thoughtflare autossh[6831]: ssh child pid is 8639
+Aug 14 06:52:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 07:02:44 thoughtflare autossh[6831]: starting ssh (count 15002)
+Aug 14 07:02:44 thoughtflare autossh[6831]: ssh child pid is 11479
+Aug 14 07:02:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 07:12:44 thoughtflare autossh[6831]: starting ssh (count 15003)
+Aug 14 07:12:44 thoughtflare autossh[6831]: ssh child pid is 14328
+Aug 14 07:12:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 07:22:44 thoughtflare autossh[6831]: starting ssh (count 15004)
+Aug 14 07:22:44 thoughtflare autossh[6831]: ssh child pid is 17179
+Aug 14 07:22:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 07:32:44 thoughtflare autossh[6831]: starting ssh (count 15005)
+Aug 14 07:32:44 thoughtflare autossh[6831]: ssh child pid is 20008
+Aug 14 07:32:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 07:42:44 thoughtflare autossh[6831]: starting ssh (count 15006)
+Aug 14 07:42:44 thoughtflare autossh[6831]: ssh child pid is 22849
+Aug 14 07:42:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 07:52:44 thoughtflare autossh[6831]: starting ssh (count 15007)
+Aug 14 07:52:44 thoughtflare autossh[6831]: ssh child pid is 25677
+Aug 14 07:52:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 08:02:44 thoughtflare autossh[6831]: starting ssh (count 15008)
+Aug 14 08:02:44 thoughtflare autossh[6831]: ssh child pid is 28510
+Aug 14 08:02:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 08:12:44 thoughtflare autossh[6831]: starting ssh (count 15009)
+Aug 14 08:12:44 thoughtflare autossh[6831]: ssh child pid is 31347
+Aug 14 08:12:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 08:22:44 thoughtflare autossh[6831]: starting ssh (count 15010)
+Aug 14 08:22:44 thoughtflare autossh[6831]: ssh child pid is 1798
+Aug 14 08:22:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 08:32:44 thoughtflare autossh[6831]: starting ssh (count 15011)
+Aug 14 08:32:44 thoughtflare autossh[6831]: ssh child pid is 4663
+Aug 14 08:32:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 08:42:44 thoughtflare autossh[6831]: starting ssh (count 15012)
+Aug 14 08:42:44 thoughtflare autossh[6831]: ssh child pid is 7544
+Aug 14 08:42:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 08:52:44 thoughtflare autossh[6831]: starting ssh (count 15013)
+Aug 14 08:52:44 thoughtflare autossh[6831]: ssh child pid is 10398
+Aug 14 08:52:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 09:02:44 thoughtflare autossh[6831]: starting ssh (count 15014)
+Aug 14 09:02:44 thoughtflare autossh[6831]: ssh child pid is 13239
+Aug 14 09:02:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 09:12:44 thoughtflare autossh[6831]: starting ssh (count 15015)
+Aug 14 09:12:44 thoughtflare autossh[6831]: ssh child pid is 16079
+Aug 14 09:12:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 09:22:44 thoughtflare autossh[6831]: starting ssh (count 15016)
+Aug 14 09:22:44 thoughtflare autossh[6831]: ssh child pid is 18924
+Aug 14 09:22:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 09:23:09 thoughtflare sshd[19041]: Accepted publickey for sweater from 192.168.1.1 port 49910 ssh2: RSA SHA256:z1A4gNTjEzQst/Gg2IRxUdXmNxYntLvmz/7g9/keiHk
+Aug 14 09:23:09 thoughtflare sshd[19041]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 09:23:09 thoughtflare systemd[1]: Starting Session 2370373 of user sweater.
+Aug 14 09:23:09 thoughtflare systemd-logind[2871]: New session 2370373 of user sweater.
+Aug 14 09:23:09 thoughtflare systemd[1]: Started Session 2370373 of user sweater.
+Aug 14 09:32:21 thoughtflare sudo[22192]: [1;39msweater : TTY=pts/48 ; PWD=/home/sweater ; USER=root ; COMMAND=/var/setuid-wrappers/su[0m
+Aug 14 09:32:21 thoughtflare sudo[22192]: pam_unix(sudo:session): session opened for user root by sweater(uid=0)
+Aug 14 09:32:21 thoughtflare su[22223]: Successful su for root by root
+Aug 14 09:32:21 thoughtflare su[22223]: pam_unix(su:session): session opened for user root by sweater(uid=0)
+Aug 14 09:32:44 thoughtflare autossh[6831]: starting ssh (count 15017)
+Aug 14 09:32:44 thoughtflare autossh[6831]: ssh child pid is 22898
+Aug 14 09:32:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 09:40:52 thoughtflare nix-daemon[2891]: accepted connection from pid 25261, user root (trusted)
+Aug 14 09:40:52 thoughtflare nix-daemon[2891]: accepted connection from pid 25264, user root (trusted)
+Aug 14 09:40:52 thoughtflare nix-daemon[2891]: accepted connection from pid 25272, user root (trusted)
+Aug 14 09:41:38 thoughtflare nix-daemon[2891]: accepted connection from pid 25507, user root (trusted)
+Aug 14 09:41:38 thoughtflare nix-daemon[2891]: accepted connection from pid 25510, user root (trusted)
+Aug 14 09:41:38 thoughtflare nix-daemon[2891]: accepted connection from pid 25518, user root (trusted)
+Aug 14 09:42:19 thoughtflare nix-daemon[2891]: accepted connection from pid 25734, user root (trusted)
+Aug 14 09:42:19 thoughtflare nix-daemon[2891]: accepted connection from pid 25737, user root (trusted)
+Aug 14 09:42:19 thoughtflare nix-daemon[2891]: accepted connection from pid 25745, user root (trusted)
+Aug 14 09:42:22 thoughtflare nix-daemon[2891]: accepted connection from pid 25759, user root (trusted)
+Aug 14 09:42:23 thoughtflare nixos[26841]: [1;39mswitching to system configuration /nix/store/3347zif2bc8gbb8q6vjz8zkyif9q102r-nixos-15.07pre67160.d921092[0m
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopping Local File Systems.
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopped target Local File Systems.
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopping All Network Interfaces.
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopped target All Network Interfaces.
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopping Extra networking commands....
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopped Extra networking commands..
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopping Networking Setup...
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopped Networking Setup.
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopping Remote File Systems.
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopped target Remote File Systems.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reloading.
+Aug 14 09:42:23 thoughtflare systemd[1]: [1;39mUnknown serialization item 'subscribed=:1.3684679'[0m
+Aug 14 09:42:23 thoughtflare systemd[1]: [1;39m[/nix/store/6376npvr2z263z6sps1hv9i2xp0v8ank-rtkit-0.11/etc/systemd/system/rtkit-daemon.service:32] Unknown lvalue 'ControlGroup' in section 'Service'[0m
+Aug 14 09:42:23 thoughtflare systemd[1]: Stopping SSH Daemon...
+Aug 14 09:42:23 thoughtflare systemd[1]: Starting SSH Daemon...
+Aug 14 09:42:23 thoughtflare sshd[2859]: Received signal 15; terminating.
+Aug 14 09:42:23 thoughtflare sshd[27014]: Server listening on 0.0.0.0 port 21984.
+Aug 14 09:42:23 thoughtflare sshd[27014]: Server listening on :: port 21984.
+Aug 14 09:42:23 thoughtflare systemd[1]: PID file /run/sshd.pid not readable (yet?) after start.
+Aug 14 09:42:23 thoughtflare systemd[1]: Started SSH Daemon.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Basic System.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Login Prompts.
+Aug 14 09:42:23 thoughtflare systemd[1]: Expecting device dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device...
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Graphical Interface.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Services Requiring IP Connectivity.
+Aug 14 09:42:23 thoughtflare systemd[1]: Starting Local File Systems.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Local File Systems.
+Aug 14 09:42:23 thoughtflare systemd[1]: Started All Containers.
+Aug 14 09:42:23 thoughtflare systemd[1]: Starting SCSI Link Power Management Policy...
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Multi-User System.
+Aug 14 09:42:23 thoughtflare systemd[1]: Starting Address configuration of eno1...
+Aug 14 09:42:23 thoughtflare systemd[1]: Starting Link configuration of eno1...
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Paths.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Remote File Systems.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Slices.
+Aug 14 09:42:23 thoughtflare systemd[1]: Starting Nix Daemon Socket.
+Aug 14 09:42:23 thoughtflare systemd[1]: [1;31mSocket service nix-daemon.service already active, refusing.[0m
+Aug 14 09:42:23 thoughtflare systemd[1]: [1;31mFailed to listen on Nix Daemon Socket.[0m
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Sockets.
+Aug 14 09:42:23 thoughtflare systemd[1]: Started Link configuration of eno1.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Sound Card.
+Aug 14 09:42:23 thoughtflare network-addresses-eno1-start[27019]: bringing up interface...
+Aug 14 09:42:23 thoughtflare network-addresses-eno1-start[27019]: checking ip 192.168.1.10/24...
+Aug 14 09:42:23 thoughtflare network-addresses-eno1-start[27019]: added ip 192.168.1.10/24...
+Aug 14 09:42:23 thoughtflare network-link-eno1-start[27020]: Configuring link...
+Aug 14 09:42:23 thoughtflare systemd[1]: Mounted Configuration File System.
+Aug 14 09:42:23 thoughtflare systemd[1]: Mounted FUSE Control File System.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target System Initialization.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Timers.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target Services Requiring IP Connectivity.
+Aug 14 09:42:23 thoughtflare systemd[1]: Started Address configuration of eno1.
+Aug 14 09:42:23 thoughtflare systemd[1]: Starting All Network Interfaces.
+Aug 14 09:42:23 thoughtflare systemd[1]: Reached target All Network Interfaces.
+Aug 14 09:42:23 thoughtflare systemd[1]: Starting Networking Setup...
+Aug 14 09:42:23 thoughtflare systemd[1]: Started Networking Setup.
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mReloading rules[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mCollecting garbage unconditionally...[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /etc/polkit-1/rules.d[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /var/run/current-system/sw/share/polkit-1/rules.d[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mFinished loading, compiling and executing 1 rules[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mReloading rules[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mCollecting garbage unconditionally...[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /etc/polkit-1/rules.d[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /var/run/current-system/sw/share/polkit-1/rules.d[0m
+Aug 14 09:42:24 thoughtflare polkitd[2847]: [1;39mFinished loading, compiling and executing 1 rules[0m
+Aug 14 09:42:24 thoughtflare sshd[27068]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:42:25 thoughtflare ntpd[2889]: Listen normally on 6 eno1 192.168.1.10:123
+Aug 14 09:42:25 thoughtflare ntpd[2889]: new interface(s) found: waking up resolver
+Aug 14 09:42:39 thoughtflare sshd[27145]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:42:42 thoughtflare sshd[27157]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 09:42:44 thoughtflare autossh[6831]: starting ssh (count 15018)
+Aug 14 09:42:44 thoughtflare autossh[6831]: ssh child pid is 27168
+Aug 14 09:42:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 09:42:49 thoughtflare sshd[27193]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:42:58 thoughtflare sshd[27242]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:42:59 thoughtflare sshd[27253]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:43:06 thoughtflare sshd[27284]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:43:15 thoughtflare sshd[27325]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:43:15 thoughtflare sshd[27323]: Accepted publickey for sweater from 31.45.249.74 port 28773 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 09:43:15 thoughtflare sshd[27323]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 09:43:15 thoughtflare systemd[1]: Starting Session 2370374 of user sweater.
+Aug 14 09:43:15 thoughtflare systemd-logind[2871]: New session 2370374 of user sweater.
+Aug 14 09:43:15 thoughtflare systemd[1]: Started Session 2370374 of user sweater.
+Aug 14 09:43:16 thoughtflare sshd[27336]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 09:43:16 thoughtflare sshd[27336]: Disconnected from 31.45.249.74
+Aug 14 09:43:16 thoughtflare sshd[27323]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 09:43:29 thoughtflare sshd[28520]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:43:54 thoughtflare systemd[1]: [1;39mJob dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device/start timed out.[0m
+Aug 14 09:43:54 thoughtflare systemd[1]: [1;31mTimed out waiting for device dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device.[0m
+Aug 14 09:43:54 thoughtflare systemd[1]: [1;31mDependency failed for /dev/disk/by-uuid/2f3737cf-d861-4c7a-aa8b-3b9d8318be95.[0m
+Aug 14 09:43:54 thoughtflare systemd[1]: [1;31mDependency failed for Swap.[0m
+Aug 14 09:43:54 thoughtflare nixos[26841]: [1;31mswitching to system configuration /nix/store/3347zif2bc8gbb8q6vjz8zkyif9q102r-nixos-15.07pre67160.d921092 failed (status 4)[0m
+Aug 14 09:44:27 thoughtflare sshd[28801]: Accepted publickey for sweater from 31.45.249.74 port 28815 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 09:44:27 thoughtflare sshd[28801]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 09:44:27 thoughtflare systemd[1]: Starting Session 2370375 of user sweater.
+Aug 14 09:44:27 thoughtflare systemd-logind[2871]: New session 2370375 of user sweater.
+Aug 14 09:44:27 thoughtflare systemd[1]: Started Session 2370375 of user sweater.
+Aug 14 09:44:42 thoughtflare sshd[28881]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:44:53 thoughtflare sshd[28939]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 09:46:20 thoughtflare sshd[29344]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:46:25 thoughtflare sshd[29372]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:46:30 thoughtflare sshd[29395]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:46:53 thoughtflare sshd[29510]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:46:55 thoughtflare sshd[29521]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:47:17 thoughtflare sshd[29631]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 09:48:28 thoughtflare sshd[29964]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:49:38 thoughtflare sshd[30301]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 09:50:36 thoughtflare sshd[30584]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:50:38 thoughtflare sshd[30595]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 09:51:14 thoughtflare sshd[30766]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 09:51:59 thoughtflare sshd[30979]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 09:52:12 thoughtflare sshd[31038]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:52:17 thoughtflare sshd[31069]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:52:42 thoughtflare sshd[31187]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 09:52:44 thoughtflare autossh[6831]: starting ssh (count 15019)
+Aug 14 09:52:44 thoughtflare autossh[6831]: ssh child pid is 31198
+Aug 14 09:52:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 09:52:59 thoughtflare sshd[31274]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:53:06 thoughtflare sshd[31312]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:53:56 thoughtflare sshd[31547]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:54:53 thoughtflare sshd[31824]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 09:56:25 thoughtflare sshd[32255]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:56:30 thoughtflare sshd[32285]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:56:53 thoughtflare sshd[32393]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:56:55 thoughtflare sshd[32405]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 09:57:17 thoughtflare sshd[32526]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 09:57:58 thoughtflare sshd[32719]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 09:59:38 thoughtflare sshd[763]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 10:00:37 thoughtflare sshd[1051]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:00:38 thoughtflare sshd[1062]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 10:01:14 thoughtflare sshd[1233]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:01:59 thoughtflare sshd[1457]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:02:12 thoughtflare sshd[1524]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:02:17 thoughtflare sshd[1547]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:02:42 thoughtflare sshd[1675]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:02:44 thoughtflare autossh[6831]: starting ssh (count 15020)
+Aug 14 10:02:44 thoughtflare autossh[6831]: ssh child pid is 1686
+Aug 14 10:02:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 10:02:59 thoughtflare sshd[1755]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:03:06 thoughtflare sshd[1793]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:04:53 thoughtflare sshd[2301]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:06:15 thoughtflare sshd[2690]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:06:25 thoughtflare sshd[2739]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:06:30 thoughtflare sshd[2762]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:06:53 thoughtflare sshd[2881]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:06:55 thoughtflare sshd[2894]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:07:18 thoughtflare sshd[3021]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:09:38 thoughtflare sshd[3682]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 10:10:37 thoughtflare sshd[3968]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:10:39 thoughtflare sshd[3979]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 10:11:14 thoughtflare sshd[4145]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:11:59 thoughtflare sshd[4364]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:12:12 thoughtflare sshd[4424]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:12:17 thoughtflare sshd[4455]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:12:42 thoughtflare sshd[4571]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:12:44 thoughtflare autossh[6831]: starting ssh (count 15021)
+Aug 14 10:12:44 thoughtflare autossh[6831]: ssh child pid is 4582
+Aug 14 10:12:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 10:12:59 thoughtflare sshd[4658]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:13:07 thoughtflare sshd[4689]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:14:54 thoughtflare sshd[5198]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:16:25 thoughtflare sshd[5634]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:16:30 thoughtflare sshd[5655]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:16:53 thoughtflare sshd[5772]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:16:55 thoughtflare sshd[5783]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:17:18 thoughtflare sshd[5893]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:18:07 thoughtflare sshd[6137]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:19:38 thoughtflare sshd[6591]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 10:20:37 thoughtflare sshd[6912]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:20:39 thoughtflare sshd[7486]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 10:20:42 thoughtflare sudo[7495]: [1;31mpam_unix(sudo:auth): auth could not identify password for [sweater][0m
+Aug 14 10:20:58 thoughtflare passwd[7519]: [1;39mpam_unix(passwd:chauthtok): password changed for sweater[0m
+Aug 14 10:21:07 thoughtflare sudo[7611]: [1;39msweater : TTY=pts/55 ; PWD=/home/sweater ; USER=root ; COMMAND=/var/setuid-wrappers/su dork[0m
+Aug 14 10:21:07 thoughtflare sudo[7611]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 14 10:21:07 thoughtflare su[7631]: Successful su for dork by root
+Aug 14 10:21:07 thoughtflare su[7631]: pam_unix(su:session): session opened for user dork by (uid=0)
+Aug 14 10:21:14 thoughtflare sshd[7672]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:21:59 thoughtflare sshd[7930]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:22:12 thoughtflare sshd[7992]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:22:17 thoughtflare sshd[8022]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:22:21 thoughtflare su[7631]: pam_unix(su:session): session closed for user dork
+Aug 14 10:22:21 thoughtflare sudo[7611]: pam_unix(sudo:session): session closed for user root
+Aug 14 10:22:42 thoughtflare sshd[8158]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:22:44 thoughtflare autossh[6831]: starting ssh (count 15022)
+Aug 14 10:22:44 thoughtflare autossh[6831]: ssh child pid is 8169
+Aug 14 10:22:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 10:22:59 thoughtflare sshd[8249]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:23:06 thoughtflare sshd[8281]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:23:42 thoughtflare sudo[8462]: [1;39msweater : TTY=pts/55 ; PWD=/home/sweater ; USER=root ; COMMAND=/var/setuid-wrappers/su dork[0m
+Aug 14 10:23:42 thoughtflare sudo[8462]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 14 10:23:42 thoughtflare su[8463]: Successful su for dork by root
+Aug 14 10:23:42 thoughtflare su[8463]: pam_unix(su:session): session opened for user dork by (uid=0)
+Aug 14 10:24:53 thoughtflare sshd[8822]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:25:33 thoughtflare sshd[9006]: Invalid user gitolite from 31.45.249.74
+Aug 14 10:25:33 thoughtflare sshd[9006]: input_userauth_request: invalid user gitolite [preauth]
+Aug 14 10:25:33 thoughtflare sshd[9006]: Postponed keyboard-interactive for invalid user gitolite from 31.45.249.74 port 29718 ssh2 [preauth]
+Aug 14 10:25:34 thoughtflare sshd[9006]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:26:25 thoughtflare sshd[9320]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:26:30 thoughtflare sshd[9349]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:26:53 thoughtflare sshd[9486]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:26:55 thoughtflare sshd[9497]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:27:17 thoughtflare sshd[9603]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:29:28 thoughtflare su[8463]: pam_unix(su:session): session closed for user dork
+Aug 14 10:29:28 thoughtflare sudo[8462]: pam_unix(sudo:session): session closed for user root
+Aug 14 10:29:38 thoughtflare sshd[10283]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 10:30:16 thoughtflare sshd[10464]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:30:38 thoughtflare sshd[10601]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:30:38 thoughtflare sshd[10603]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 10:31:14 thoughtflare sshd[10797]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:31:59 thoughtflare sshd[11044]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:32:12 thoughtflare sshd[11111]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:32:17 thoughtflare sshd[11134]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:32:42 thoughtflare sshd[11257]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:32:44 thoughtflare autossh[6831]: starting ssh (count 15023)
+Aug 14 10:32:44 thoughtflare autossh[6831]: ssh child pid is 11262
+Aug 14 10:32:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 10:32:59 thoughtflare sshd[11338]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:33:06 thoughtflare sshd[11376]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:34:45 thoughtflare sshd[11837]: Accepted publickey for sweater from 31.45.249.74 port 29961 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:34:45 thoughtflare sshd[11837]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:34:45 thoughtflare systemd[1]: Starting Session 2370376 of user sweater.
+Aug 14 10:34:45 thoughtflare systemd-logind[2871]: New session 2370376 of user sweater.
+Aug 14 10:34:45 thoughtflare systemd[1]: Started Session 2370376 of user sweater.
+Aug 14 10:34:45 thoughtflare sshd[11846]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:34:45 thoughtflare sshd[11846]: Disconnected from 31.45.249.74
+Aug 14 10:34:45 thoughtflare sshd[11837]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:34:45 thoughtflare systemd-logind[2871]: Removed session 2370376.
+Aug 14 10:34:46 thoughtflare sshd[12412]: Accepted publickey for sweater from 31.45.249.74 port 29962 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:34:46 thoughtflare sshd[12412]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:34:46 thoughtflare systemd[1]: Starting Session 2370377 of user sweater.
+Aug 14 10:34:46 thoughtflare systemd-logind[2871]: New session 2370377 of user sweater.
+Aug 14 10:34:46 thoughtflare systemd[1]: Started Session 2370377 of user sweater.
+Aug 14 10:34:47 thoughtflare sshd[12414]: Accepted publickey for sweater from 31.45.249.74 port 29963 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:34:47 thoughtflare sshd[12414]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:34:47 thoughtflare systemd[1]: Starting Session 2370378 of user sweater.
+Aug 14 10:34:47 thoughtflare systemd-logind[2871]: New session 2370378 of user sweater.
+Aug 14 10:34:47 thoughtflare systemd[1]: Started Session 2370378 of user sweater.
+Aug 14 10:34:47 thoughtflare sshd[12417]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:34:47 thoughtflare sshd[12417]: Disconnected from 31.45.249.74
+Aug 14 10:34:47 thoughtflare sshd[12412]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:34:47 thoughtflare systemd-logind[2871]: Removed session 2370377.
+Aug 14 10:34:48 thoughtflare sshd[12981]: Accepted publickey for sweater from 31.45.249.74 port 29964 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:34:48 thoughtflare sshd[12981]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:34:48 thoughtflare systemd[1]: Starting Session 2370379 of user sweater.
+Aug 14 10:34:48 thoughtflare systemd-logind[2871]: New session 2370379 of user sweater.
+Aug 14 10:34:48 thoughtflare systemd[1]: Started Session 2370379 of user sweater.
+Aug 14 10:34:53 thoughtflare sshd[13012]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:35:17 thoughtflare sudo[13109]: [1;39msweater : TTY=pts/55 ; PWD=/home/sweater/github/dorknet ; USER=root ; COMMAND=/var/setuid-wrappers/su dork[0m
+Aug 14 10:35:17 thoughtflare sudo[13109]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 14 10:35:17 thoughtflare su[13129]: Successful su for dork by root
+Aug 14 10:35:17 thoughtflare su[13129]: pam_unix(su:session): session opened for user dork by (uid=0)
+Aug 14 10:36:14 thoughtflare sshd[28805]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:36:14 thoughtflare sshd[28805]: Disconnected from 31.45.249.74
+Aug 14 10:36:14 thoughtflare sshd[28801]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:36:14 thoughtflare systemd-logind[2871]: Removed session 2370375.
+Aug 14 10:36:14 thoughtflare sshd[12985]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:36:14 thoughtflare sshd[12985]: Disconnected from 31.45.249.74
+Aug 14 10:36:14 thoughtflare sshd[12981]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:36:14 thoughtflare sshd[12443]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:36:14 thoughtflare sshd[12443]: Disconnected from 31.45.249.74
+Aug 14 10:36:14 thoughtflare sshd[12414]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:36:14 thoughtflare systemd-logind[2871]: Removed session 2370379.
+Aug 14 10:36:14 thoughtflare systemd-logind[2871]: Removed session 2370378.
+Aug 14 10:36:23 thoughtflare sshd[13457]: Accepted publickey for sweater from 31.45.249.74 port 29985 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:23 thoughtflare sshd[13457]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:36:23 thoughtflare systemd[1]: Starting Session 2370380 of user sweater.
+Aug 14 10:36:23 thoughtflare systemd-logind[2871]: New session 2370380 of user sweater.
+Aug 14 10:36:23 thoughtflare systemd[1]: Started Session 2370380 of user sweater.
+Aug 14 10:36:23 thoughtflare sshd[13459]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:36:23 thoughtflare sshd[13459]: Disconnected from 31.45.249.74
+Aug 14 10:36:23 thoughtflare sshd[13457]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:36:23 thoughtflare systemd-logind[2871]: Removed session 2370380.
+Aug 14 10:36:25 thoughtflare sshd[14023]: Accepted publickey for sweater from 31.45.249.74 port 29986 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:25 thoughtflare sshd[14023]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:36:25 thoughtflare systemd[1]: Starting Session 2370381 of user sweater.
+Aug 14 10:36:25 thoughtflare systemd-logind[2871]: New session 2370381 of user sweater.
+Aug 14 10:36:25 thoughtflare systemd[1]: Started Session 2370381 of user sweater.
+Aug 14 10:36:25 thoughtflare sshd[14025]: Accepted publickey for sweater from 31.45.249.74 port 29987 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:25 thoughtflare sshd[14025]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:36:25 thoughtflare systemd[1]: Starting Session 2370382 of user sweater.
+Aug 14 10:36:25 thoughtflare systemd-logind[2871]: New session 2370382 of user sweater.
+Aug 14 10:36:25 thoughtflare systemd[1]: Started Session 2370382 of user sweater.
+Aug 14 10:36:25 thoughtflare sshd[14031]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:36:25 thoughtflare sshd[14030]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:36:25 thoughtflare sshd[14030]: Disconnected from 31.45.249.74
+Aug 14 10:36:25 thoughtflare sshd[14025]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:36:25 thoughtflare systemd-logind[2871]: Removed session 2370382.
+Aug 14 10:36:26 thoughtflare sshd[14596]: Accepted publickey for sweater from 31.45.249.74 port 29988 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:26 thoughtflare sshd[14596]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:36:26 thoughtflare systemd[1]: Starting Session 2370383 of user sweater.
+Aug 14 10:36:26 thoughtflare systemd-logind[2871]: New session 2370383 of user sweater.
+Aug 14 10:36:26 thoughtflare systemd[1]: Started Session 2370383 of user sweater.
+Aug 14 10:36:30 thoughtflare sshd[14618]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:36:40 thoughtflare sshd[14662]: Accepted publickey for dork from 31.45.249.74 port 29989 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:40 thoughtflare sshd[14662]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:36:40 thoughtflare systemd[1]: Starting Session 2370384 of user dork.
+Aug 14 10:36:40 thoughtflare systemd-logind[2871]: New session 2370384 of user dork.
+Aug 14 10:36:40 thoughtflare systemd[1]: Started Session 2370384 of user dork.
+Aug 14 10:36:40 thoughtflare sshd[14673]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:36:40 thoughtflare sshd[14673]: Disconnected from 31.45.249.74
+Aug 14 10:36:40 thoughtflare sshd[14662]: pam_unix(sshd:session): session closed for user dork
+Aug 14 10:36:40 thoughtflare systemd-logind[2871]: Removed session 2370384.
+Aug 14 10:36:47 thoughtflare sshd[14712]: Accepted publickey for sweater from 31.45.249.74 port 29992 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:47 thoughtflare sshd[14712]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:36:47 thoughtflare systemd[1]: Starting Session 2370385 of user sweater.
+Aug 14 10:36:47 thoughtflare systemd-logind[2871]: New session 2370385 of user sweater.
+Aug 14 10:36:47 thoughtflare systemd[1]: Started Session 2370385 of user sweater.
+Aug 14 10:36:47 thoughtflare sshd[14717]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:36:47 thoughtflare sshd[14717]: Disconnected from 31.45.249.74
+Aug 14 10:36:47 thoughtflare sshd[14712]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:36:47 thoughtflare systemd-logind[2871]: Removed session 2370385.
+Aug 14 10:36:48 thoughtflare sshd[15273]: Accepted publickey for sweater from 31.45.249.74 port 29993 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:48 thoughtflare sshd[15273]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:36:48 thoughtflare systemd[1]: Starting Session 2370386 of user sweater.
+Aug 14 10:36:48 thoughtflare systemd-logind[2871]: New session 2370386 of user sweater.
+Aug 14 10:36:48 thoughtflare systemd[1]: Started Session 2370386 of user sweater.
+Aug 14 10:36:48 thoughtflare sshd[15275]: Accepted publickey for sweater from 31.45.249.74 port 29994 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:48 thoughtflare sshd[15275]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:36:48 thoughtflare systemd[1]: Starting Session 2370387 of user sweater.
+Aug 14 10:36:48 thoughtflare systemd-logind[2871]: New session 2370387 of user sweater.
+Aug 14 10:36:48 thoughtflare systemd[1]: Started Session 2370387 of user sweater.
+Aug 14 10:36:49 thoughtflare sshd[15287]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:36:49 thoughtflare sshd[15287]: Disconnected from 31.45.249.74
+Aug 14 10:36:49 thoughtflare sshd[15275]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:36:49 thoughtflare systemd-logind[2871]: Removed session 2370387.
+Aug 14 10:36:50 thoughtflare sshd[15843]: Accepted publickey for sweater from 31.45.249.74 port 29995 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:36:50 thoughtflare sshd[15843]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:36:50 thoughtflare systemd[1]: Starting Session 2370388 of user sweater.
+Aug 14 10:36:50 thoughtflare systemd-logind[2871]: New session 2370388 of user sweater.
+Aug 14 10:36:50 thoughtflare systemd[1]: Started Session 2370388 of user sweater.
+Aug 14 10:36:53 thoughtflare sshd[15865]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:36:55 thoughtflare sshd[15876]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:37:18 thoughtflare sshd[15992]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:37:53 thoughtflare sshd[16158]: Accepted publickey for dork from 31.45.249.74 port 10006 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:37:53 thoughtflare sshd[16158]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:37:53 thoughtflare systemd[1]: Starting Session 2370389 of user dork.
+Aug 14 10:37:53 thoughtflare systemd-logind[2871]: New session 2370389 of user dork.
+Aug 14 10:37:53 thoughtflare systemd[1]: Started Session 2370389 of user dork.
+Aug 14 10:37:53 thoughtflare sshd[16162]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:37:53 thoughtflare sshd[16162]: Disconnected from 31.45.249.74
+Aug 14 10:37:53 thoughtflare sshd[16158]: pam_unix(sshd:session): session closed for user dork
+Aug 14 10:37:53 thoughtflare systemd-logind[2871]: Removed session 2370389.
+Aug 14 10:38:34 thoughtflare sshd[16367]: Accepted publickey for sweater from 31.45.249.74 port 10013 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:38:34 thoughtflare sshd[16367]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:38:34 thoughtflare systemd[1]: Starting Session 2370390 of user sweater.
+Aug 14 10:38:34 thoughtflare systemd-logind[2871]: New session 2370390 of user sweater.
+Aug 14 10:38:34 thoughtflare systemd[1]: Started Session 2370390 of user sweater.
+Aug 14 10:38:34 thoughtflare sshd[16369]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:38:34 thoughtflare sshd[16369]: Disconnected from 31.45.249.74
+Aug 14 10:38:34 thoughtflare sshd[16367]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:38:34 thoughtflare systemd-logind[2871]: Removed session 2370390.
+Aug 14 10:38:35 thoughtflare sshd[16942]: Accepted publickey for sweater from 31.45.249.74 port 10014 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:38:35 thoughtflare sshd[16942]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:38:35 thoughtflare systemd[1]: Starting Session 2370391 of user sweater.
+Aug 14 10:38:35 thoughtflare systemd-logind[2871]: New session 2370391 of user sweater.
+Aug 14 10:38:35 thoughtflare systemd[1]: Started Session 2370391 of user sweater.
+Aug 14 10:38:36 thoughtflare sshd[16944]: Accepted publickey for sweater from 31.45.249.74 port 10015 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:38:36 thoughtflare sshd[16944]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:38:36 thoughtflare systemd[1]: Starting Session 2370392 of user sweater.
+Aug 14 10:38:36 thoughtflare systemd-logind[2871]: New session 2370392 of user sweater.
+Aug 14 10:38:36 thoughtflare systemd[1]: Started Session 2370392 of user sweater.
+Aug 14 10:38:36 thoughtflare sshd[16947]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:38:36 thoughtflare sshd[16947]: Disconnected from 31.45.249.74
+Aug 14 10:38:36 thoughtflare sshd[16944]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:38:36 thoughtflare systemd-logind[2871]: Removed session 2370392.
+Aug 14 10:38:37 thoughtflare sshd[17511]: Accepted publickey for sweater from 31.45.249.74 port 10016 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:38:37 thoughtflare sshd[17511]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 10:38:37 thoughtflare systemd[1]: Starting Session 2370393 of user sweater.
+Aug 14 10:38:37 thoughtflare systemd-logind[2871]: New session 2370393 of user sweater.
+Aug 14 10:38:37 thoughtflare systemd[1]: Started Session 2370393 of user sweater.
+Aug 14 10:39:38 thoughtflare sshd[17798]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 10:40:38 thoughtflare sshd[18092]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:40:38 thoughtflare sshd[18094]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 10:41:14 thoughtflare sshd[18266]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:41:59 thoughtflare sshd[18477]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:42:12 thoughtflare sshd[18546]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:42:17 thoughtflare sshd[18569]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:42:42 thoughtflare sshd[18693]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:42:44 thoughtflare autossh[6831]: starting ssh (count 15024)
+Aug 14 10:42:44 thoughtflare autossh[6831]: ssh child pid is 18704
+Aug 14 10:42:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 10:42:59 thoughtflare sshd[18774]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:43:06 thoughtflare sshd[18812]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:43:46 thoughtflare sshd[18994]: Accepted publickey for dork from 31.45.249.74 port 10033 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:43:46 thoughtflare sshd[18994]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:43:46 thoughtflare systemd[1]: Starting Session 2370394 of user dork.
+Aug 14 10:43:46 thoughtflare systemd-logind[2871]: New session 2370394 of user dork.
+Aug 14 10:43:46 thoughtflare systemd[1]: Started Session 2370394 of user dork.
+Aug 14 10:43:46 thoughtflare sshd[19006]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:43:46 thoughtflare sshd[19006]: Disconnected from 31.45.249.74
+Aug 14 10:43:46 thoughtflare sshd[18994]: pam_unix(sshd:session): session closed for user dork
+Aug 14 10:43:46 thoughtflare systemd-logind[2871]: Removed session 2370394.
+Aug 14 10:43:47 thoughtflare sshd[19021]: Accepted publickey for dork from 31.45.249.74 port 10036 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:43:47 thoughtflare sshd[19021]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:43:47 thoughtflare systemd[1]: Starting Session 2370395 of user dork.
+Aug 14 10:43:47 thoughtflare systemd-logind[2871]: New session 2370395 of user dork.
+Aug 14 10:43:47 thoughtflare systemd[1]: Started Session 2370395 of user dork.
+Aug 14 10:43:48 thoughtflare sshd[19022]: Accepted publickey for dork from 31.45.249.74 port 10035 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:43:48 thoughtflare sshd[19022]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:43:48 thoughtflare systemd[1]: Starting Session 2370396 of user dork.
+Aug 14 10:43:48 thoughtflare systemd-logind[2871]: New session 2370396 of user dork.
+Aug 14 10:43:48 thoughtflare systemd[1]: Started Session 2370396 of user dork.
+Aug 14 10:43:48 thoughtflare systemd-logind[2871]: Removed session 2370395.
+Aug 14 10:43:48 thoughtflare sshd[19027]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:43:48 thoughtflare sshd[19027]: Disconnected from 31.45.249.74
+Aug 14 10:43:48 thoughtflare sshd[19021]: pam_unix(sshd:session): session closed for user dork
+Aug 14 10:43:49 thoughtflare sshd[19050]: Accepted publickey for dork from 31.45.249.74 port 10042 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:43:49 thoughtflare sshd[19050]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:43:49 thoughtflare systemd[1]: Starting Session 2370397 of user dork.
+Aug 14 10:43:49 thoughtflare systemd-logind[2871]: New session 2370397 of user dork.
+Aug 14 10:43:49 thoughtflare systemd[1]: Started Session 2370397 of user dork.
+Aug 14 10:44:35 thoughtflare sshd[15286]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:44:35 thoughtflare sshd[15286]: Disconnected from 31.45.249.74
+Aug 14 10:44:35 thoughtflare sshd[15273]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:44:35 thoughtflare sshd[14029]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:44:35 thoughtflare sshd[14029]: Disconnected from 31.45.249.74
+Aug 14 10:44:35 thoughtflare sshd[14023]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:44:35 thoughtflare systemd-logind[2871]: Removed session 2370386.
+Aug 14 10:44:35 thoughtflare systemd-logind[2871]: Removed session 2370381.
+Aug 14 10:44:35 thoughtflare sshd[17513]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:44:35 thoughtflare sshd[17513]: Disconnected from 31.45.249.74
+Aug 14 10:44:35 thoughtflare sshd[17511]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:44:35 thoughtflare systemd-logind[2871]: Removed session 2370393.
+Aug 14 10:44:37 thoughtflare sshd[15854]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:44:37 thoughtflare sshd[15854]: Disconnected from 31.45.249.74
+Aug 14 10:44:37 thoughtflare sshd[15843]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:44:37 thoughtflare sshd[14601]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:44:37 thoughtflare sshd[14601]: Disconnected from 31.45.249.74
+Aug 14 10:44:37 thoughtflare sshd[14596]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:44:37 thoughtflare sshd[16946]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:44:37 thoughtflare sshd[16946]: Disconnected from 31.45.249.74
+Aug 14 10:44:37 thoughtflare sshd[16942]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 10:44:37 thoughtflare systemd-logind[2871]: Removed session 2370388.
+Aug 14 10:44:37 thoughtflare systemd-logind[2871]: Removed session 2370383.
+Aug 14 10:44:37 thoughtflare systemd-logind[2871]: Removed session 2370391.
+Aug 14 10:44:53 thoughtflare sshd[19366]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:46:25 thoughtflare sshd[19803]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:46:30 thoughtflare sshd[19824]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:46:53 thoughtflare sshd[19934]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:46:55 thoughtflare sshd[19945]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:47:17 thoughtflare sshd[20058]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:49:12 thoughtflare sshd[20595]: Accepted publickey for dork from 31.45.249.74 port 10092 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:49:12 thoughtflare sshd[20595]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:49:12 thoughtflare systemd[1]: Starting Session 2370398 of user dork.
+Aug 14 10:49:12 thoughtflare systemd-logind[2871]: New session 2370398 of user dork.
+Aug 14 10:49:12 thoughtflare systemd[1]: Started Session 2370398 of user dork.
+Aug 14 10:49:12 thoughtflare sshd[20604]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:49:12 thoughtflare sshd[20604]: Disconnected from 31.45.249.74
+Aug 14 10:49:12 thoughtflare sshd[20595]: pam_unix(sshd:session): session closed for user dork
+Aug 14 10:49:12 thoughtflare systemd-logind[2871]: Removed session 2370398.
+Aug 14 10:49:13 thoughtflare sshd[19039]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:49:13 thoughtflare sshd[19039]: Disconnected from 31.45.249.74
+Aug 14 10:49:13 thoughtflare sshd[19022]: pam_unix(sshd:session): session closed for user dork
+Aug 14 10:49:13 thoughtflare systemd-logind[2871]: Removed session 2370396.
+Aug 14 10:49:13 thoughtflare sshd[20620]: Accepted publickey for dork from 31.45.249.74 port 10093 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:49:13 thoughtflare sshd[20620]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:49:13 thoughtflare systemd[1]: Starting Session 2370399 of user dork.
+Aug 14 10:49:13 thoughtflare systemd-logind[2871]: New session 2370399 of user dork.
+Aug 14 10:49:13 thoughtflare systemd[1]: Started Session 2370399 of user dork.
+Aug 14 10:49:14 thoughtflare sshd[20621]: Accepted publickey for dork from 31.45.249.74 port 10094 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:49:14 thoughtflare sshd[20621]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:49:14 thoughtflare systemd[1]: Starting Session 2370400 of user dork.
+Aug 14 10:49:14 thoughtflare systemd-logind[2871]: New session 2370400 of user dork.
+Aug 14 10:49:14 thoughtflare systemd[1]: Started Session 2370400 of user dork.
+Aug 14 10:49:14 thoughtflare sshd[19054]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:49:14 thoughtflare sshd[19054]: Disconnected from 31.45.249.74
+Aug 14 10:49:14 thoughtflare sshd[19050]: pam_unix(sshd:session): session closed for user dork
+Aug 14 10:49:14 thoughtflare systemd-logind[2871]: Removed session 2370397.
+Aug 14 10:49:14 thoughtflare sshd[20633]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 10:49:14 thoughtflare sshd[20633]: Disconnected from 31.45.249.74
+Aug 14 10:49:14 thoughtflare sshd[20621]: pam_unix(sshd:session): session closed for user dork
+Aug 14 10:49:14 thoughtflare systemd-logind[2871]: Removed session 2370400.
+Aug 14 10:49:15 thoughtflare sshd[20648]: Accepted publickey for dork from 31.45.249.74 port 10096 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 10:49:15 thoughtflare sshd[20648]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 10:49:15 thoughtflare systemd[1]: Starting Session 2370401 of user dork.
+Aug 14 10:49:15 thoughtflare systemd-logind[2871]: New session 2370401 of user dork.
+Aug 14 10:49:15 thoughtflare systemd[1]: Started Session 2370401 of user dork.
+Aug 14 10:49:38 thoughtflare sshd[20757]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 10:50:38 thoughtflare sshd[21044]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 10:50:38 thoughtflare sshd[21053]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 10:51:14 thoughtflare sshd[21220]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:51:59 thoughtflare sshd[21443]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:52:12 thoughtflare sshd[21504]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:52:17 thoughtflare sshd[21533]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:52:42 thoughtflare sshd[21650]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 10:52:44 thoughtflare autossh[6831]: starting ssh (count 15025)
+Aug 14 10:52:44 thoughtflare autossh[6831]: ssh child pid is 21661
+Aug 14 10:52:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 10:52:59 thoughtflare sshd[21735]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:53:06 thoughtflare sshd[21769]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:54:53 thoughtflare sshd[22276]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:56:25 thoughtflare sshd[22714]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:56:30 thoughtflare sshd[22735]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:56:53 thoughtflare sshd[22851]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:56:55 thoughtflare sshd[22862]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 10:57:18 thoughtflare sshd[22969]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 10:59:38 thoughtflare sshd[23635]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 11:00:38 thoughtflare sshd[23915]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 11:00:38 thoughtflare sshd[23924]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 11:01:14 thoughtflare sshd[24095]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:01:59 thoughtflare sshd[24306]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:02:12 thoughtflare sshd[24367]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:02:17 thoughtflare sshd[24395]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:02:42 thoughtflare sshd[24514]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:02:44 thoughtflare autossh[6831]: starting ssh (count 15026)
+Aug 14 11:02:44 thoughtflare autossh[6831]: ssh child pid is 24525
+Aug 14 11:02:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 11:02:59 thoughtflare sshd[24600]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:03:07 thoughtflare sshd[24634]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:04:53 thoughtflare sshd[25146]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 11:06:25 thoughtflare sshd[25577]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:06:30 thoughtflare sshd[25598]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:06:53 thoughtflare sshd[25713]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:06:55 thoughtflare sshd[25724]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:07:17 thoughtflare sshd[25831]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 11:09:38 thoughtflare sshd[26496]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 11:10:38 thoughtflare sshd[26792]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 11:10:38 thoughtflare sshd[26794]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 11:11:14 thoughtflare sshd[26966]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:11:59 thoughtflare sshd[27178]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:12:12 thoughtflare sshd[27251]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:12:17 thoughtflare sshd[27272]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:12:34 thoughtflare systemd-logind[2871]: Removed session 2368511.
+Aug 14 11:12:42 thoughtflare sshd[27411]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:12:44 thoughtflare autossh[6831]: starting ssh (count 15027)
+Aug 14 11:12:44 thoughtflare autossh[6831]: ssh child pid is 27415
+Aug 14 11:12:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 11:13:00 thoughtflare sshd[27489]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:13:06 thoughtflare sshd[27529]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:14:53 thoughtflare sshd[28034]: Connection closed by 87.110.53.25 [preauth]
+Aug 14 11:15:25 thoughtflare sshd[28150]: Accepted publickey for dork from 87.110.53.25 port 54482 ssh2: RSA SHA256:z4KbH7txTKzetPBS4jp44nvnRq2dt1dAT4F+IP/z1tM
+Aug 14 11:15:25 thoughtflare sshd[28150]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 11:15:25 thoughtflare systemd[1]: Starting Session 2370402 of user dork.
+Aug 14 11:15:25 thoughtflare systemd-logind[2871]: New session 2370402 of user dork.
+Aug 14 11:15:25 thoughtflare systemd[1]: Started Session 2370402 of user dork.
+Aug 14 11:15:26 thoughtflare sshd[28189]: Received disconnect from 87.110.53.25: 11: disconnected by user
+Aug 14 11:15:26 thoughtflare sshd[28189]: Disconnected from 87.110.53.25
+Aug 14 11:15:26 thoughtflare sshd[28150]: pam_unix(sshd:session): session closed for user dork
+Aug 14 11:15:26 thoughtflare systemd-logind[2871]: Removed session 2370402.
+Aug 14 11:15:37 thoughtflare sshd[28260]: Accepted publickey for dork from 87.110.53.25 port 54483 ssh2: RSA SHA256:z4KbH7txTKzetPBS4jp44nvnRq2dt1dAT4F+IP/z1tM
+Aug 14 11:15:37 thoughtflare sshd[28260]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 11:15:37 thoughtflare systemd[1]: Starting Session 2370403 of user dork.
+Aug 14 11:15:37 thoughtflare systemd-logind[2871]: New session 2370403 of user dork.
+Aug 14 11:15:37 thoughtflare systemd[1]: Started Session 2370403 of user dork.
+Aug 14 11:15:37 thoughtflare sshd[28262]: Received disconnect from 87.110.53.25: 11: disconnected by user
+Aug 14 11:15:37 thoughtflare sshd[28262]: Disconnected from 87.110.53.25
+Aug 14 11:15:37 thoughtflare sshd[28260]: pam_unix(sshd:session): session closed for user dork
+Aug 14 11:15:37 thoughtflare systemd-logind[2871]: Removed session 2370403.
+Aug 14 11:15:37 thoughtflare sshd[28276]: Accepted publickey for dork from 87.110.53.25 port 54484 ssh2: RSA SHA256:z4KbH7txTKzetPBS4jp44nvnRq2dt1dAT4F+IP/z1tM
+Aug 14 11:15:37 thoughtflare sshd[28276]: pam_unix(sshd:session): session opened for user dork by (uid=0)
+Aug 14 11:15:37 thoughtflare systemd[1]: Starting Session 2370404 of user dork.
+Aug 14 11:15:37 thoughtflare systemd-logind[2871]: New session 2370404 of user dork.
+Aug 14 11:15:37 thoughtflare systemd[1]: Started Session 2370404 of user dork.
+Aug 14 11:16:25 thoughtflare sshd[28501]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:16:30 thoughtflare sshd[28531]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:16:53 thoughtflare sshd[28639]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:16:55 thoughtflare sshd[28650]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:19:38 thoughtflare sshd[29424]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 11:20:38 thoughtflare sshd[29711]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 11:20:39 thoughtflare sshd[29718]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 11:21:14 thoughtflare sshd[29885]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:21:59 thoughtflare sshd[30095]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:22:12 thoughtflare sshd[30164]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:22:17 thoughtflare sshd[30185]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:22:42 thoughtflare sshd[30311]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:22:44 thoughtflare autossh[6831]: starting ssh (count 15028)
+Aug 14 11:22:44 thoughtflare autossh[6831]: ssh child pid is 30322
+Aug 14 11:22:44 thoughtflare autossh[6831]: ssh exited with error status 255; restarting ssh
+Aug 14 11:22:59 thoughtflare sshd[30390]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:23:06 thoughtflare sshd[30431]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:25:14 thoughtflare sshd[31033]: Accepted publickey for sweater from 31.45.249.74 port 12961 ssh2: RSA SHA256:CaSdhf+RIHpdcELt+EM8w92pup8eodVt53PgT5BVc1w
+Aug 14 11:25:14 thoughtflare sshd[31033]: pam_unix(sshd:session): session opened for user sweater by (uid=0)
+Aug 14 11:25:14 thoughtflare systemd[1]: Starting Session 2370405 of user sweater.
+Aug 14 11:25:14 thoughtflare systemd-logind[2871]: New session 2370405 of user sweater.
+Aug 14 11:25:14 thoughtflare systemd[1]: Started Session 2370405 of user sweater.
+Aug 14 11:25:15 thoughtflare sshd[31044]: Received disconnect from 31.45.249.74: 11: disconnected by user
+Aug 14 11:25:15 thoughtflare sshd[31044]: Disconnected from 31.45.249.74
+Aug 14 11:25:15 thoughtflare sshd[31033]: pam_unix(sshd:session): session closed for user sweater
+Aug 14 11:26:25 thoughtflare sshd[32555]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:26:30 thoughtflare sshd[32577]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:26:53 thoughtflare sshd[32696]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:26:55 thoughtflare sshd[32707]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:28:41 thoughtflare nix-daemon[2891]: accepted connection from pid 887, user root (trusted)
+Aug 14 11:28:41 thoughtflare nix-daemon[2891]: accepted connection from pid 897, user root (trusted)
+Aug 14 11:28:42 thoughtflare nix-daemon[2891]: accepted connection from pid 905, user root (trusted)
+Aug 14 11:28:44 thoughtflare nix-daemon[2891]: accepted connection from pid 917, user root (trusted)
+Aug 14 11:28:46 thoughtflare nixos[2073]: [1;39mswitching to system configuration /nix/store/sg3nkl1h8saznqbz12sldcipia4ylpcl-nixos-15.07pre67160.d921092[0m
+Aug 14 11:28:46 thoughtflare systemd[1]: Stopping Local File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Stopped target Local File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Stopping All Network Interfaces.
+Aug 14 11:28:46 thoughtflare systemd[1]: Stopped target All Network Interfaces.
+Aug 14 11:28:46 thoughtflare systemd[1]: Stopping Remote File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Stopped target Remote File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reloading.
+Aug 14 11:28:46 thoughtflare systemd[1]: [1;39mUnknown serialization item 'subscribed=:1.3684679'[0m
+Aug 14 11:28:46 thoughtflare systemd[1]: [1;39m[/nix/store/6376npvr2z263z6sps1hv9i2xp0v8ank-rtkit-0.11/etc/systemd/system/rtkit-daemon.service:32] Unknown lvalue 'ControlGroup' in section 'Service'[0m
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Basic System.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Login Prompts.
+Aug 14 11:28:46 thoughtflare systemd[1]: Expecting device dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device...
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Graphical Interface.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Services Requiring IP Connectivity.
+Aug 14 11:28:46 thoughtflare systemd[1]: Starting Local File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Local File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Started All Containers.
+Aug 14 11:28:46 thoughtflare systemd[1]: Starting SCSI Link Power Management Policy...
+Aug 14 11:28:46 thoughtflare systemd[1]: Starting Remote File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Remote File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Started SCSI Link Power Management Policy.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Paths.
+Aug 14 11:28:46 thoughtflare systemd[1]: Starting All Network Interfaces.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target All Network Interfaces.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Multi-User System.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Remote File Systems.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Slices.
+Aug 14 11:28:46 thoughtflare systemd[1]: Starting Nix Daemon Socket.
+Aug 14 11:28:46 thoughtflare systemd[1]: [1;31mSocket service nix-daemon.service already active, refusing.[0m
+Aug 14 11:28:46 thoughtflare systemd[1]: [1;31mFailed to listen on Nix Daemon Socket.[0m
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Sockets.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Sound Card.
+Aug 14 11:28:46 thoughtflare systemd[1]: Mounted Configuration File System.
+Aug 14 11:28:46 thoughtflare systemd[1]: Mounted FUSE Control File System.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target System Initialization.
+Aug 14 11:28:46 thoughtflare systemd[1]: Reached target Timers.
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mReloading rules[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mCollecting garbage unconditionally...[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /etc/polkit-1/rules.d[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /var/run/current-system/sw/share/polkit-1/rules.d[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mFinished loading, compiling and executing 1 rules[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mReloading rules[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mCollecting garbage unconditionally...[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /etc/polkit-1/rules.d[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /var/run/current-system/sw/share/polkit-1/rules.d[0m
+Aug 14 11:28:47 thoughtflare polkitd[2847]: [1;39mFinished loading, compiling and executing 1 rules[0m
+Aug 14 11:29:38 thoughtflare sshd[2489]: Connection closed by 85.214.16.247 [preauth]
+Aug 14 11:30:17 thoughtflare systemd[1]: [1;39mJob dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device/start timed out.[0m
+Aug 14 11:30:17 thoughtflare systemd[1]: [1;31mTimed out waiting for device dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device.[0m
+Aug 14 11:30:17 thoughtflare systemd[1]: [1;31mDependency failed for /dev/disk/by-uuid/2f3737cf-d861-4c7a-aa8b-3b9d8318be95.[0m
+Aug 14 11:30:17 thoughtflare systemd[1]: [1;31mDependency failed for Swap.[0m
+Aug 14 11:30:17 thoughtflare nixos[2073]: [1;31mswitching to system configuration /nix/store/sg3nkl1h8saznqbz12sldcipia4ylpcl-nixos-15.07pre67160.d921092 failed (status 4)[0m
+Aug 14 11:30:34 thoughtflare nix-daemon[2891]: accepted connection from pid 2784, user root (trusted)
+Aug 14 11:30:34 thoughtflare nix-daemon[2891]: accepted connection from pid 2787, user root (trusted)
+Aug 14 11:30:34 thoughtflare nix-daemon[2891]: accepted connection from pid 2795, user root (trusted)
+Aug 14 11:30:36 thoughtflare nix-daemon[2891]: accepted connection from pid 2807, user root (trusted)
+Aug 14 11:30:36 thoughtflare nixos[2810]: [1;39mswitching to system configuration /nix/store/sg3nkl1h8saznqbz12sldcipia4ylpcl-nixos-15.07pre67160.d921092[0m
+Aug 14 11:30:36 thoughtflare systemd[1]: Stopping Local File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Stopped target Local File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Stopping All Network Interfaces.
+Aug 14 11:30:36 thoughtflare systemd[1]: Stopped target All Network Interfaces.
+Aug 14 11:30:36 thoughtflare systemd[1]: Stopping Remote File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Stopped target Remote File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reloading.
+Aug 14 11:30:36 thoughtflare systemd[1]: [1;39mUnknown serialization item 'subscribed=:1.3684679'[0m
+Aug 14 11:30:36 thoughtflare systemd[1]: [1;39m[/nix/store/6376npvr2z263z6sps1hv9i2xp0v8ank-rtkit-0.11/etc/systemd/system/rtkit-daemon.service:32] Unknown lvalue 'ControlGroup' in section 'Service'[0m
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Basic System.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Login Prompts.
+Aug 14 11:30:36 thoughtflare systemd[1]: Expecting device dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device...
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Graphical Interface.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Services Requiring IP Connectivity.
+Aug 14 11:30:36 thoughtflare systemd[1]: Starting Local File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Local File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Started All Containers.
+Aug 14 11:30:36 thoughtflare systemd[1]: Starting SCSI Link Power Management Policy...
+Aug 14 11:30:36 thoughtflare systemd[1]: Starting Remote File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Remote File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Started SCSI Link Power Management Policy.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Multi-User System.
+Aug 14 11:30:36 thoughtflare systemd[1]: Starting All Network Interfaces.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target All Network Interfaces.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Paths.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Remote File Systems.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Slices.
+Aug 14 11:30:36 thoughtflare systemd[1]: Starting Nix Daemon Socket.
+Aug 14 11:30:36 thoughtflare systemd[1]: [1;31mSocket service nix-daemon.service already active, refusing.[0m
+Aug 14 11:30:36 thoughtflare systemd[1]: [1;31mFailed to listen on Nix Daemon Socket.[0m
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Sockets.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Sound Card.
+Aug 14 11:30:36 thoughtflare systemd[1]: Mounted Configuration File System.
+Aug 14 11:30:36 thoughtflare systemd[1]: Mounted FUSE Control File System.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target System Initialization.
+Aug 14 11:30:36 thoughtflare systemd[1]: Reached target Timers.
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mReloading rules[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mCollecting garbage unconditionally...[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /etc/polkit-1/rules.d[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /var/run/current-system/sw/share/polkit-1/rules.d[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mFinished loading, compiling and executing 1 rules[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mReloading rules[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mCollecting garbage unconditionally...[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /etc/polkit-1/rules.d[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /var/run/current-system/sw/share/polkit-1/rules.d[0m
+Aug 14 11:30:37 thoughtflare polkitd[2847]: [1;39mFinished loading, compiling and executing 1 rules[0m
+Aug 14 11:30:38 thoughtflare sshd[3011]: Connection closed by 31.45.249.74 [preauth]
+Aug 14 11:30:38 thoughtflare sshd[3020]: Connection closed by 108.61.173.91 [preauth]
+Aug 14 11:30:45 thoughtflare nixos[2810]: [1;31mswitching to system configuration /nix/store/sg3nkl1h8saznqbz12sldcipia4ylpcl-nixos-15.07pre67160.d921092 failed (status 4)[0m
+Aug 14 11:31:14 thoughtflare sshd[3196]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:31:57 thoughtflare nix-daemon[2891]: accepted connection from pid 3414, user root (trusted)
+Aug 14 11:31:57 thoughtflare nix-daemon[2891]: accepted connection from pid 3417, user root (trusted)
+Aug 14 11:31:57 thoughtflare nix-daemon[2891]: accepted connection from pid 3425, user root (trusted)
+Aug 14 11:31:59 thoughtflare nix-daemon[2891]: accepted connection from pid 3437, user root (trusted)
+Aug 14 11:31:59 thoughtflare nixos[3441]: [1;39mswitching to system configuration /nix/store/sg3nkl1h8saznqbz12sldcipia4ylpcl-nixos-15.07pre67160.d921092[0m
+Aug 14 11:31:59 thoughtflare systemd[1]: Stopping Local File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Stopped target Local File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Stopping All Network Interfaces.
+Aug 14 11:31:59 thoughtflare systemd[1]: Stopped target All Network Interfaces.
+Aug 14 11:31:59 thoughtflare systemd[1]: Stopping Remote File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Stopped target Remote File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reloading.
+Aug 14 11:31:59 thoughtflare systemd[1]: [1;39mUnknown serialization item 'subscribed=:1.3684679'[0m
+Aug 14 11:31:59 thoughtflare systemd[1]: [1;39m[/nix/store/6376npvr2z263z6sps1hv9i2xp0v8ank-rtkit-0.11/etc/systemd/system/rtkit-daemon.service:32] Unknown lvalue 'ControlGroup' in section 'Service'[0m
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Swap.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Basic System.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Login Prompts.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Graphical Interface.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Services Requiring IP Connectivity.
+Aug 14 11:31:59 thoughtflare systemd[1]: Starting Local File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Local File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Started All Containers.
+Aug 14 11:31:59 thoughtflare systemd[1]: Starting SCSI Link Power Management Policy...
+Aug 14 11:31:59 thoughtflare systemd[1]: Starting Remote File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Remote File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Started SCSI Link Power Management Policy.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Multi-User System.
+Aug 14 11:31:59 thoughtflare systemd[1]: Starting All Network Interfaces.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target All Network Interfaces.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Paths.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Remote File Systems.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Slices.
+Aug 14 11:31:59 thoughtflare systemd[1]: Starting Nix Daemon Socket.
+Aug 14 11:31:59 thoughtflare systemd[1]: [1;31mSocket service nix-daemon.service already active, refusing.[0m
+Aug 14 11:31:59 thoughtflare systemd[1]: [1;31mFailed to listen on Nix Daemon Socket.[0m
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Sockets.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Sound Card.
+Aug 14 11:31:59 thoughtflare systemd[1]: Mounted Configuration File System.
+Aug 14 11:31:59 thoughtflare systemd[1]: Mounted FUSE Control File System.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target System Initialization.
+Aug 14 11:31:59 thoughtflare systemd[1]: Reached target Timers.
+Aug 14 11:31:59 thoughtflare sshd[3443]: Connection closed by 151.236.4.21 [preauth]
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mReloading rules[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mCollecting garbage unconditionally...[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /etc/polkit-1/rules.d[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /var/run/current-system/sw/share/polkit-1/rules.d[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mFinished loading, compiling and executing 1 rules[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mReloading rules[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mCollecting garbage unconditionally...[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /etc/polkit-1/rules.d[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mLoading rules from directory /var/run/current-system/sw/share/polkit-1/rules.d[0m
+Aug 14 11:32:00 thoughtflare polkitd[2847]: [1;39mFinished loading, compiling and executing 1 rules[0m
+Aug 14 11:32:06 thoughtflare systemd[1]: [1;39mJob dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device/start timed out.[0m
+Aug 14 11:32:06 thoughtflare systemd[1]: [1;31mTimed out waiting for device dev-disk-by\x2duuid-2f3737cf\x2dd861\x2d4c7a\x2daa8b\x2d3b9d8318be95.device.[0m
+Aug 14 11:32:06 thoughtflare systemd[1]: [1;31mDependency failed for /dev/disk/by-uuid/2f3737cf-d861-4c7a-aa8b-3b9d8318be95.[0m
+Aug 14 11:32:06 thoughtflare systemd[1]: [1;31mDependency failed for Swap.[0m
+Aug 14 11:32:06 thoughtflare nixos[3441]: [1;31mswitching to system configuration /nix/store/sg3nkl1h8saznqbz12sldcipia4ylpcl-nixos-15.07pre67160.d921092 failed (status 4)[0m
+Aug 14 11:32:12 thoughtflare sshd[3678]: Connection closed by 88.198.44.145 [preauth]
+Aug 14 11:32:17 thoughtflare sshd[3706]: Connection closed by 88.198.44.145 [preauth]

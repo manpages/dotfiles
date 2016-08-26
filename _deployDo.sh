@@ -1,9 +1,5 @@
 [ -z "$1" ] && dest="/home/sweater/github/dotfiles" || dest=$1
 home='/home/sweater'
-mkdir -p $home/.emacs.d
-mkdir -p $home/.vimperator
-mkdir -p $home/.arbtt
-mkdir -p $home/.js
 
 for c in \
     '.bashrc' \
@@ -29,9 +25,10 @@ do
     cc=${c/\./_}
     target=${cc//\//->}
     if [ -f $home/$c ]; then
-      cp -v $home/$c{,.backup}
+      cp -uv $home/$c{,.backup}
     fi
-    cp -v $dest/$target $home/$c
+    mkdir -p "$(dirname ${home}/${c})"
+    cp -uv "${dest}/${target}" "${home}/${c}"
 done
 
 for globc in \
@@ -42,6 +39,8 @@ do
     cc=${globc/\./_}
     target=${cc//\//->}
     cp -u "${dest}/${target}" "${globc}"
+
+done
 
 mkdir -p ${home}/.emacs.d
 cp -vru _emacs.d/wilderness ${home}/.emacs.d/

@@ -1,5 +1,5 @@
-{ nss ? [ "8.8.8.8" "8.8.4.4" ], tz, ... }:
+{ nameservers ? [ "8.8.8.8" "8.8.4.4" ], timeZone, ... }:
 { ... }:
 
-{ networking.nameservers = nss;
-  time.timeZone = tz; }
+{ networking.nameservers = nameservers;
+  time.timeZone = timeZone; }

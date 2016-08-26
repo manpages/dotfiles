@@ -7,3 +7,5 @@
      (set-face-foreground 'magit-diff-none "#535353")
      (set-face-foreground 'magit-diff-hunk-header "#000000")
      (set-face-foreground 'magit-branch "#a5aea5")))
+
+(setq magit-last-seen-setup-instructions "1.4.0")
