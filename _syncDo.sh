@@ -1,6 +1,7 @@
 [ -z "$1" ] &&  msg="Dotfiles autosync"             ||  msg=$1
 [ -z "$2" ] && dest="/home/sweater/github/dotfiles" || dest=$2
 home='/home/sweater'
+
 for c in \
     '.bashrc' \
     '.tmux.conf' \
@@ -18,19 +19,25 @@ for c in \
     '.ghcPkgUtils.source' \
     '.arbtt/categorize.cfg' \
     '.gitconfig' \
-    '.Xresources'
+    '.Xresources' \
+    '.muttrc'
+
 do
+  # Save local configs
   cc=${c/\./_}
   target=${cc//\//->}
   cp -u $home/$c "${dest}/${target}"
 done
+
 for globc in \
     '/root/cron.conf'
 do
+  # Save global configs (TODO: not redeployed automatically)
   cc=${globc/\./_}
   target=${cc//\//->}
   cp -u $globc "${dest}/${target}"
 done
+
 rsync -Pav /etc/nixos "${dest}/"
 mkdir -p ${dest}/_emacs.d 2>/dev/null
 cp -ru ${home}/.emacs.d/wilderness ${dest}/_emacs.d/

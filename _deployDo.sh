@@ -4,6 +4,7 @@ mkdir -p $home/.emacs.d
 mkdir -p $home/.vimperator
 mkdir -p $home/.arbtt
 mkdir -p $home/.js
+
 for c in \
     '.bashrc' \
     '.tmux.conf' \
@@ -21,7 +22,9 @@ for c in \
     '.ghcPkgUtils.source' \
     '.arbtt/categorize.cfg' \
     '.gitconfig' \
-    '.Xresources'
+    '.Xresources' \
+    '.muttrc'
+
 do
       cc=${c/\./_}
       target=${cc//\//->}

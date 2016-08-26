@@ -1,0 +1,44 @@
+source ~/.mutt/creds
+# set from        = '
+# set realname    = '
+# set imap_user   = '
+# set imap_pass   = '
+
+# # SMTP Settings
+# set smtp_url    = 'smtps://user@domain@smtp.gmail.com:465/'
+# set smtp_pass   = '
+
+#############################################################
+
+# Channel encryption
+set ssl_starttls=yes
+set ssl_force_tls=yes
+
+# Remote GMail folders
+set folder      = 'imaps://imap.gmail.com:993'
+set spoolfile   = '+INBOX'
+set postponed   ='+[Google Mail]/Drafts'
+set trash       = '+[Google Mail]/Trash'
+
+# Caches
+set header_cache      = ~/.mutt/cache/headers
+set message_cachedir  = ~/.mutt/cache/bodies
+set certificate_file  = ~/.mutt/certificates
+
+# Misc
+set move           = no
+set imap_keepalive = 900
+set signature      = ~/.mutt/signature
+
+# GPG
+source ~/.mutt/gpg.rc
+
+# Crypto
+set crypt_autosign            = yes
+set crypt_replysign           = yes
+set crypt_replysignencrypted  = yes
+set pgp_sign_as               = 583CCF51
+set pgp_timeout               = 3600
+
+# Useful keybinds
+bind index "^" imap-fetch-mail
