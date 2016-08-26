@@ -22,7 +22,7 @@ git_prompt() {
 alias ls='ls -p'
 alias p='proxychains4'
 #alias stack='stack --extra-lib-dirs=/nix/store/31w31mc8immhpnmxvcl4l0fvc3i5iwh0-zlib-1.2.8/lib'
-alias stack='stack --nix'
+#alias stack='stack --nix'
 
 # HISTORY
 HISTCONTROL=ignoredups:erasedups
@@ -32,9 +32,18 @@ shopt -s histappend
 
 # ENV
 export PS1="${ps1_date} ${ps1_user} ${ps1_path} \$(git_prompt)\n${ps1_lambda} "
-export PATH=$HOME/github/usr-local-bin:$PATH:$HOME/npm/bin
+export PATH=$HOME/.local/bin:$HOME/github/usr-local-bin:$PATH:$HOME/npm/bin:$HOME/github/mkbook/bin
 export GPG_AGENT_INFO  # the env file does not contain the export statement
 export SSH_AUTH_SOCK   # enable gpg-agent for ssh
 
 # IT'S A TRAP
 trap 'echo -ne "\033]2;$(pwd); $(history 1 | sed "s/^[ ]*[0-9]*[ ]*//g")\007"' DEBUG
+
+PATH="/home/sweater/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/sweater/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/sweater/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/sweater/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/sweater/perl5"; export PERL_MM_OPT;
+
+#
+if [ -e /home/sweater/.nix-profile/etc/profile.d/nix.sh ]; then . /home/sweater/.nix-profile/etc/profile.d/nix.sh; fi

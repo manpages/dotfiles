@@ -7,4 +7,5 @@ urxvt -e newsbeuter &
 ~/.fehbg &
 xsetroot -cursor_name left_ptr &
 arbtt-capture &
+setxkbmap "lv,ru" option grp:caps_toggle &
 exec xmonad

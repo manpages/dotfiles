@@ -1,1 +1,2 @@
 . ~/.bashrc
+if [ -e /home/sweater/.nix-profile/etc/profile.d/nix.sh ]; then . /home/sweater/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

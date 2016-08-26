@@ -1,4 +1,5 @@
 """"""""""""""""""""""""""""""
+set cm=blowfish2
 set nocompatible
 set noswapfile
 set nobackup
@@ -26,3 +27,4 @@ autocmd BufRead,BufEnter ~/github/*icfpc*tbd*/*py setlocal expandtab tabstop=4 s
 autocmd FileType make setlocal noexpandtab shiftwidth=4 softtabstop=0
 """"""""""""""""""""""""""""""
 autocmd BufRead,BufEnter *.txt,*.md,*.markdown setlocal textwidth=72
+""""""""""""""""""""""""""""""
