@@ -41,3 +41,8 @@ set pgp_timeout               = 3600
 
 # Useful keybinds
 bind index "^" imap-fetch-mail
+
+# Useful macros
+macro index A \
+  "<tag-pattern>~N<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" \
+  "mark all new as read"
