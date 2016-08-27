@@ -15,17 +15,17 @@
 
 ;; Sorrow.
 (quelpa 'evil 'evil-magit 'evil-surround 'evil-leader)
-(add-to-list 'load-path "~/.emacs.d/plugins/evil-org-mode")
 (package-initialize)
-
-;; Happiness
 (setq evil-want-C-i-jump nil)
-(evil-mode 1)
+(add-to-list 'load-path "~/.emacs.d/plugins/evil-org-mode")
+(require 'evil-org)
+
 ;; Leader
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
+;; Happiness
+(evil-mode 1)
 ;; Work with org-mode
-(require 'evil-org)
 
 ;; prettify haskell
 (global-prettify-symbols-mode t)
