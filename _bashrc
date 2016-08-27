@@ -4,7 +4,7 @@ export EDITOR="vim"
 export TERM="screen-256color"
 
 ps1_date="\[$(tput bold)\]\[$(tput setaf 242)\]\$(date +'%a %b %d %H:%M:%S:%N')"
-ps1_user="\[$(tput setaf 250)\]\u\[$(tput setaf 242)\]@\[$(tput setaf 250)\]\h"
+ps1_user="\[$(tput setaf 227)\]\u\[$(tput setaf 242)\]@\[$(tput setaf 227)\]\h"
 ps1_path="\[$(tput setaf 242)\]\w"
 ps1_lambda="\[$(tput setaf 242)\]λ\[$(tput sgr0)\]"
 for x in {0..256}; do
