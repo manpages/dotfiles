@@ -48,5 +48,6 @@ cp -vru _emacs.d/wilderness ${home}/.emacs.d/
 mkdir -p ${home}/.js
 cp -vru _js/*               ${home}/.js/
 
-mkdir -p ${home}/.mutt
+mkdir -p ${home}/.mutt/cache/bodies
+touch    ${home}/.mutt/cache/headers
 cp -vru _mutt/includes      ${home}/.mutt/

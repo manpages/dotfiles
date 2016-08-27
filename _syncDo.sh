@@ -26,7 +26,7 @@ do
   # Save local configs
   cc=${c/\./_}
   target=${cc//\//->}
-  cp -u $home/$c "${dest}/${target}"
+  cp -u ${home}/${c} "${dest}/${target}"
 done
 
 for globc in \
