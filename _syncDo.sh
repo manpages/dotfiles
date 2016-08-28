@@ -1,5 +1,6 @@
 [ -z "$1" ] &&  msg="Dotfiles autosync"             ||  msg=$1
 [ -z "$2" ] && dest="/home/sweater/github/dotfiles" || dest=$2
+[ -z "$3" ] && push=""                              || push=$3
 home='/home/sweater'
 
 for c in \
@@ -26,32 +27,35 @@ do
   # Save local configs
   cc=${c/\./_}
   target=${cc//\//->}
-  cp -u ${home}/${c} "${dest}/${target}"
+  cp -vu ${home}/${c} "${dest}/${target}"
 done
 
 for globc in \
     '/root/cron.conf'
+
 do
   # Save global configs (TODO: not redeployed automatically)
   cc=${globc/\./_}
   target=${cc//\//->}
-  cp -u $globc "${dest}/${target}"
+  cp -vu $globc "${dest}/${target}"
 done
 
 mkdir -p ${dest}/_emacs.d 2>/dev/null
-cp -ru ${home}/.emacs.d/wilderness ${dest}/_emacs.d/
+cp -vru ${home}/.emacs.d/wilderness ${dest}/_emacs.d/
 
 mkdir -p ${dest}/_js 2>/dev/null
-cp -ru ${home}/.js/*               ${dest}/_js/
+cp -vru ${home}/.js/*               ${dest}/_js/
 
 mkdir -p ${dest}/_mutt 2>/dev/null
-cp -ru ${home}/.mutt/includes      ${dest}/_mutt/
+cp -vru ${home}/.mutt/includes      ${dest}/_mutt/
 
 cd "${dest}"
 
-rsync -Pav /etc/nixos "${dest}/"
+[ -d "/etc/nixos" ] && rsync -Pav /etc/nixos "${dest}/"
 
-git add .
-git status
-git commit -am "$msg"
-git push origin master
+if [ $push=="true" ]; then
+  git add .
+  git status
+  git commit -am "$msg"
+  git push origin master
+fi

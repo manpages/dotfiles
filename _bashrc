@@ -19,7 +19,8 @@ git_prompt() {
 }
 
 # ALIASES
-alias vi='emacsclient -c'
+alias emacs='emacs -nw'
+alias vi='emacsclient -c -nw'
 alias ls='ls -p'
 alias p='proxychains4'
 #alias stack='stack --extra-lib-dirs=/nix/store/31w31mc8immhpnmxvcl4l0fvc3i5iwh0-zlib-1.2.8/lib'

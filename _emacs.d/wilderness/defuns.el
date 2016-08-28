@@ -54,3 +54,10 @@ Return a list of installed packages or nil for every skipped package."
 	     (package-install package)
 	   package)))
         packages))
+
+(defun quelpas (&rest packages)
+    "Assure every package is installed with quelpa and install otherwise"
+    (mapcar
+      (lambda (package)
+        (quelpa package))
+      packages))

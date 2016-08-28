@@ -14,7 +14,7 @@
         (eval-buffer)))
 
 ;; Sorrow.
-(quelpa 'evil 'evil-magit 'evil-surround 'evil-leader)
+(quelpas 'evil 'evil-magit 'evil-surround 'evil-leader 'rainbow-delimiters 'haskell-mode)
 (package-initialize)
 (setq evil-want-C-i-jump nil)
 (add-to-list 'load-path "~/.emacs.d/plugins/evil-org-mode")
@@ -33,7 +33,7 @@
 (defun my-org-clocktable-indent-string (level)
   (if (= level 1)
       ""
-    (let ((str "*"))
+    (let ((str "▶"))
       (while (> level 2)
 	(setq level (1- level)
 	      str (concat str "  ")))
