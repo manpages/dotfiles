@@ -28,7 +28,9 @@
 
 ;; Org-mode
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "DOING(d)" "WAITING(w@/!)" "|" "DONE(d!)" "CANCELED(c@/!)")))
+      '((sequence "TODO(t)" "NEXT(n)" "DOING(d)"
+		  "WAITING(w@/!)" "DELEGATED(x@/!)" "|"
+		  "DONE(o!)" "CANCELED(c@/!)")))
 ; \emsp fix by Misha
 (defun my-org-clocktable-indent-string (level)
   (if (= level 1)
@@ -87,3 +89,15 @@
 (set-face-foreground 'rainbow-delimiters-depth-7-face "#B090B0")
 (set-face-foreground 'rainbow-delimiters-depth-3-face "#759090")
 (put 'downcase-region 'disabled nil)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-files (quote ("~/life.org"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

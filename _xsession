@@ -1,7 +1,6 @@
 clipit &
 xrdb ~/.Xresources &
 firefox &
-emacs &
 urxvt -e newsbeuter &
 ( sleep 5; killall ssh; sh ${HOME}/forward ) &
 ~/.fehbg &
