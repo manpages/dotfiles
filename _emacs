@@ -23,9 +23,9 @@
 ;	 'rainbow-delimiters 'haskell-mode 'flycheck-haskell)
 
 (package-initialize)
+(setq evil-want-C-i-jump nil)
 (add-to-list 'load-path "~/.emacs.d/plugins/evil-org-mode")
 (require 'evil-org)
-(setq evil-want-C-i-jump nil)
 
 ;; Leader
 (global-evil-leader-mode)
