@@ -1,3 +1,8 @@
+;;; .emacs -- Emacs configuration file
+;;; Commentary:
+;;; This is a fork of manpages .emacs, using some good stuff by volhovm
+
+;;; Code:
 (load "~/.emacs.d/wilderness/defuns.el")
 
 ;; while deploying emacs on a new machine, cross your fingers and hope for best
@@ -14,11 +19,13 @@
         (eval-buffer)))
 
 ;; Sorrow.
-(quelpas 'evil 'evil-magit 'evil-surround 'evil-leader 'rainbow-delimiters 'haskell-mode)
+;(quelpas 'evil 'evil-magit 'evil-surround 'evil-leader
+;	 'rainbow-delimiters 'haskell-mode 'flycheck-haskell)
+
 (package-initialize)
-(setq evil-want-C-i-jump nil)
 (add-to-list 'load-path "~/.emacs.d/plugins/evil-org-mode")
 (require 'evil-org)
+(setq evil-want-C-i-jump nil)
 
 ;; Leader
 (global-evil-leader-mode)
@@ -33,19 +40,55 @@
 		  "DONE(o!)" "CANCELED(c@/!)")))
 ; \emsp fix by Misha
 (defun my-org-clocktable-indent-string (level)
+  "LEVEL -- indentation level."
   (if (= level 1)
       ""
     (let ((str "▶"))
       (while (> level 2)
 	(setq level (1- level)
 	      str (concat str "  ")))
-      (concat str " "))))
+      (concat str " ")))
+  )
 (advice-add 'org-clocktable-indent-string :override #'my-org-clocktable-indent-string)
 
-;; prettify haskell
+;; haskell
+;; smart stuff by Misha
+(require 'haskell-process)
+(require 'hindent)
+(setq-default hindent-style "johan-tibell")
+(add-hook 'haskell-mode-hook 'volhovm-haskell-mode-hook)
+(defun volhovm-haskell-mode-hook ()
+  "Func for haskell-mode hook."
+  (interactive-haskell-mode)
+  (whitespace-mode)
+  (volhovm-haskell-style)
+  (hindent-mode))
+;; make advanced tools usable
+'(flycheck-ghc-args (quote ("-v")))
+'(flycheck-haskell-runghc-command
+  (quote
+   ("stack" "--verbosity" "silent" "runghc" "--")))
+'(haskell-interactive-popup-errors nil)
+'(haskell-process-args-stack-ghci (quote ("--ghc-options=-ferror-spans")))
+'(haskell-process-log t)
+'(haskell-process-type (quote auto))
+;; eye-candy
 (global-prettify-symbols-mode t)
 (load "~/.emacs.d/wilderness/haskell.el")
 (setq haskell-stylish-on-save t)
+;; we've got style, we've got moves
+(defun volhovm-haskell-style ()
+  "Style properties for haskell."
+  (interactive)
+  (setq tab-width 4
+	haskell-indentation-layout-offset 4
+	haskell-indentation-left-offset 4
+	haskell-indentation-ifte-offset 4))
+;; not-so-smart stuff by Jonn
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup))
 
 ;; monochrome scheme is ok
 (load "~/.emacs.d/wilderness/monochrome-theme.el")
@@ -68,8 +111,8 @@
 (setq auto-save-default nil)
 
 ;; boring shit
-(set-cursor-color "#997A8D") 
-(set-mouse-color "#997A8D") 
+(set-cursor-color "#997A8D")
+(set-mouse-color "#997A8D")
 (blink-cursor-mode 0)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -95,9 +138,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-agenda-files (quote ("~/life.org"))))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(whitespace-newline ((t (:foreground "black" :weight normal))))
+ '(whitespace-space ((t (:background "black" :foreground "black")))))
+
+(provide '.emacs)
+;;; .emacs ends here
