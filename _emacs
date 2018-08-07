@@ -20,7 +20,7 @@
 
 ;; Sorrow.
 ;(quelpas 'evil 'evil-magit 'evil-surround 'evil-leader
-;	 'rainbow-delimiters 'haskell-mode 'flycheck-haskell)
+;	 'rainbow-delimiters 'haskell-mode 'flycheck-haskell 'psc-ide 'purescript-mode)
 
 (package-initialize)
 (setq evil-want-C-i-jump nil)
@@ -43,18 +43,34 @@
   "LEVEL -- indentation level."
   (if (= level 1)
       ""
-    (let ((str "▶"))
+    (let ((str ">"))
       (while (> level 2)
 	(setq level (1- level)
 	      str (concat str "  ")))
       (concat str " ")))
   )
 (advice-add 'org-clocktable-indent-string :override #'my-org-clocktable-indent-string)
+; Clocking
+(setq org-clock-into-drawer t)
+(setq org-clock-out-remove-zero-time-clocks t)
+(setq org-columns-default-format "%80ITEM(Task) %10CLOCKSUM")
+(setq org-capture-templates
+      '( ("j" "Journal" entry (file+datetree "~/org/diary.org") "* %?\n%U\n" :clock-in t :clock-resume t) ))
+; Refiling
+(setq org-refile-targets (quote ((nil :maxlevel . 9)
+				 (org-agenda-files :maxlevel . 9))))
+(setq org-refile-use-outline-path t)
+(setq org-outline-path-complete-in-steps nil)
+(setq org-refile-allow-creating-parent-nodes (quote confirm))
+(setq org-completion-use-ido t)
+; Tags
+(setq org-tag-alist '(("PERSONAL" . ?p)
+		      ("WORK"     . ?w)))
 
-;; haskell
+;; Haskell
 ;; smart stuff by Misha
 (require 'haskell-process)
-(require 'hindent)
+;(require 'hindent)
 (setq-default hindent-style "johan-tibell")
 (add-hook 'haskell-mode-hook 'volhovm-haskell-mode-hook)
 (defun volhovm-haskell-mode-hook ()
@@ -90,6 +106,16 @@
 (eval-after-load 'flycheck
   '(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup))
 
+;; purescript
+(require 'psc-ide)
+
+(add-hook 'purescript-mode-hook
+	  (lambda ()
+	    (psc-ide-mode)
+	    (company-mode)
+	    (flycheck-mode)
+	        (turn-on-purescript-indentation)))
+
 ;; monochrome scheme is ok
 (load "~/.emacs.d/wilderness/monochrome-theme.el")
 (require 'rainbow-delimiters)
@@ -116,7 +142,7 @@
 (blink-cursor-mode 0)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-(scroll-bar-mode -1)
+;(scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 (set-default-font "Ubuntu Mono-8")
@@ -137,13 +163,18 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/life.org"))))
+ '(org-agenda-files
+   (quote
+    ("~/org" "~/org/self" "~/org/company" "~/org/projects")))
+ '(org-modules '(org-habit))
+ '(safe-local-variable-values (quote ((auto-revert-mode . t)))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(secondary-selection ((((class color) (min-colors 10)) (:foreground: "white" :background "black"))))
  '(whitespace-newline ((t (:foreground "black" :weight normal))))
  '(whitespace-space ((t (:background "black" :foreground "black")))))
 

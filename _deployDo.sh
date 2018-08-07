@@ -43,6 +43,7 @@ do
 done
 
 mkdir -p ${home}/.emacs.d/plugins/
+# git clone git://github.com/somelauw/evil-org.git ~/.emacs.d/plugins/evil-org
 git clone git@github.com:manpages/evil-org-mode.git ${home}/.emacs.d/plugins/evil-org-mode
 cp -vru _emacs.d/wilderness ${home}/.emacs.d/
 
